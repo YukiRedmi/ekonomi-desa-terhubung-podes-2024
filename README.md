@@ -1,63 +1,80 @@
-# Ekonomi Desa yang Terhubung — FINAL FROZEN
+# Ekonomi Desa yang Terhubung
 
-**Konektivitas digital, mobilitas, dan infrastruktur ekonomi kabupaten/kota Indonesia — Podes 2024**
+### Konektivitas Digital, Mobilitas, dan Infrastruktur Ekonomi Kabupaten/Kota Indonesia — Podes 2024
 
-Status: **dashboard lokal final / frozen**. Folder ini adalah satu-satunya baseline yang digunakan untuk tahap repository, deployment, dan paper IEEE.
+[![Data](https://img.shields.io/badge/Data-BPS%20Podes%202024-2563EB)](https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html)
+![Wilayah](https://img.shields.io/badge/Cakupan-514%20Kabupaten%2FKota-0F766E)
+![Provinsi](https://img.shields.io/badge/Provinsi-38-D97706)
+![Visualization](https://img.shields.io/badge/Visualization-Multivariate%20%7C%20Geospatial%20%7C%20Hierarchy-7C3AED)
 
-## Menjalankan dashboard
-### Windows
-Double-click `start_dashboard.bat`, atau jalankan:
+**Live Dashboard:**  
+https://yukiredmi.github.io/ekonomi-desa-terhubung-podes-2024/
 
-```bat
-cd /d C:\Users\yudha\Downloads\PODES_2024_DASHBOARD_FINAL
-py run_local.py
-```
+**Repository:**  
+https://github.com/YukiRedmi/ekonomi-desa-terhubung-podes-2024
 
-Lalu buka:
+---
 
-`http://127.0.0.1:8000/index.html`
+## Ringkasan
 
-### Single-file
-`PODES_2024_DASHBOARD_FINAL.html` dapat dibuka langsung di Chrome/Edge modern. Mode **Satellite** memerlukan koneksi internet karena menggunakan tile citra eksternal; mode **Plain** dan **Light** tidak memerlukan tile eksternal.
+**Ekonomi Desa yang Terhubung** adalah dashboard visualisasi data interaktif untuk mengeksplorasi variasi **konektivitas digital, mobilitas, dan infrastruktur ekonomi** pada 514 kabupaten/kota di Indonesia menggunakan **Statistik Potensi Desa Indonesia 2024 (Podes 2024)** dari Badan Pusat Statistik (BPS).
 
-## Visualisasi final
-- Ringkasan nasional/provinsi dan delapan indikator.
-- PCA, KMeans cluster, parallel coordinates, clustered heatmap, brushing/linking.
-- Choropleth dan proportional symbol map.
-- Basemap **Plain / Light / Satellite** dengan legenda terpisah dari area peta.
-- Treemap dan sunburst Indonesia → Provinsi → Kabupaten/Kota.
-- Detail wilayah dan perbandingan wilayah–provinsi–nasional.
-- Interpretasi interaktif tepat di bawah setiap visual.
-- Filter provinsi, kabupaten/kota, indikator, cluster, dan pencilan.
+Dashboard tidak dimaksudkan untuk menghasilkan indeks pembangunan baru ataupun klasifikasi resmi daerah. Analisis dilakukan secara **deskriptif dan eksploratif** untuk membantu melihat:
 
-## Sumber utama
-**BPS — Statistik Potensi Desa Indonesia 2024**  
-Katalog 1105014 · Nomor Publikasi 04300.24002 · Rilis 10 Desember 2024  
-https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html
+1. pola multivariat antarindikator pada tingkat kabupaten/kota;
+2. persebaran geografis indikator dan kelompok wilayah;
+3. struktur perbedaan indikator dalam hirarki Indonesia → Provinsi → Kabupaten/Kota;
+4. wilayah dengan profil multivariat yang relatif tidak biasa dibandingkan wilayah lainnya.
 
-## Batas wilayah
-**Indonesia-GeoJSON / Laravel Nusa / Peta Nusa**  
-Referensi: Kepmendagri No 300.2.2-2138 Tahun 2025  
-https://github.com/AlfianAliM/Indonesia-GeoJSON
+Proyek dikembangkan sebagai Ujian Akhir Semester mata kuliah **Visualisasi Data dan Informasi**, Program Studi Komputasi Statistik, Politeknik Statistika STIS.
 
-Join polygon dan data Podes telah diaudit 514/514 berdasarkan normalisasi nama kabupaten/kota. Kode boundary dipertahankan sebagai metadata boundary dan tidak diklaim sebagai kode BPS.
+---
 
-## Data final
-- `data/PODES_2024_DASHBOARD_DATA.csv`
-- `data/PODES_2024_DASHBOARD_ANALYSIS.geojson`
-- `data/PODES_2024_HIERARCHY_READY.json`
-- `data/DATA_DICTIONARY.csv`
-- `data/dashboard_records.json`
-- `data/dashboard_geo.geojson`
-- `data/dashboard_meta.json`
-- `data/analysis_podes_2024.py`
+## Pertanyaan Analisis
 
-## Dokumentasi
-- `docs/DATA_PROVENANCE.md`
-- `docs/UAS_COMPLIANCE.md`
-- `docs/FINAL_QA_CHECKLIST.md`
-- `docs/BROWSER_QA_FINAL.md`
-- `docs/FILE_MANIFEST_SHA256.txt`
+Dashboard dirancang untuk menjawab tiga pertanyaan utama:
 
-## Batas interpretasi
-Analisis bersifat deskriptif dan eksploratif. PCA/clustering bukan indeks atau klasifikasi resmi pembangunan. Pencilan menunjukkan profil multivariat yang tidak biasa, bukan kesalahan data atau penilaian kualitas wilayah.
+1. **Bagaimana profil multivariat kabupaten/kota terbentuk dari indikator konektivitas digital, mobilitas, dan infrastruktur ekonomi?**
+2. **Bagaimana pola tersebut tersebar secara geografis di Indonesia?**
+3. **Bagaimana indikator tersebut bervariasi dalam struktur wilayah Indonesia → Provinsi → Kabupaten/Kota?**
+
+---
+
+## Cakupan Data
+
+Dataset analisis terdiri atas:
+
+| Komponen | Cakupan |
+|---|---:|
+| Kabupaten/kota | 514 |
+| Provinsi | 38 |
+| Unit administrasi desa/kelurahan Podes 2024 | 84.276 |
+| Indikator utama | 8 |
+| Observasi lengkap untuk PCA dan clustering | 509 |
+| Wilayah teridentifikasi sebagai pencilan multivariat 99% | 25 |
+
+Lima kabupaten/kota di DI Yogyakarta tidak memiliki nilai indikator transportasi yang diperlukan untuk analisis PCA delapan variabel karena tabel terkait tidak dipublikasikan pada sumber yang digunakan. Nilai yang tidak tersedia dipertahankan sebagai **missing value** dan tidak diimputasi menjadi nol.
+
+---
+
+## Indikator Utama
+
+Semua indikator utama dinyatakan sebagai **persentase desa/kelurahan dalam suatu kabupaten/kota**.
+
+| Domain | Indikator | Definisi ringkas |
+|---|---|---|
+| Digital | BTS | Persentase desa/kelurahan yang memiliki BTS |
+| Digital | 4G/5G | Persentase desa/kelurahan dengan jaringan 4G/5G |
+| Mobilitas | Angkutan umum | Persentase desa/kelurahan yang memiliki angkutan umum |
+| Infrastruktur ekonomi | Akses pertokoan/pasar | Persentase desa/kelurahan yang memiliki akses pertokoan atau pasar |
+| Infrastruktur ekonomi | Pasar permanen | Persentase desa/kelurahan yang memiliki pasar dengan bangunan permanen |
+| Infrastruktur ekonomi | Akses bank | Persentase desa/kelurahan yang memiliki akses layanan bank |
+| Infrastruktur ekonomi | KUR | Persentase desa/kelurahan yang memiliki penerima/akses Kredit Usaha Rakyat |
+| Aktivitas ekonomi | Produk unggulan | Persentase desa/kelurahan yang memiliki produk unggulan |
+
+Secara umum, indikator dihitung sebagai:
+
+```text
+persentase = jumlah desa/kelurahan dengan karakteristik tertentu
+             --------------------------------------------------- × 100
+                       total desa/kelurahan
