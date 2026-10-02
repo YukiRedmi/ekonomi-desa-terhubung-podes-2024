@@ -1,0 +1,186 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ekonomi Desa yang Terhubung — Podes 2024</title><link rel="stylesheet" href="styles.css"></head><body>
+<div class="app" id="appRoot">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-row">
+        <div class="brand">
+          <h1>Ekonomi Desa yang Terhubung</h1>
+          <p>Konektivitas digital, mobilitas, dan infrastruktur ekonomi kabupaten/kota Indonesia · Podes 2024</p>
+        </div>
+        <div class="meta-badges"><span class="badge">BPS · Podes 2024</span><span class="badge">514 kabupaten/kota</span><span class="badge">38 provinsi</span></div>
+      </div>
+      <nav class="tabs" aria-label="Navigasi dashboard">
+        <button class="tab-btn active" data-page="overview">Ringkasan</button>
+        <button class="tab-btn" data-page="multivariate">Multivariat</button>
+        <button class="tab-btn" data-page="spatial">Peta</button>
+        <button class="tab-btn" data-page="hierarchy">Struktur wilayah</button>
+        <button class="tab-btn" data-page="method">Metodologi</button>
+      </nav>
+    </div>
+  </header>
+  <section class="filterbar">
+    <div class="filter-inner">
+      <div class="control"><label>Provinsi</label><select id="provinceFilter"></select></div>
+      <div class="control"><label>Kabupaten/Kota</label><select id="regionFilter"></select></div>
+      <div class="control"><label>Indikator aktif</label><select id="indicatorFilter"></select></div>
+      <div class="control"><label>Cluster</label><select id="clusterFilter"><option value="ALL">Semua cluster</option><option value="1">C1 · Relatif rendah</option><option value="2">C2 · Menengah/transisi</option><option value="3">C3 · Relatif tinggi</option></select></div>
+      <label class="check-control"><input id="outlierOnly" type="checkbox"> Pencilan saja</label>
+      <button class="btn" id="compareBtn">Bandingkan</button>
+      <button class="btn ghost" id="resetBtn">Reset</button>
+    </div>
+  </section>
+  <main class="main">
+    <section id="page-overview" class="page active">
+      <div class="hero">
+        <div class="hero-main"><div class="hero-kicker">Visualisasi Data dan Informasi</div><h2>Bagaimana desa-desa Indonesia terhubung secara digital, bergerak, dan mengakses infrastruktur ekonomi?</h2><p>Dashboard ini menggunakan delapan indikator Podes 2024 untuk menyajikan profil multivariat, pola spasial, dan struktur wilayah dari tingkat Indonesia hingga kabupaten/kota.</p></div>
+        <div class="hero-side"><div><div class="big" id="hero4g">86,9%</div><p id="hero4gLabel">desa/kelurahan memiliki 4G/5G secara nasional</p></div><div class="small-source">Sumber: BPS — Statistik Potensi Desa Indonesia 2024</div></div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi"><div class="value" id="kpiKab">514</div><div class="label">Kabupaten/Kota</div></div>
+        <div class="kpi"><div class="value" id="kpiProv">38</div><div class="label">Provinsi</div></div>
+        <div class="kpi"><div class="value" id="kpiDesa">84.276</div><div class="label">Desa/Kelurahan</div></div>
+        <div class="kpi"><div class="value">8</div><div class="label">Indikator utama</div></div>
+        <div class="kpi"><div class="value" id="kpiPca">509</div><div class="label">Observasi lengkap PCA</div></div>
+      </div>
+      <div class="grid-2">
+        <div class="card"><div class="card-title-row"><div><h3 id="overviewChartTitle">Profil indikator nasional</h3><p class="subtitle">Persentase desa/kelurahan. Agregasi provinsi dan nasional dihitung dengan pembobot jumlah desa/kelurahan.</p></div><span class="pill" id="scopePill">Indonesia</span></div><div id="overviewBar" class="chart medium"></div>
+<div class="semantic-legend" aria-label="Kelompok indikator">
+  <span><i style="background:#2563EB"></i>Konektivitas digital</span>
+  <span><i style="background:#D97706"></i>Mobilitas</span>
+  <span><i style="background:#0F766E"></i>Infrastruktur & aktivitas ekonomi</span>
+</div><div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretOverviewProfile">Profil delapan indikator akan diringkas di sini.</p></div><div class="source">Sumber: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026. *Indikator angkutan umum menggunakan wilayah dengan data yang dapat dibandingkan.</div></div>
+        <div class="stack"><div class="card"><h3>Temuan utama</h3><div class="insights" id="insightCards"></div></div><div class="card"><h3>Komposisi cluster</h3><p class="subtitle">Cluster dibentuk dari delapan indikator untuk membantu membaca kemiripan profil antarwilayah; hasilnya merupakan segmentasi eksploratif, bukan klasifikasi pembangunan resmi.</p><div id="overviewCluster" class="chart" style="min-height:260px"></div><div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretOverviewCluster">Komposisi cluster pada cakupan aktif akan diringkas di sini.</p></div><div class="source">Sumber: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026. Hasil KMeans pada 509 observasi lengkap.</div></div></div>
+      </div>
+    </section>
+
+    <section id="page-multivariate" class="page">
+      <div class="page-head"><h2>Profil Multivariat</h2><p>Delapan indikator dianalisis secara bersamaan melalui PCA, clustering, parallel coordinates, dan heatmap terklaster. Seleksi lasso pada PCA akan diteruskan ke visual lain melalui brushing dan linking.</p></div>
+      <div class="grid-8-4">
+        <div class="card"><div class="card-title-row"><div><h3>Profil kabupaten/kota dalam ruang PCA</h3><p class="subtitle">PC1 = 53,87% · PC2 = 15,78% · total = 69,65% variasi.</p></div><span class="pill">Seleksi lasso aktif</span></div><div id="selectionStatus" class="selection-status">Tarik lasso/box pada titik untuk menautkan pilihan ke visual lain.</div><div id="pcaChart" class="chart tall"></div><div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretPCA">Posisi wilayah pada ruang PCA akan dijelaskan di sini.</p></div><div class="source">Sumber: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026. PCA menggunakan 509 observasi lengkap setelah standardisasi z-score.</div></div>
+        <div class="card"><h3>Profil rata-rata cluster</h3><p class="subtitle">Rata-rata delapan indikator pada masing-masing cluster (%).</p><div class="legend-row"><span><i class="dot" style="background:#0072B2"></i>C1 Relatif rendah</span><span><i class="dot" style="background:#E69F00"></i>C2 Menengah/transisi</span><span><i class="dot" style="background:#009E73"></i>C3 Relatif tinggi</span></div><div id="clusterProfile" class="chart tall"></div><div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretClusterProfile">Perbedaan profil antarcluster akan dijelaskan di sini.</p></div><div class="source">Sumber: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026. Label cluster bersifat relatif terhadap delapan indikator yang dianalisis.</div></div>
+      </div>
+      <div class="card" style="margin-top:16px"><div class="card-title-row"><div><h3>Koordinat paralel (parallel coordinates)</h3><p class="subtitle">Z-score digunakan agar pola antarindikator dengan sebaran berbeda dapat dibandingkan pada skala yang sama.</p></div><span class="pill" id="parallelScope">509 wilayah</span></div><div id="parallelChart" class="chart medium"></div><div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretParallel">Pola relatif pada koordinat paralel akan dijelaskan di sini.</p></div><div class="source">Sumber: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026. Garis mengikuti filter dan hasil brushing PCA.</div></div>
+      <div class="card" style="margin-top:16px"><div class="card-title-row"><div><h3>Heatmap terklaster</h3><p class="subtitle">Wilayah diurutkan menggunakan Ward hierarchical clustering; warna menunjukkan z-score tiap indikator.</p></div><button class="clear-link" id="clearSelection">Bersihkan pilihan</button></div><div id="heatmapChart" class="chart tall"></div><div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretHeatmap">Pola z-score pada heatmap akan dijelaskan di sini.</p></div><div class="source">Sumber: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026. Biru = relatif di bawah rata-rata; oranye = relatif di atas rata-rata.</div></div>
+    </section>
+
+    <section id="page-spatial" class="page">
+      <div class="page-head"><h2>Peta Interaktif</h2><p>Dua bentuk peta digunakan untuk membedakan proporsi dan volume: choropleth menunjukkan persentase, sedangkan proportional symbol menunjukkan jumlah desa/kelurahan.</p></div>
+      <div class="card map-shell">
+        <div class="toolbar map-toolbar">
+          <div class="control"><label>Jenis peta</label><select id="mapType"><option value="choropleth">Choropleth</option><option value="symbol">Proportional symbol</option></select></div>
+          <div class="control"><label>Klasifikasi</label><select id="classification"><option value="jenks">Natural Breaks (Jenks)</option><option value="quantile">Quantile</option><option value="equal">Equal Interval</option></select></div>
+          <div class="control"><label>Basemap</label><select id="basemapMode"><option value="plain">Plain</option><option value="light">Light</option><option value="satellite">Satellite</option></select></div>
+          <label class="check-control"><input id="clusterLayer" type="checkbox"> Layer cluster</label>
+          <label class="check-control"><input id="outlierLayer" type="checkbox" checked> Tandai pencilan</label>
+          <div class="map-nav-group" aria-label="Navigasi peta">
+            <button class="btn icon-btn" id="mapZoomIn" title="Perbesar peta" aria-label="Perbesar peta">+</button>
+            <button class="btn icon-btn" id="mapZoomOut" title="Perkecil peta" aria-label="Perkecil peta">−</button>
+            <button class="btn" id="resetMap" title="Sesuaikan peta dengan cakupan aktif">Fit wilayah</button>
+            <button class="btn map-home-btn" id="mapIndonesia" title="Kembali ke cakupan nasional">Indonesia</button>
+          </div>
+        </div>
+        <div class="interaction-hint"><b>Navigasi peta:</b> drag untuk menggeser · scroll atau tombol +/− untuk zoom · klik wilayah untuk membuka detail. Basemap dapat diubah tanpa mengubah data yang divisualisasikan.</div>
+        <div class="card-title-row"><div><h3 id="mapTitle">Persentase desa/kelurahan dengan jaringan 4G/5G, 2024</h3><p class="subtitle" id="mapSubtitle">Kabupaten/kota · Natural Breaks · 5 kelas · skala nasional tetap.</p></div><span class="pill" id="mapScope">514 wilayah</span></div>
+        <div class="map-layout">
+          <div class="map-frame">
+            <div id="mapChart" class="map-chart"></div>
+          </div>
+          <aside class="map-side-panel" aria-label="Legenda dan konteks peta">
+            <div class="map-side-card">
+              <div class="map-side-head"><strong>Legenda peta</strong><span>Dipisahkan dari area peta</span></div>
+              <div id="mapLegend" class="map-legend-body"></div>
+            </div>
+            <div class="map-side-card">
+              <div class="map-side-head"><strong>Konteks basemap</strong><span>Tampilan latar peta</span></div>
+              <div id="mapBasemapInfo" class="map-basemap-info"></div>
+            </div>
+          </aside>
+        </div>
+        <div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretMap">Pola spasial indikator aktif akan dijelaskan di sini.</p></div><div class="source">Sumber indikator: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026. Batas wilayah: <a href="https://github.com/AlfianAliM/Indonesia-GeoJSON" target="_blank" rel="noopener">Indonesia-GeoJSON / Peta Nusa–Laravel Nusa</a>; referensi Kepmendagri No 300.2.2-2138 Tahun 2025; diakses 2 Oktober 2026. Nilai NA tidak diimputasi.</div>
+      </div>
+    </section>
+
+    <section id="page-hierarchy" class="page">
+      <div class="page-head"><h2>Struktur Wilayah</h2><p>Struktur wilayah disusun dalam tiga tingkat: Indonesia → Provinsi → Kabupaten/Kota. Luas area menunjukkan jumlah desa/kelurahan, sedangkan warna menunjukkan indikator yang sedang dipilih.</p></div>
+      <div class="card">
+        <div class="toolbar hierarchy-toolbar">
+          <div class="control"><label>Representasi</label><select id="hierarchyType"><option value="treemap">Treemap</option><option value="sunburst">Sunburst</option></select></div>
+          <span class="pill">Size = desa/kelurahan</span>
+          <span class="pill">Color = indikator aktif</span>
+          <div class="hierarchy-nav-group">
+            <button class="btn" id="hierUp">← Satu level</button>
+            <button class="btn" id="hierReset">Reset ke Indonesia</button>
+          </div>
+        </div>
+        <div class="interaction-hint"><b>Navigasi struktur:</b> klik provinsi untuk drill-down · klik breadcrumb atau tombol di atas untuk kembali.</div>
+        <div class="breadcrumb" id="breadcrumb"><button type="button" class="crumb active" data-hier="root">Indonesia</button></div>
+        <div id="hierarchyChart" class="chart tall"></div><div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretHierarchy">Pola pada struktur wilayah akan dijelaskan di sini.</p></div><div class="source">Sumber: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026. Agregasi provinsi/nasional menggunakan pembobot jumlah desa/kelurahan.</div>
+      </div>
+    </section>
+
+    <section id="page-method" class="page">
+      <div class="page-head"><h2>Metodologi & Data</h2><p>Bagian ini memuat sumber data, pengolahan, visual encoding, penanganan data yang tidak tersedia, metode multivariat, serta batas interpretasi.</p></div>
+      <div class="method-content">
+        <div class="info-grid"><div class="info-box"><b>514</b><span>kabupaten/kota</span></div><div class="info-box"><b>509</b><span>observasi lengkap PCA</span></div><div class="info-box"><b>8</b><span>indikator primer</span></div></div>
+        <details open><summary>01 · Data dan unit observasi</summary><div>
+      Data utama yang digunakan adalah <b>BPS — Statistik Potensi Desa Indonesia 2024</b> (Katalog <b>1105014</b>, Nomor Publikasi <b>04300.24002</b>, rilis <b>10 Desember 2024</b>). Podes 2024 mencakup 514 kabupaten/kota, 7.281 kecamatan, dan 84.276 wilayah administrasi setingkat desa.
+      <br><br><b>URL resmi:</b> <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html</a><br><b>Tanggal akses:</b> 2 Oktober 2026.
+    </div></details>
+        <details><summary>02 · Definisi delapan indikator</summary><div><table id="indicatorTable"></table></div></details>
+        <details><summary>03 · Data hilang dan keterbandingan</summary><div>
+      <div class="callout warning">Nilai yang tidak tersedia atau tidak dapat dibandingkan dipertahankan sebagai <b>NA</b> dan tidak diubah menjadi nol.</div>
+      <table class="method-table"><thead><tr><th>Kondisi</th><th>Perlakuan</th></tr></thead><tbody>
+        <tr><td>Angkutan umum pada 5 kabupaten/kota DI Yogyakarta</td><td>NA; tidak masuk PCA/clustering.</td></tr>
+        <tr><td>Nilai struktural yang tidak tersedia pada tabel sumber</td><td>Tetap NA; tidak diimputasi nol.</td></tr>
+        <tr><td>PCA dan clustering</td><td>Analisis complete-case pada 509 wilayah dengan delapan indikator lengkap.</td></tr>
+        <tr><td>Visual lain</td><td>Wilayah tetap ditampilkan untuk indikator yang tersedia.</td></tr>
+      </tbody></table>
+    </div></details>
+        <details><summary>04 · PCA</summary><div>Sebelum PCA, delapan indikator distandardisasi menggunakan z-score. PC1 menjelaskan <b>53,87%</b> dan PC2 <b>15,78%</b>, sehingga dua komponen pertama merangkum <b>69,65%</b> variasi. Seluruh loading PC1 bernilai positif, sehingga PC1 diinterpretasikan sebagai dimensi umum konektivitas dan infrastruktur relatif, bukan sebagai indeks pembangunan resmi.</div></details>
+        <details><summary>05 · Clustering</summary><div>
+      KMeans dievaluasi untuk <b>k=2–8</b>. Nilai <b>k=3</b> dipilih karena menghasilkan silhouette tertinggi dan Davies–Bouldin terendah di antara kandidat yang diuji. Silhouette k=3 adalah <b>0,2945</b>, sehingga pemisahan antarcluster tetap moderat. Cluster digunakan sebagai alat eksplorasi, bukan klasifikasi definitif pembangunan. Label yang digunakan adalah <b>relatif rendah</b>, <b>menengah/transisi</b>, dan <b>relatif tinggi</b> terhadap delapan indikator.
+    </div></details>
+        <details><summary>06 · Pencilan multivariat</summary><div>
+      Pencilan multivariat diidentifikasi menggunakan <b>squared Mahalanobis distance</b> pada delapan variabel standar. Ambang yang digunakan adalah <b>chi-square 99%</b> dengan <b>df=8</b> (D² ≈ <b>20,09</b>). Sebanyak <b>25 wilayah</b> melewati ambang tersebut. Status pencilan menunjukkan kombinasi indikator yang tidak biasa dibanding mayoritas wilayah dan tidak berarti data salah atau wilayah dinilai buruk.
+    </div></details>
+        <details><summary>07 · Peta, batas wilayah, dan klasifikasi</summary><div>
+      Choropleth menggunakan <b>rasio/persentase</b>, bukan jumlah absolut. Natural Breaks (Jenks) lima kelas digunakan sebagai klasifikasi default; Quantile dan Equal Interval tersedia sebagai pembanding. Proportional symbol menggunakan <b>area simbol</b> yang proporsional terhadap jumlah desa/kelurahan.
+      <br><br>Batas kabupaten/kota menggunakan <a href="https://github.com/AlfianAliM/Indonesia-GeoJSON" target="_blank" rel="noopener">Indonesia-GeoJSON</a>, yang mendokumentasikan sumber Laravel Nusa/Peta Nusa dan referensi <b>Kepmendagri No 300.2.2-2138 Tahun 2025</b>. Penggabungan polygon ke data Podes diaudit satu-ke-satu berdasarkan nama kabupaten/kota dan menghasilkan <b>514/514 wilayah cocok</b>. Kode yang berasal dari boundary diperlakukan sebagai <b>boundary code</b> dan tidak diklaim sebagai kode BPS.
+      <br><b>Tanggal akses batas:</b> 2 Oktober 2026.
+    </div></details>
+        <details><summary>08 · Encoding visual dan aksesibilitas</summary><div>Palet kontinu Cividis-like digunakan untuk data berurutan, sedangkan heatmap menggunakan palet diverging biru–netral–oranye dengan titik tengah z=0. Tiga cluster dibedakan melalui warna kategorikal dan label teks. Nilai yang tidak tersedia ditandai dengan abu-abu/NA. Layout disusun agar tetap terbaca pada laptop maupun ponsel.</div></details>
+        <details><summary>09 · Keterbatasan</summary><div>Interpretasi dibatasi pada pola deskriptif dan eksploratif. Korelasi tidak ditafsirkan sebagai hubungan kausal, sedangkan PCA dan cluster tidak diperlakukan sebagai klasifikasi resmi pembangunan. Perbedaan ketersediaan tabel sumber juga perlu diperhatikan ketika membaca indikator transportasi.</div></details>
+        <details><summary>10 · Deklarasi penggunaan AI</summary><div>
+      Alat bantu berbasis AI digunakan untuk mendukung penataan data, pemeriksaan konsistensi, analisis eksploratif, perancangan visualisasi, dan pengembangan kode dashboard. Hasil yang digunakan dalam proyek ditinjau kembali terhadap sumber data, keluaran analisis, dan ketentuan tugas sebelum dipertahankan sebagai bagian dari hasil akhir.
+    </div></details>
+        <details><summary>11 · Provenance dan audit penggabungan wilayah</summary><div>
+      <b>Data indikator:</b> BPS — Statistik Potensi Desa Indonesia 2024.<br>
+      <b>Batas wilayah:</b> Indonesia-GeoJSON / Laravel Nusa / Peta Nusa.<br>
+      <b>Metode penggabungan:</b> normalisasi nama dan audit satu-ke-satu kabupaten/kota.<br>
+      <b>Hasil audit:</b> 514 baris Podes ↔ 514 polygon unik; 0 wilayah tidak cocok; 0 polygon terpakai ganda.<br>
+      <b>Kode boundary:</b> dipertahankan sebagai metadata batas dan tidak disebut sebagai kode BPS tanpa verifikasi resmi lintas seluruh 514 wilayah.<br>
+      <b>URL BPS:</b> <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html</a><br>
+      <b>URL boundary:</b> <a href="https://github.com/AlfianAliM/Indonesia-GeoJSON" target="_blank" rel="noopener">https://github.com/AlfianAliM/Indonesia-GeoJSON</a><br>
+      <b>Tanggal akses:</b> 2 Oktober 2026.
+    </div></details>
+    <div class="callout good" style="margin-top:16px"><b>Cakupan visual proyek:</b> Multivariat = PCA + parallel coordinates + heatmap terklaster + brushing/linking; Geospasial = choropleth + proportional symbol + tooltip + zoom/pan + layer; Hierarki = treemap + sunburst + drill-down/path.</div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="drawer" id="regionDrawer" aria-live="polite">
+    <div class="drawer-head"><div><h3 id="drawerTitle">Detail wilayah</h3><div class="sub" id="drawerSub"></div></div><button class="close-btn" id="drawerClose" aria-label="Tutup detail">×</button></div>
+    <div class="drawer-body"><div id="drawerBadge" class="pill"></div><div class="drawer-metrics" id="drawerMetrics"></div><div class="drawer-section-title">
+        <strong>Perbandingan wilayah, provinsi, dan nasional</strong>
+        <span>Delapan indikator · persen (%)</span>
+      </div>
+      <div id="drawerCompareChart" class="drawer-chart"></div><div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretDrawer">Perbandingan wilayah dengan provinsi dan nasional akan dijelaskan di sini.</p></div><div class="drawer-note" id="drawerNote"></div><div class="source">Sumber: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026.</div></div>
+  </aside>
+
+  <section class="compare-panel" id="comparePanel" aria-live="polite">
+    <div class="compare-head"><div><h3 style="margin:0">Bandingkan wilayah</h3><p class="subtitle" style="margin:2px 0 0">Pilih sampai tiga kabupaten/kota. Seluruh indikator ditampilkan pada skala persen 0–100 agar perbandingan tetap konsisten.</p></div><button class="close-btn" id="compareClose">×</button></div>
+    <div class="compare-selects"><select id="compare1"></select><select id="compare2"></select><select id="compare3"></select></div>
+    <div id="compareChart" class="compare-chart"></div><div class="interpretation-box" aria-live="polite"><div class="interpretation-box-head"><span>Interpretasi</span><small>Mengikuti filter dan pilihan</small></div><p id="interpretCompare">Pilih wilayah untuk membaca perbandingan.</p></div><div class="source">Sumber: <a href="https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html" target="_blank" rel="noopener">BPS — Statistik Potensi Desa Indonesia 2024</a>; diakses 2 Oktober 2026. Nilai NA tidak diimputasi.</div>
+  </section>
+</div>
+<script src="plotly.min.js"></script><script src="dashboard.js"></script></body></html>

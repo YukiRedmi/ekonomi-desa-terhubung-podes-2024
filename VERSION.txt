@@ -1,0 +1,4 @@
+PODES_2024_DASHBOARD_FINAL
+Status: FROZEN
+Freeze date: 2026-10-02
+Source baseline: user-approved MAP_REVISI_V2 package

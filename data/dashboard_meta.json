@@ -1,0 +1,5970 @@
+{
+  "vars": [
+    "pct_bts",
+    "pct_4g5g",
+    "pct_public_transport",
+    "pct_market_access",
+    "pct_permanent_market",
+    "pct_bank_access",
+    "pct_kur",
+    "pct_leading_product"
+  ],
+  "labels": {
+    "pct_bts": "BTS",
+    "pct_4g5g": "4G / 5G",
+    "pct_public_transport": "Angkutan umum",
+    "pct_market_access": "Akses pasar",
+    "pct_permanent_market": "Pasar permanen",
+    "pct_bank_access": "Akses bank",
+    "pct_kur": "KUR",
+    "pct_leading_product": "Produk unggulan"
+  },
+  "definitions": {
+    "pct_bts": "Persentase desa/kelurahan yang memiliki BTS terhadap total desa/kelurahan kabupaten/kota.",
+    "pct_4g5g": "Persentase desa/kelurahan dengan jaringan internet seluler 4G/LTE atau 5G.",
+    "pct_public_transport": "Persentase desa/kelurahan dengan angkutan umum bertrayek tetap atau tanpa trayek tetap.",
+    "pct_market_access": "Persentase desa/kelurahan yang tidak termasuk kategori tidak memiliki pertokoan maupun pasar.",
+    "pct_permanent_market": "Persentase desa/kelurahan yang memiliki pasar dengan bangunan permanen.",
+    "pct_bank_access": "Persentase desa/kelurahan yang tidak termasuk kategori tidak memiliki bank.",
+    "pct_kur": "Persentase desa/kelurahan yang tercatat memiliki fasilitas Kredit Usaha Rakyat (KUR).",
+    "pct_leading_product": "Persentase desa/kelurahan yang tercatat memiliki produk unggulan."
+  },
+  "countMap": {
+    "pct_bts": "bts_ada",
+    "pct_4g5g": "internet_5g_4g_lte",
+    "pct_public_transport": "public_transport_count",
+    "pct_market_access": "market_access_count",
+    "pct_permanent_market": "pasar_bangunan_permanen",
+    "pct_bank_access": "bank_access_count",
+    "pct_kur": "kur",
+    "pct_leading_product": "produk_unggulan_ada"
+  },
+  "national": {
+    "pct_bts": 54.7380037021216,
+    "pct_4g5g": 86.87052067017893,
+    "pct_public_transport": 75.86655216011832,
+    "pct_market_access": 32.023351843941334,
+    "pct_permanent_market": 10.071669277137026,
+    "pct_bank_access": 12.415159713322891,
+    "pct_kur": 72.33732023351844,
+    "pct_leading_product": 27.647254259812996
+  },
+  "province": {
+    "Aceh": {
+      "pct_bts": 26.27378759975445,
+      "pct_4g5g": 89.74831184775937,
+      "pct_public_transport": 63.19828115408226,
+      "pct_market_access": 13.505217925107427,
+      "pct_permanent_market": 3.376304481276857,
+      "pct_bank_access": 3.63720073664825,
+      "pct_kur": 38.10620012277471,
+      "pct_leading_product": 7.397176181706569
+    },
+    "Bali": {
+      "pct_bts": 82.42677824267783,
+      "pct_4g5g": 99.442119944212,
+      "pct_public_transport": 79.3584379358438,
+      "pct_market_access": 55.09065550906555,
+      "pct_permanent_market": 37.65690376569037,
+      "pct_bank_access": 92.18967921896792,
+      "pct_kur": 98.88423988842399,
+      "pct_leading_product": 43.793584379358435
+    },
+    "Banten": {
+      "pct_bts": 73.84020618556701,
+      "pct_4g5g": 91.3659793814433,
+      "pct_public_transport": 66.81701030927834,
+      "pct_market_access": 42.20360824742268,
+      "pct_permanent_market": 11.211340206185566,
+      "pct_bank_access": 16.945876288659793,
+      "pct_kur": 58.24742268041237,
+      "pct_leading_product": 25.9020618556701
+    },
+    "Bengkulu": {
+      "pct_bts": 35.00660501981506,
+      "pct_4g5g": 89.03566710700132,
+      "pct_public_transport": 71.99471598414796,
+      "pct_market_access": 29.194187582562748,
+      "pct_permanent_market": 5.812417437252312,
+      "pct_bank_access": 7.7278731836195504,
+      "pct_kur": 94.91413474240423,
+      "pct_leading_product": 11.822985468956407
+    },
+    "DI Yogyakarta": {
+      "pct_bts": 83.10502283105023,
+      "pct_4g5g": 94.29223744292237,
+      "pct_public_transport": null,
+      "pct_market_access": 79.68036529680366,
+      "pct_permanent_market": 39.04109589041096,
+      "pct_bank_access": 43.15068493150685,
+      "pct_kur": 96.80365296803653,
+      "pct_leading_product": 65.52511415525115
+    },
+    "DKI Jakarta": {
+      "pct_bts": 90.6367041198502,
+      "pct_4g5g": 100.0,
+      "pct_public_transport": 99.25093632958801,
+      "pct_market_access": 91.01123595505618,
+      "pct_permanent_market": 59.176029962546814,
+      "pct_bank_access": 92.50936329588015,
+      "pct_kur": 57.30337078651685,
+      "pct_leading_product": 35.2059925093633
+    },
+    "Gorontalo": {
+      "pct_bts": 47.131147540983605,
+      "pct_4g5g": 90.30054644808743,
+      "pct_public_transport": 98.49726775956285,
+      "pct_market_access": 22.404371584699454,
+      "pct_permanent_market": 7.240437158469946,
+      "pct_bank_access": 7.37704918032787,
+      "pct_kur": 88.11475409836065,
+      "pct_leading_product": 21.857923497267755
+    },
+    "Jambi": {
+      "pct_bts": 52.6813880126183,
+      "pct_4g5g": 88.64353312302839,
+      "pct_public_transport": 84.35331230283911,
+      "pct_market_access": 40.126182965299684,
+      "pct_permanent_market": 7.381703470031546,
+      "pct_bank_access": 9.842271293375395,
+      "pct_kur": 84.03785488958991,
+      "pct_leading_product": 21.38801261829653
+    },
+    "Jawa Barat": {
+      "pct_bts": 81.85328185328186,
+      "pct_4g5g": 98.43881148228974,
+      "pct_public_transport": 97.66661071008897,
+      "pct_market_access": 47.42319959711264,
+      "pct_permanent_market": 12.204129595433944,
+      "pct_bank_access": 21.655195568239048,
+      "pct_kur": 89.45778076212859,
+      "pct_leading_product": 51.217055564881655
+    },
+    "Jawa Tengah": {
+      "pct_bts": 59.406749970804626,
+      "pct_4g5g": 97.1154969052902,
+      "pct_public_transport": 86.41831133948382,
+      "pct_market_access": 42.858811164311575,
+      "pct_permanent_market": 16.244306901786757,
+      "pct_bank_access": 18.229592432558682,
+      "pct_kur": 96.02942893845615,
+      "pct_leading_product": 44.08501693331776
+    },
+    "Jawa Timur": {
+      "pct_bts": 60.289616199670355,
+      "pct_4g5g": 96.35036496350365,
+      "pct_public_transport": 66.29385448551919,
+      "pct_market_access": 42.77136802448788,
+      "pct_permanent_market": 20.13185778196374,
+      "pct_bank_access": 19.36661172592418,
+      "pct_kur": 89.51024252413468,
+      "pct_leading_product": 50.44737461737697
+    },
+    "Kalimantan Barat": {
+      "pct_bts": 67.13027352804822,
+      "pct_4g5g": 71.53453871117293,
+      "pct_public_transport": 47.3342605470561,
+      "pct_market_access": 17.199814557255447,
+      "pct_permanent_market": 9.179415855354659,
+      "pct_bank_access": 7.7885952712100135,
+      "pct_kur": 66.48122392211404,
+      "pct_leading_product": 19.796012980992117
+    },
+    "Kalimantan Selatan": {
+      "pct_bts": 49.97518610421836,
+      "pct_4g5g": 88.98263027295286,
+      "pct_public_transport": 77.27047146401985,
+      "pct_market_access": 40.992555831265506,
+      "pct_permanent_market": 5.856079404466501,
+      "pct_bank_access": 9.330024813895783,
+      "pct_kur": 83.67245657568238,
+      "pct_leading_product": 30.471464019851116
+    },
+    "Kalimantan Tengah": {
+      "pct_bts": 58.46544071020926,
+      "pct_4g5g": 69.18199112238428,
+      "pct_public_transport": 63.98224476854788,
+      "pct_market_access": 38.68103994927077,
+      "pct_permanent_market": 8.941027266962587,
+      "pct_bank_access": 5.833861762840837,
+      "pct_kur": 64.23589093214966,
+      "pct_leading_product": 18.833227647431833
+    },
+    "Kalimantan Timur": {
+      "pct_bts": 73.47908745247149,
+      "pct_4g5g": 82.12927756653993,
+      "pct_public_transport": 61.88212927756654,
+      "pct_market_access": 51.80608365019011,
+      "pct_permanent_market": 11.596958174904943,
+      "pct_bank_access": 21.102661596958175,
+      "pct_kur": 73.00380228136882,
+      "pct_leading_product": 39.35361216730038
+    },
+    "Kalimantan Utara": {
+      "pct_bts": 55.578512396694215,
+      "pct_4g5g": 66.94214876033058,
+      "pct_public_transport": 55.16528925619835,
+      "pct_market_access": 22.107438016528924,
+      "pct_permanent_market": 9.090909090909092,
+      "pct_bank_access": 11.570247933884295,
+      "pct_kur": 29.958677685950413,
+      "pct_leading_product": 29.545454545454547
+    },
+    "Kepulauan Bangka Belitung": {
+      "pct_bts": 93.12977099236642,
+      "pct_4g5g": 98.72773536895674,
+      "pct_public_transport": 82.44274809160305,
+      "pct_market_access": 52.67175572519084,
+      "pct_permanent_market": 13.994910941475826,
+      "pct_bank_access": 18.06615776081425,
+      "pct_kur": 92.1119592875318,
+      "pct_leading_product": 58.26972010178117
+    },
+    "Kepulauan Riau": {
+      "pct_bts": 80.23255813953489,
+      "pct_4g5g": 90.69767441860465,
+      "pct_public_transport": 80.0,
+      "pct_market_access": 26.976744186046513,
+      "pct_permanent_market": 14.651162790697674,
+      "pct_bank_access": 17.674418604651166,
+      "pct_kur": 57.2093023255814,
+      "pct_leading_product": 50.69767441860465
+    },
+    "Lampung": {
+      "pct_bts": 57.09446744448626,
+      "pct_4g5g": 91.79525780955966,
+      "pct_public_transport": 75.91268347760632,
+      "pct_market_access": 35.00188182160331,
+      "pct_permanent_market": 12.984569062852842,
+      "pct_bank_access": 8.99510726383139,
+      "pct_kur": 87.39179525780956,
+      "pct_leading_product": 22.732404968009032
+    },
+    "Maluku": {
+      "pct_bts": 65.21394611727416,
+      "pct_4g5g": 89.46117274167987,
+      "pct_public_transport": 83.91442155309034,
+      "pct_market_access": 11.648177496038036,
+      "pct_permanent_market": 5.229793977812995,
+      "pct_bank_access": 4.6751188589540424,
+      "pct_kur": 46.43423137876387,
+      "pct_leading_product": 29.873217115689382
+    },
+    "Maluku Utara": {
+      "pct_bts": 58.56079404466501,
+      "pct_4g5g": 82.5475599669148,
+      "pct_public_transport": 87.92390405293631,
+      "pct_market_access": 11.993382961124896,
+      "pct_permanent_market": 5.376344086021505,
+      "pct_bank_access": 5.541770057899092,
+      "pct_kur": 48.635235732009924,
+      "pct_leading_product": 11.331679073614557
+    },
+    "Nusa Tenggara Barat": {
+      "pct_bts": 82.59005145797599,
+      "pct_4g5g": 96.22641509433963,
+      "pct_public_transport": 98.54202401372213,
+      "pct_market_access": 39.19382504288165,
+      "pct_permanent_market": 12.521440823327616,
+      "pct_bank_access": 15.351629502572898,
+      "pct_kur": 92.53859348198971,
+      "pct_leading_product": 45.19725557461407
+    },
+    "Nusa Tenggara Timur": {
+      "pct_bts": 43.49915206331261,
+      "pct_4g5g": 82.9847371396269,
+      "pct_public_transport": 92.9055963821368,
+      "pct_market_access": 17.778405879027698,
+      "pct_permanent_market": 3.335217637083098,
+      "pct_bank_access": 6.868287167891464,
+      "pct_kur": 72.55511588468062,
+      "pct_leading_product": 23.85528547201809
+    },
+    "Papua": {
+      "pct_bts": 54.713313896987366,
+      "pct_4g5g": 78.42565597667638,
+      "pct_public_transport": 63.55685131195335,
+      "pct_market_access": 19.24198250728863,
+      "pct_permanent_market": 3.012633624878523,
+      "pct_bank_access": 6.997084548104956,
+      "pct_kur": 27.016520894071913,
+      "pct_leading_product": 7.288629737609329
+    },
+    "Papua Barat": {
+      "pct_bts": 45.4639175257732,
+      "pct_4g5g": 73.71134020618557,
+      "pct_public_transport": 65.15463917525773,
+      "pct_market_access": 6.0824742268041225,
+      "pct_permanent_market": 1.8556701030927836,
+      "pct_bank_access": 4.536082474226804,
+      "pct_kur": 14.845360824742269,
+      "pct_leading_product": 6.185567010309279
+    },
+    "Papua Barat Daya": {
+      "pct_bts": 57.00757575757576,
+      "pct_4g5g": 87.68939393939394,
+      "pct_public_transport": 63.541666666666664,
+      "pct_market_access": 10.700757575757578,
+      "pct_permanent_market": 1.231060606060606,
+      "pct_bank_access": 4.924242424242421,
+      "pct_kur": 9.848484848484848,
+      "pct_leading_product": 6.912878787878788
+    },
+    "Papua Pegunungan": {
+      "pct_bts": 16.818526955201214,
+      "pct_4g5g": 17.91951404707669,
+      "pct_public_transport": 32.11845102505695,
+      "pct_market_access": 8.769931662870158,
+      "pct_permanent_market": 0.22779043280182232,
+      "pct_bank_access": 0.6454062262718292,
+      "pct_kur": 0.5694760820045558,
+      "pct_leading_product": 0.45558086560364464
+    },
+    "Papua Selatan": {
+      "pct_bts": 70.14492753623189,
+      "pct_4g5g": 80.0,
+      "pct_public_transport": 31.014492753623188,
+      "pct_market_access": 8.840579710144928,
+      "pct_permanent_market": 2.608695652173913,
+      "pct_bank_access": 5.217391304347825,
+      "pct_kur": 16.231884057971016,
+      "pct_leading_product": 3.9130434782608696
+    },
+    "Papua Tengah": {
+      "pct_bts": 15.397350993377483,
+      "pct_4g5g": 15.894039735099337,
+      "pct_public_transport": 36.42384105960265,
+      "pct_market_access": 8.609271523178807,
+      "pct_permanent_market": 1.2417218543046358,
+      "pct_bank_access": 3.1456953642384105,
+      "pct_kur": 6.7052980132450335,
+      "pct_leading_product": 2.6490066225165565
+    },
+    "Riau": {
+      "pct_bts": 70.4812834224599,
+      "pct_4g5g": 90.16042780748663,
+      "pct_public_transport": 60.962566844919785,
+      "pct_market_access": 56.25668449197861,
+      "pct_permanent_market": 8.983957219251337,
+      "pct_bank_access": 13.368983957219251,
+      "pct_kur": 81.17647058823529,
+      "pct_leading_product": 22.727272727272727
+    },
+    "Sulawesi Barat": {
+      "pct_bts": 52.92307692307692,
+      "pct_4g5g": 82.3076923076923,
+      "pct_public_transport": 78.76923076923077,
+      "pct_market_access": 31.076923076923077,
+      "pct_permanent_market": 12.615384615384615,
+      "pct_bank_access": 6.307692307692309,
+      "pct_kur": 88.3076923076923,
+      "pct_leading_product": 45.53846153846154
+    },
+    "Sulawesi Selatan": {
+      "pct_bts": 63.8235294117647,
+      "pct_4g5g": 93.49673202614379,
+      "pct_public_transport": 93.56209150326798,
+      "pct_market_access": 35.751633986928105,
+      "pct_permanent_market": 14.019607843137255,
+      "pct_bank_access": 11.830065359477125,
+      "pct_kur": 91.79738562091504,
+      "pct_leading_product": 28.49673202614379
+    },
+    "Sulawesi Tengah": {
+      "pct_bts": 55.19287833827893,
+      "pct_4g5g": 93.3728981206726,
+      "pct_public_transport": 88.67457962413452,
+      "pct_market_access": 25.717111770524234,
+      "pct_permanent_market": 6.775469831849654,
+      "pct_bank_access": 6.726013847675569,
+      "pct_kur": 79.92087042532147,
+      "pct_leading_product": 18.991097922848663
+    },
+    "Sulawesi Tenggara": {
+      "pct_bts": 36.2565445026178,
+      "pct_4g5g": 89.26701570680628,
+      "pct_public_transport": 92.36474694589877,
+      "pct_market_access": 23.42931937172775,
+      "pct_permanent_market": 8.507853403141361,
+      "pct_bank_access": 5.846422338568937,
+      "pct_kur": 80.5846422338569,
+      "pct_leading_product": 20.50610820244328
+    },
+    "Sulawesi Utara": {
+      "pct_bts": 43.906420021762784,
+      "pct_4g5g": 94.2328618063112,
+      "pct_public_transport": 95.37540805223068,
+      "pct_market_access": 15.01632208922742,
+      "pct_permanent_market": 3.808487486398259,
+      "pct_bank_access": 8.487486398258978,
+      "pct_kur": 86.8335146898803,
+      "pct_leading_product": 22.034820457018498
+    },
+    "Sumatera Barat": {
+      "pct_bts": 77.99377916018662,
+      "pct_4g5g": 92.84603421461897,
+      "pct_public_transport": 90.43545878693624,
+      "pct_market_access": 51.244167962674965,
+      "pct_permanent_market": 16.174183514774494,
+      "pct_bank_access": 23.017107309486782,
+      "pct_kur": 94.86780715396579,
+      "pct_leading_product": 36.70295489891135
+    },
+    "Sumatera Selatan": {
+      "pct_bts": 49.98477002741395,
+      "pct_4g5g": 87.32866280840695,
+      "pct_public_transport": 79.34815717331709,
+      "pct_market_access": 41.8519646664636,
+      "pct_permanent_market": 6.792567773378008,
+      "pct_bank_access": 8.102345415778252,
+      "pct_kur": 74.84008528784648,
+      "pct_leading_product": 20.194943649101432
+    },
+    "Sumatera Utara": {
+      "pct_bts": 46.94912481596597,
+      "pct_4g5g": 86.43873711761819,
+      "pct_public_transport": 73.09013577621462,
+      "pct_market_access": 24.963193194830687,
+      "pct_permanent_market": 5.152952723703582,
+      "pct_bank_access": 7.901194176345493,
+      "pct_kur": 74.49697366268607,
+      "pct_leading_product": 13.659414362833306
+    }
+  },
+  "clusterProfiles": {
+    "1": {
+      "pct_bts": 42.0659358071156,
+      "pct_4g5g": 65.25527330038376,
+      "pct_public_transport": 52.60640031992896,
+      "pct_market_access": 13.512477558949872,
+      "pct_permanent_market": 3.8060405117707607,
+      "pct_bank_access": 4.0970911777335655,
+      "pct_kur": 27.268940218116153,
+      "pct_leading_product": 8.822321860264587
+    },
+    "2": {
+      "pct_bts": 58.54756916909839,
+      "pct_4g5g": 91.1552752828257,
+      "pct_public_transport": 83.22127372132086,
+      "pct_market_access": 32.36828793762936,
+      "pct_permanent_market": 9.55577200689007,
+      "pct_bank_access": 10.817588588572436,
+      "pct_kur": 83.29143992327631,
+      "pct_leading_product": 30.288396223922504
+    },
+    "3": {
+      "pct_bts": 87.57301280129512,
+      "pct_4g5g": 98.55970052569005,
+      "pct_public_transport": 94.36141567977444,
+      "pct_market_access": 71.30582608342462,
+      "pct_permanent_market": 29.323786344192495,
+      "pct_bank_access": 52.22963166394304,
+      "pct_kur": 86.13031258821724,
+      "pct_leading_product": 46.278131446241204
+    }
+  },
+  "correlation": [
+    [
+      1.0,
+      0.5258326593699771,
+      0.31554281061725653,
+      0.6609607971873029,
+      0.5532978724312169,
+      0.6188331835671862,
+      0.3341512420500667,
+      0.5128459184424605
+    ],
+    [
+      0.5258326593699771,
+      1.0,
+      0.5218559609638852,
+      0.4099587928560309,
+      0.36113231237566934,
+      0.37402648207932426,
+      0.6089200853845205,
+      0.4325719137066444
+    ],
+    [
+      0.31554281061725653,
+      0.5218559609638852,
+      1.0,
+      0.33208592518254293,
+      0.2925940523471211,
+      0.34034390871930736,
+      0.484435656430342,
+      0.33276705760765746
+    ],
+    [
+      0.6609607971873029,
+      0.4099587928560309,
+      0.33208592518254293,
+      1.0,
+      0.7302793441053417,
+      0.7502936619051794,
+      0.43075529410957925,
+      0.44600984515219294
+    ],
+    [
+      0.5532978724312169,
+      0.36113231237566934,
+      0.2925940523471211,
+      0.7302793441053417,
+      1.0,
+      0.7865535603108067,
+      0.34089308142899233,
+      0.45233989287930765
+    ],
+    [
+      0.6188331835671862,
+      0.37402648207932426,
+      0.34034390871930736,
+      0.7502936619051794,
+      0.7865535603108067,
+      1.0,
+      0.2672335834215054,
+      0.3933383451918481
+    ],
+    [
+      0.3341512420500667,
+      0.6089200853845205,
+      0.484435656430342,
+      0.43075529410957925,
+      0.34089308142899233,
+      0.2672335834215054,
+      1.0,
+      0.4683235532679503
+    ],
+    [
+      0.5128459184424605,
+      0.4325719137066444,
+      0.33276705760765746,
+      0.44600984515219294,
+      0.45233989287930765,
+      0.3933383451918481,
+      0.4683235532679503,
+      1.0
+    ]
+  ],
+  "pca": {
+    "explained": [
+      0.5387111400339779,
+      0.15782663175109826
+    ],
+    "loadings": {
+      "pct_bts": [
+        0.7884629799951247,
+        -0.1722850165646624
+      ],
+      "pct_4g5g": [
+        0.7065007825845585,
+        0.467289533288456
+      ],
+      "pct_public_transport": [
+        0.5862053221873356,
+        0.4939384473665353
+      ],
+      "pct_market_access": [
+        0.8364627958305675,
+        -0.3152345367061592
+      ],
+      "pct_permanent_market": [
+        0.7950299924031395,
+        -0.40364632314048093
+      ],
+      "pct_bank_access": [
+        0.7993378522984539,
+        -0.4386135156223954
+      ],
+      "pct_kur": [
+        0.6471002007315717,
+        0.5454915289957709
+      ],
+      "pct_leading_product": [
+        0.6813930468995413,
+        0.14434575340503653
+      ]
+    }
+  },
+  "breaks": {
+    "pct_bts": {
+      "jenks": [
+        0.5791505791505791,
+        32.098765432098766,
+        50.42016806722689,
+        67.64705882352942,
+        84.7457627118644,
+        100.0
+      ],
+      "quantile": [
+        0.5791505791505791,
+        40.43995389557839,
+        56.59711075441414,
+        69.69200198708396,
+        82.35294117647058,
+        100.0
+      ],
+      "equal": [
+        0.5791505791505791,
+        20.463320463320464,
+        40.34749034749035,
+        60.231660231660236,
+        80.11583011583012,
+        100.0
+      ]
+    },
+    "pct_4g5g": {
+      "jenks": [
+        0.0,
+        22.18543046357616,
+        59.9290780141844,
+        79.76878612716763,
+        92.3076923076923,
+        100.0
+      ],
+      "quantile": [
+        0.0,
+        82.6910048696824,
+        90.62807881773399,
+        95.44055944055944,
+        99.33949111188566,
+        100.0
+      ],
+      "equal": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    },
+    "pct_public_transport": {
+      "jenks": [
+        1.5873015873015872,
+        28.947368421052637,
+        54.187192118226605,
+        73.35526315789474,
+        89.91935483870968,
+        100.0
+      ],
+      "quantile": [
+        1.5873015873015872,
+        61.264672859038484,
+        82.0179104477612,
+        93.16555767837144,
+        100.0,
+        100.0
+      ],
+      "equal": [
+        1.5873015873015872,
+        21.269841269841272,
+        40.952380952380956,
+        60.63492063492064,
+        80.31746031746032,
+        100.0
+      ]
+    },
+    "pct_market_access": {
+      "jenks": [
+        0.0,
+        19.84732824427481,
+        37.77777777777778,
+        55.93220338983051,
+        77.14285714285715,
+        100.0
+      ],
+      "quantile": [
+        0.0,
+        14.793244030285386,
+        26.90185676392573,
+        38.80278323684071,
+        56.2353783719265,
+        100.0
+      ],
+      "equal": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    },
+    "pct_permanent_market": {
+      "jenks": [
+        0.0,
+        6.470588235294119,
+        14.285714285714285,
+        24.81203007518797,
+        41.37931034482759,
+        87.09677419354838
+      ],
+      "quantile": [
+        0.0,
+        3.4819121447028425,
+        7.347787432963377,
+        11.610017889087661,
+        19.212523719165095,
+        87.09677419354838
+      ],
+      "equal": [
+        0.0,
+        17.419354838709676,
+        34.83870967741935,
+        52.258064516129025,
+        69.6774193548387,
+        87.09677419354838
+      ]
+    },
+    "pct_bank_access": {
+      "jenks": [
+        0.1930501930501926,
+        9.999999999999998,
+        21.682847896440126,
+        39.39393939393939,
+        68.25396825396825,
+        100.0
+      ],
+      "quantile": [
+        0.1930501930501926,
+        4.599296128707888,
+        7.284768211920534,
+        13.1184272117335,
+        24.716981132075485,
+        100.0
+      ],
+      "equal": [
+        0.1930501930501926,
+        20.154440154440156,
+        40.115830115830114,
+        60.077220077220076,
+        80.03861003861005,
+        100.0
+      ]
+    },
+    "pct_kur": {
+      "jenks": [
+        0.0,
+        24.793388429752067,
+        53.0,
+        75.53516819571865,
+        90.19607843137256,
+        100.0
+      ],
+      "quantile": [
+        0.0,
+        52.839974699557246,
+        80.36031447942197,
+        89.74138598528843,
+        95.81585081585082,
+        100.0
+      ],
+      "equal": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    },
+    "pct_leading_product": {
+      "jenks": [
+        0.0,
+        15.384615384615383,
+        31.37254901960784,
+        47.794117647058826,
+        64.43514644351464,
+        100.0
+      ],
+      "quantile": [
+        0.0,
+        11.314207516739165,
+        21.2129319955407,
+        32.852878464818765,
+        48.199233716475106,
+        100.0
+      ],
+      "equal": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    }
+  },
+  "centroids": {
+    "aceh|acehbarat": {
+      "lon": 96.18355848992573,
+      "lat": 4.4337290178799496
+    },
+    "aceh|acehbaratdaya": {
+      "lon": 96.84906835952819,
+      "lat": 3.8440236723047185
+    },
+    "aceh|acehbesar": {
+      "lon": 95.49546829399134,
+      "lat": 5.353592260724293
+    },
+    "aceh|acehjaya": {
+      "lon": 95.69684291442533,
+      "lat": 4.8145314335289005
+    },
+    "aceh|acehselatan": {
+      "lon": 97.46698865284809,
+      "lat": 3.0735620067812377
+    },
+    "aceh|acehsingkil": {
+      "lon": 97.93888097332683,
+      "lat": 2.3547829821489703
+    },
+    "aceh|acehtamiang": {
+      "lon": 97.91221171597226,
+      "lat": 4.204018535377129
+    },
+    "aceh|acehtengah": {
+      "lon": 96.96337971733331,
+      "lat": 4.566246500525638
+    },
+    "aceh|acehtenggara": {
+      "lon": 97.7392212586816,
+      "lat": 3.3498489918375665
+    },
+    "aceh|acehtimur": {
+      "lon": 97.64218692774288,
+      "lat": 4.694798486910722
+    },
+    "aceh|acehutara": {
+      "lon": 97.16283680977222,
+      "lat": 4.999304236801127
+    },
+    "aceh|benermeriah": {
+      "lon": 96.97682691639784,
+      "lat": 4.773302699160297
+    },
+    "aceh|bireuen": {
+      "lon": 96.59380899517018,
+      "lat": 5.078748696545187
+    },
+    "aceh|gayolues": {
+      "lon": 97.33507169779388,
+      "lat": 3.978991202282222
+    },
+    "aceh|naganraya": {
+      "lon": 96.5204625046355,
+      "lat": 4.176441700773935
+    },
+    "aceh|pidie": {
+      "lon": 95.94238600979449,
+      "lat": 5.119244610700257
+    },
+    "aceh|pidiejaya": {
+      "lon": 96.21216368506718,
+      "lat": 5.100301886922564
+    },
+    "aceh|simeulue": {
+      "lon": 96.02639446175706,
+      "lat": 2.6290242132469306
+    },
+    "aceh|kotabandaaceh": {
+      "lon": 95.33117687950985,
+      "lat": 5.563234101522573
+    },
+    "aceh|kotalangsa": {
+      "lon": 97.97669216273233,
+      "lat": 4.485422720432307
+    },
+    "aceh|kotalhokseumawe": {
+      "lon": 97.11434585759778,
+      "lat": 5.158966682966092
+    },
+    "aceh|kotasabang": {
+      "lon": 95.3364201841128,
+      "lat": 5.839762036089157
+    },
+    "aceh|kotasubulussalam": {
+      "lon": 97.92616326149331,
+      "lat": 2.7573858207990494
+    },
+    "bali|badung": {
+      "lon": 115.20180246956686,
+      "lat": -8.54208552477707
+    },
+    "bali|bangli": {
+      "lon": 115.36898193315926,
+      "lat": -8.334851879560539
+    },
+    "bali|buleleng": {
+      "lon": 114.98533791317496,
+      "lat": -8.222193641373403
+    },
+    "bali|gianyar": {
+      "lon": 115.28376782228943,
+      "lat": -8.484263832809562
+    },
+    "bali|jembrana": {
+      "lon": 114.67006267122295,
+      "lat": -8.318834039309424
+    },
+    "bali|karangasem": {
+      "lon": 115.55354869162304,
+      "lat": -8.37421297744692
+    },
+    "bali|klungkung": {
+      "lon": 115.53454781210604,
+      "lat": -8.742382514241624
+    },
+    "bali|tabanan": {
+      "lon": 115.07184123609443,
+      "lat": -8.440600518998735
+    },
+    "bali|kotadenpasar": {
+      "lon": 115.21873411940271,
+      "lat": -8.663741762871995
+    },
+    "banten|lebak": {
+      "lon": 106.18701980378518,
+      "lat": -6.644866523721075
+    },
+    "banten|pandeglang": {
+      "lon": 105.7975259251537,
+      "lat": -6.548488596971128
+    },
+    "banten|serang": {
+      "lon": 105.9890638176025,
+      "lat": -6.104234468046225
+    },
+    "banten|tangerang": {
+      "lon": 106.47086967297537,
+      "lat": -6.184580656871778
+    },
+    "banten|kotacilegon": {
+      "lon": 106.02835354844319,
+      "lat": -5.969849493259475
+    },
+    "banten|kotaserang": {
+      "lon": 106.15300656624814,
+      "lat": -6.119488401668364
+    },
+    "banten|kotatangerang": {
+      "lon": 106.63546277610443,
+      "lat": -6.178583007549702
+    },
+    "banten|kotatangerangselatan": {
+      "lon": 106.71368135296898,
+      "lat": -6.302810249992933
+    },
+    "bengkulu|bengkuluselatan": {
+      "lon": 103.00366085887381,
+      "lat": -4.368878815005253
+    },
+    "bengkulu|bengkulutengah": {
+      "lon": 102.38487744171957,
+      "lat": -3.6685298371821577
+    },
+    "bengkulu|bengkuluutara": {
+      "lon": 101.85736827213725,
+      "lat": -3.188106422573325
+    },
+    "bengkulu|kaur": {
+      "lon": 103.36397574946548,
+      "lat": -4.585682505393265
+    },
+    "bengkulu|kepahiang": {
+      "lon": 102.66126313165867,
+      "lat": -3.649523602831975
+    },
+    "bengkulu|lebong": {
+      "lon": 102.2056415524055,
+      "lat": -3.048860030715808
+    },
+    "bengkulu|mukomuko": {
+      "lon": 101.57410011499289,
+      "lat": -2.717212823762763
+    },
+    "bengkulu|rejanglebong": {
+      "lon": 102.7031245500742,
+      "lat": -3.4403211226716106
+    },
+    "bengkulu|seluma": {
+      "lon": 102.68122736826706,
+      "lat": -4.086447815514241
+    },
+    "bengkulu|kotabengkulu": {
+      "lon": 102.33545364017792,
+      "lat": -3.861482888174697
+    },
+    "diyogyakarta|bantul": {
+      "lon": 110.3851047146518,
+      "lat": -7.896405072386096
+    },
+    "diyogyakarta|gunungkidul": {
+      "lon": 110.55856932124239,
+      "lat": -7.98806666159713
+    },
+    "diyogyakarta|kulonprogo": {
+      "lon": 110.14709624082774,
+      "lat": -7.8183729097818935
+    },
+    "diyogyakarta|sleman": {
+      "lon": 110.382961859095,
+      "lat": -7.681066245860472
+    },
+    "diyogyakarta|kotayogyakarta": {
+      "lon": 110.37242621331956,
+      "lat": -7.7981334517473835
+    },
+    "dkijakarta|kepulauanseribu": {
+      "lon": 106.57206108067703,
+      "lat": -5.654653345275599
+    },
+    "dkijakarta|kotajakartabarat": {
+      "lon": 106.75615256767401,
+      "lat": -6.153323013596149
+    },
+    "dkijakarta|kotajakartapusat": {
+      "lon": 106.84165316916939,
+      "lat": -6.175669165899204
+    },
+    "dkijakarta|kotajakartaselatan": {
+      "lon": 106.8045327447889,
+      "lat": -6.282742065593786
+    },
+    "dkijakarta|kotajakartatimur": {
+      "lon": 106.88049158882609,
+      "lat": -6.267456072040049
+    },
+    "dkijakarta|kotajakartautara": {
+      "lon": 106.90128042612895,
+      "lat": -6.1361301951523375
+    },
+    "gorontalo|boalemo": {
+      "lon": 122.33889899948863,
+      "lat": 0.6849154487890114
+    },
+    "gorontalo|bonebolango": {
+      "lon": 123.30802653018708,
+      "lat": 0.5596244558539993
+    },
+    "gorontalo|gorontalo": {
+      "lon": 122.7227310537053,
+      "lat": 0.7016228891850691
+    },
+    "gorontalo|gorontaloutara": {
+      "lon": 123.05047614825395,
+      "lat": 0.8650547501766166
+    },
+    "gorontalo|pohuwato": {
+      "lon": 121.64955596349472,
+      "lat": 0.7043089474000315
+    },
+    "gorontalo|kotagorontalo": {
+      "lon": 123.0413475882093,
+      "lat": 0.5384554684451732
+    },
+    "jambi|batanghari": {
+      "lon": 103.00895864767428,
+      "lat": -1.8545917807860217
+    },
+    "jambi|bungo": {
+      "lon": 101.98371796421598,
+      "lat": -1.5165686997855836
+    },
+    "jambi|kerinci": {
+      "lon": 101.59969302649174,
+      "lat": -2.0557649491429935
+    },
+    "jambi|merangin": {
+      "lon": 102.11520776615617,
+      "lat": -2.2112132450451654
+    },
+    "jambi|muarojambi": {
+      "lon": 103.8009349873411,
+      "lat": -1.7038367561613281
+    },
+    "jambi|sarolangun": {
+      "lon": 102.63032493357318,
+      "lat": -2.3283402778814715
+    },
+    "jambi|tanjungjabungbarat": {
+      "lon": 103.06750022264391,
+      "lat": -1.090705083922419
+    },
+    "jambi|tanjungjabungtimur": {
+      "lon": 103.87740824039781,
+      "lat": -1.2720394534579764
+    },
+    "jambi|tebo": {
+      "lon": 102.41940100269932,
+      "lat": -1.3888986749338166
+    },
+    "jambi|kotajambi": {
+      "lon": 103.60909956484329,
+      "lat": -1.6266533885430228
+    },
+    "jambi|kotasungaipenuh": {
+      "lon": 101.33893237375868,
+      "lat": -2.1373611110764106
+    },
+    "jawabarat|bandung": {
+      "lon": 107.63128088014824,
+      "lat": -7.064191815150104
+    },
+    "jawabarat|bandungbarat": {
+      "lon": 107.40828916714241,
+      "lat": -6.909698031339032
+    },
+    "jawabarat|bekasi": {
+      "lon": 107.16461339673765,
+      "lat": -6.200864958151246
+    },
+    "jawabarat|bogor": {
+      "lon": 107.00016787567296,
+      "lat": -6.544406724840427
+    },
+    "jawabarat|ciamis": {
+      "lon": 108.40267300549483,
+      "lat": -7.3084313849004525
+    },
+    "jawabarat|cianjur": {
+      "lon": 107.06838519181858,
+      "lat": -7.0536348018045905
+    },
+    "jawabarat|cirebon": {
+      "lon": 108.45769408817532,
+      "lat": -6.762068318548024
+    },
+    "jawabarat|garut": {
+      "lon": 107.70466417532216,
+      "lat": -7.340396257281404
+    },
+    "jawabarat|indramayu": {
+      "lon": 108.17831187272361,
+      "lat": -6.4456312212537705
+    },
+    "jawabarat|karawang": {
+      "lon": 107.42795896069536,
+      "lat": -6.261737088445844
+    },
+    "jawabarat|kuningan": {
+      "lon": 108.55107475658525,
+      "lat": -6.991167746794006
+    },
+    "jawabarat|majalengka": {
+      "lon": 108.2764113159003,
+      "lat": -6.803424984625276
+    },
+    "jawabarat|pangandaran": {
+      "lon": 108.55450198199048,
+      "lat": -7.637561174508559
+    },
+    "jawabarat|purwakarta": {
+      "lon": 107.40464477382017,
+      "lat": -6.5877089662457236
+    },
+    "jawabarat|subang": {
+      "lon": 107.7383059819589,
+      "lat": -6.492953044597253
+    },
+    "jawabarat|sukabumi": {
+      "lon": 106.73341117858402,
+      "lat": -7.080408421311527
+    },
+    "jawabarat|sumedang": {
+      "lon": 107.98320268546209,
+      "lat": -6.806644332719695
+    },
+    "jawabarat|tasikmalaya": {
+      "lon": 108.06761478576911,
+      "lat": -7.430041684725922
+    },
+    "jawabarat|kotabandung": {
+      "lon": 107.62858318019447,
+      "lat": -6.901823777944908
+    },
+    "jawabarat|kotabanjar": {
+      "lon": 108.55606314220208,
+      "lat": -7.391345914732143
+    },
+    "jawabarat|kotabekasi": {
+      "lon": 106.96154001418776,
+      "lat": -6.285035402461795
+    },
+    "jawabarat|kotabogor": {
+      "lon": 106.80350769499833,
+      "lat": -6.598358135819264
+    },
+    "jawabarat|kotacimahi": {
+      "lon": 107.54253118442367,
+      "lat": -6.881314022374178
+    },
+    "jawabarat|kotacirebon": {
+      "lon": 108.55198825296708,
+      "lat": -6.749585994298161
+    },
+    "jawabarat|kotadepok": {
+      "lon": 106.81335890717452,
+      "lat": -6.384079164371873
+    },
+    "jawabarat|kotasukabumi": {
+      "lon": 106.93069729591049,
+      "lat": -6.942785367350738
+    },
+    "jawabarat|kotatasikmalaya": {
+      "lon": 108.22539342240296,
+      "lat": -7.355126232839319
+    },
+    "jawatengah|banjarnegara": {
+      "lon": 109.65524190020933,
+      "lat": -7.352818031976564
+    },
+    "jawatengah|banyumas": {
+      "lon": 109.11617851623265,
+      "lat": -7.4568579410910365
+    },
+    "jawatengah|batang": {
+      "lon": 109.86818111396991,
+      "lat": -7.032057623360569
+    },
+    "jawatengah|blora": {
+      "lon": 111.42124314583504,
+      "lat": -7.119294538212299
+    },
+    "jawatengah|boyolali": {
+      "lon": 110.70526898990195,
+      "lat": -7.385186670728253
+    },
+    "jawatengah|brebes": {
+      "lon": 108.88987066009057,
+      "lat": -7.052236629866541
+    },
+    "jawatengah|cilacap": {
+      "lon": 108.81938847004481,
+      "lat": -7.43879867801656
+    },
+    "jawatengah|demak": {
+      "lon": 110.65658957281588,
+      "lat": -6.9289747147612415
+    },
+    "jawatengah|grobogan": {
+      "lon": 110.90250780083896,
+      "lat": -7.108439934705161
+    },
+    "jawatengah|jepara": {
+      "lon": 110.78108545079033,
+      "lat": -6.602965013724375
+    },
+    "jawatengah|karanganyar": {
+      "lon": 111.06869885976597,
+      "lat": -7.6359217414451654
+    },
+    "jawatengah|kebumen": {
+      "lon": 109.61314301875507,
+      "lat": -7.639701557380877
+    },
+    "jawatengah|kendal": {
+      "lon": 110.14408253038323,
+      "lat": -7.015129453811201
+    },
+    "jawatengah|klaten": {
+      "lon": 110.62820246179055,
+      "lat": -7.671327866487791
+    },
+    "jawatengah|kudus": {
+      "lon": 110.8698223767382,
+      "lat": -6.799872878380623
+    },
+    "jawatengah|magelang": {
+      "lon": 110.22165142172274,
+      "lat": -7.515546746335237
+    },
+    "jawatengah|pati": {
+      "lon": 111.0885184480905,
+      "lat": -6.70266351850655
+    },
+    "jawatengah|pekalongan": {
+      "lon": 109.62038724449673,
+      "lat": -7.037415898774694
+    },
+    "jawatengah|pemalang": {
+      "lon": 109.39306436073184,
+      "lat": -7.003605756050772
+    },
+    "jawatengah|purbalingga": {
+      "lon": 109.40072680797942,
+      "lat": -7.327851745811368
+    },
+    "jawatengah|purworejo": {
+      "lon": 109.97252574868452,
+      "lat": -7.711177029596143
+    },
+    "jawatengah|rembang": {
+      "lon": 111.45670537521289,
+      "lat": -6.7677211489118685
+    },
+    "jawatengah|semarang": {
+      "lon": 110.46287502824156,
+      "lat": -7.287055640205623
+    },
+    "jawatengah|sragen": {
+      "lon": 110.94804364181766,
+      "lat": -7.403594912125459
+    },
+    "jawatengah|sukoharjo": {
+      "lon": 110.86582064231303,
+      "lat": -7.6827371345110675
+    },
+    "jawatengah|tegal": {
+      "lon": 109.14874111575625,
+      "lat": -7.046509305959673
+    },
+    "jawatengah|temanggung": {
+      "lon": 110.1252205435972,
+      "lat": -7.245204329915848
+    },
+    "jawatengah|wonogiri": {
+      "lon": 110.95173654581352,
+      "lat": -7.96126325249709
+    },
+    "jawatengah|wonosobo": {
+      "lon": 109.92009581792578,
+      "lat": -7.400412948398775
+    },
+    "jawatengah|kotamagelang": {
+      "lon": 110.21919737850746,
+      "lat": -7.470110615612339
+    },
+    "jawatengah|kotapekalongan": {
+      "lon": 109.67451657858763,
+      "lat": -6.899228185682186
+    },
+    "jawatengah|kotasalatiga": {
+      "lon": 110.49676410812624,
+      "lat": -7.329785062030973
+    },
+    "jawatengah|kotasemarang": {
+      "lon": 110.38476159487705,
+      "lat": -7.023774449581114
+    },
+    "jawatengah|kotasurakarta": {
+      "lon": 110.8208153104944,
+      "lat": -7.557557551389874
+    },
+    "jawatengah|kotategal": {
+      "lon": 109.11583289927749,
+      "lat": -6.87226819157372
+    },
+    "jawatimur|bangkalan": {
+      "lon": 112.89504520258194,
+      "lat": -7.0484628780593175
+    },
+    "jawatimur|banyuwangi": {
+      "lon": 114.14384061396763,
+      "lat": -8.327436678809645
+    },
+    "jawatimur|blitar": {
+      "lon": 112.28718948322907,
+      "lat": -8.13829682254033
+    },
+    "jawatimur|bojonegoro": {
+      "lon": 111.80764156555054,
+      "lat": -7.228588136982887
+    },
+    "jawatimur|bondowoso": {
+      "lon": 113.88052291045658,
+      "lat": -7.950331263676817
+    },
+    "jawatimur|gresik": {
+      "lon": 112.55387122820866,
+      "lat": -7.126948566972739
+    },
+    "jawatimur|jember": {
+      "lon": 113.63298854594825,
+      "lat": -8.262906002559927
+    },
+    "jawatimur|jombang": {
+      "lon": 112.24343469476202,
+      "lat": -7.557908417389551
+    },
+    "jawatimur|kediri": {
+      "lon": 112.16879334123581,
+      "lat": -7.803305196077907
+    },
+    "jawatimur|lamongan": {
+      "lon": 112.3312452436972,
+      "lat": -7.122689403393182
+    },
+    "jawatimur|lumajang": {
+      "lon": 113.14637722728092,
+      "lat": -8.124661008498695
+    },
+    "jawatimur|madiun": {
+      "lon": 111.66970343194319,
+      "lat": -7.614435225005626
+    },
+    "jawatimur|magetan": {
+      "lon": 111.33563460648436,
+      "lat": -7.654915426655577
+    },
+    "jawatimur|malang": {
+      "lon": 112.69062822911485,
+      "lat": -8.101009461017776
+    },
+    "jawatimur|mojokerto": {
+      "lon": 112.50894256503598,
+      "lat": -7.546539270820655
+    },
+    "jawatimur|nganjuk": {
+      "lon": 111.94425268234724,
+      "lat": -7.623572342389621
+    },
+    "jawatimur|ngawi": {
+      "lon": 111.39089801113255,
+      "lat": -7.426779737994486
+    },
+    "jawatimur|pacitan": {
+      "lon": 111.13646962706633,
+      "lat": -8.106889904845165
+    },
+    "jawatimur|pamekasan": {
+      "lon": 113.4976282061247,
+      "lat": -7.074036125216957
+    },
+    "jawatimur|pasuruan": {
+      "lon": 112.81930560316479,
+      "lat": -7.755353409781999
+    },
+    "jawatimur|ponorogo": {
+      "lon": 111.49895119508798,
+      "lat": -7.973596083342541
+    },
+    "jawatimur|probolinggo": {
+      "lon": 113.30246829549088,
+      "lat": -7.8654056352618165
+    },
+    "jawatimur|sampang": {
+      "lon": 113.25322430864159,
+      "lat": -7.046688173920027
+    },
+    "jawatimur|sidoarjo": {
+      "lon": 112.66975880240244,
+      "lat": -7.459544307323832
+    },
+    "jawatimur|situbondo": {
+      "lon": 114.26478732239624,
+      "lat": -7.798238434556052
+    },
+    "jawatimur|sumenep": {
+      "lon": 113.84176383297478,
+      "lat": -6.99019065317608
+    },
+    "jawatimur|trenggalek": {
+      "lon": 111.6571588402695,
+      "lat": -8.121581738356491
+    },
+    "jawatimur|tuban": {
+      "lon": 111.89884325474134,
+      "lat": -6.961364126952833
+    },
+    "jawatimur|tulungagung": {
+      "lon": 111.89651674911191,
+      "lat": -8.069542643528154
+    },
+    "jawatimur|kotabatu": {
+      "lon": 112.5308207699563,
+      "lat": -7.847444730140144
+    },
+    "jawatimur|kotablitar": {
+      "lon": 112.16813629126806,
+      "lat": -8.096376657007047
+    },
+    "jawatimur|kotakediri": {
+      "lon": 112.00630410872608,
+      "lat": -7.824555198913278
+    },
+    "jawatimur|kotamadiun": {
+      "lon": 111.52374618453406,
+      "lat": -7.630040111411977
+    },
+    "jawatimur|kotamalang": {
+      "lon": 112.64477445559496,
+      "lat": -7.982720920484025
+    },
+    "jawatimur|kotamojokerto": {
+      "lon": 112.43774600236435,
+      "lat": -7.47057911608329
+    },
+    "jawatimur|kotapasuruan": {
+      "lon": 112.90814569106597,
+      "lat": -7.653409867571285
+    },
+    "jawatimur|kotaprobolinggo": {
+      "lon": 113.20261815979245,
+      "lat": -7.759383533573131
+    },
+    "jawatimur|kotasurabaya": {
+      "lon": 112.73194101653462,
+      "lat": -7.271497121944596
+    },
+    "kalimantanbarat|bengkayang": {
+      "lon": 109.77143961395035,
+      "lat": 1.0331498558812076
+    },
+    "kalimantanbarat|kapuashulu": {
+      "lon": 112.79533488536032,
+      "lat": 0.8284120905955845
+    },
+    "kalimantanbarat|kayongutara": {
+      "lon": 110.0347129202577,
+      "lat": -1.022161847191441
+    },
+    "kalimantanbarat|ketapang": {
+      "lon": 110.46328428855159,
+      "lat": -1.674120930836212
+    },
+    "kalimantanbarat|kuburaya": {
+      "lon": 109.52580165790438,
+      "lat": -0.32763827243827137
+    },
+    "kalimantanbarat|landak": {
+      "lon": 109.70639148997122,
+      "lat": 0.5011415355534705
+    },
+    "kalimantanbarat|melawi": {
+      "lon": 111.65512754469262,
+      "lat": -0.7244542700484828
+    },
+    "kalimantanbarat|mempawah": {
+      "lon": 109.09897882616369,
+      "lat": 0.34422937493572014
+    },
+    "kalimantanbarat|sambas": {
+      "lon": 109.40491052111787,
+      "lat": 1.5226745993533548
+    },
+    "kalimantanbarat|sanggau": {
+      "lon": 110.54403254257005,
+      "lat": 0.34485853029695157
+    },
+    "kalimantanbarat|sekadau": {
+      "lon": 110.94207389026991,
+      "lat": 0.03572535793902887
+    },
+    "kalimantanbarat|sintang": {
+      "lon": 111.56664778447342,
+      "lat": 0.19322643330325917
+    },
+    "kalimantanbarat|kotapontianak": {
+      "lon": 109.32570976666699,
+      "lat": -0.031569037930692545
+    },
+    "kalimantanbarat|kotasingkawang": {
+      "lon": 109.05064654710296,
+      "lat": 0.8939215741213786
+    },
+    "kalimantanselatan|balangan": {
+      "lon": 115.62107026060687,
+      "lat": -2.2863862546718376
+    },
+    "kalimantanselatan|banjar": {
+      "lon": 115.02823655207717,
+      "lat": -3.2858024154989867
+    },
+    "kalimantanselatan|baritokuala": {
+      "lon": 114.67690274000316,
+      "lat": -3.022180001855526
+    },
+    "kalimantanselatan|hulusungaiselatan": {
+      "lon": 115.16175001314923,
+      "lat": -2.7174270202407396
+    },
+    "kalimantanselatan|hulusungaitengah": {
+      "lon": 115.43212567867583,
+      "lat": -2.624469057401038
+    },
+    "kalimantanselatan|hulusungaiutara": {
+      "lon": 115.15728851923667,
+      "lat": -2.4220418968660145
+    },
+    "kalimantanselatan|kotabaru": {
+      "lon": 115.85567762388314,
+      "lat": -2.798418423171592
+    },
+    "kalimantanselatan|tabalong": {
+      "lon": 115.51849133887907,
+      "lat": -1.8443845758374682
+    },
+    "kalimantanselatan|tanahbumbu": {
+      "lon": 115.69907318899988,
+      "lat": -3.4350572477437584
+    },
+    "kalimantanselatan|tanahlaut": {
+      "lon": 114.98831230718169,
+      "lat": -3.840804506572651
+    },
+    "kalimantanselatan|tapin": {
+      "lon": 115.00869744130286,
+      "lat": -2.862213381142567
+    },
+    "kalimantanselatan|kotabanjarbaru": {
+      "lon": 114.7839210936482,
+      "lat": -3.4736111110139216
+    },
+    "kalimantanselatan|kotabanjarmasin": {
+      "lon": 114.59940629837892,
+      "lat": -3.3254019744714896
+    },
+    "kalimantantengah|baritoselatan": {
+      "lon": 114.77963525196097,
+      "lat": -1.9456091375016609
+    },
+    "kalimantantengah|baritotimur": {
+      "lon": 115.17764158310298,
+      "lat": -2.006283333309103
+    },
+    "kalimantantengah|baritoutara": {
+      "lon": 115.04566882941292,
+      "lat": -0.7545079846057483
+    },
+    "kalimantantengah|gunungmas": {
+      "lon": 113.55769448282348,
+      "lat": -0.9792305001374206
+    },
+    "kalimantantengah|kapuas": {
+      "lon": 114.33650703938278,
+      "lat": -1.9228877214911204
+    },
+    "kalimantantengah|katingan": {
+      "lon": 113.3407670599585,
+      "lat": -1.872485512846092
+    },
+    "kalimantantengah|kotawaringinbarat": {
+      "lon": 111.6541637084139,
+      "lat": -2.50277521010778
+    },
+    "kalimantantengah|kotawaringintimur": {
+      "lon": 112.78944000618296,
+      "lat": -2.231875018866994
+    },
+    "kalimantantengah|lamandau": {
+      "lon": 111.41746785896783,
+      "lat": -1.780187483765319
+    },
+    "kalimantantengah|murungraya": {
+      "lon": 114.12513708848235,
+      "lat": -0.0413278350614803
+    },
+    "kalimantantengah|pulangpisau": {
+      "lon": 114.04249164805114,
+      "lat": -2.4626025595104544
+    },
+    "kalimantantengah|seruyan": {
+      "lon": 112.16648578197263,
+      "lat": -2.112587757369047
+    },
+    "kalimantantengah|sukamara": {
+      "lon": 111.18438731297894,
+      "lat": -2.55124211907847
+    },
+    "kalimantantengah|kotapalangkaraya": {
+      "lon": 113.7137831060207,
+      "lat": -1.9639251875972956
+    },
+    "kalimantantimur|berau": {
+      "lon": 117.26873227324629,
+      "lat": 1.7697990917047797
+    },
+    "kalimantantimur|kutaibarat": {
+      "lon": 115.74513294135926,
+      "lat": -0.4183326299968453
+    },
+    "kalimantantimur|kutaikartanegara": {
+      "lon": 116.15149076842039,
+      "lat": 0.19583650285237297
+    },
+    "kalimantantimur|kutaitimur": {
+      "lon": 117.01128575425672,
+      "lat": 0.9437850848138947
+    },
+    "kalimantantimur|mahakamulu": {
+      "lon": 115.31497334574203,
+      "lat": 0.6225080336689199
+    },
+    "kalimantantimur|paser": {
+      "lon": 116.018916828457,
+      "lat": -1.6884086940059522
+    },
+    "kalimantantimur|penajampaserutara": {
+      "lon": 116.56843523465096,
+      "lat": -1.1932180130008767
+    },
+    "kalimantantimur|kotabalikpapan": {
+      "lon": 116.90004908544992,
+      "lat": -1.160168487185878
+    },
+    "kalimantantimur|kotabontang": {
+      "lon": 117.45892868129366,
+      "lat": 0.11353188468878628
+    },
+    "kalimantantimur|kotasamarinda": {
+      "lon": 117.15818256500813,
+      "lat": -0.5188422684059084
+    },
+    "kalimantanutara|bulungan": {
+      "lon": 117.07079496916319,
+      "lat": 2.7596455347137034
+    },
+    "kalimantanutara|malinau": {
+      "lon": 115.69269618724005,
+      "lat": 2.6169917550655093
+    },
+    "kalimantanutara|nunukan": {
+      "lon": 116.986905796339,
+      "lat": 3.90395036107034
+    },
+    "kalimantanutara|tanatidung": {
+      "lon": 116.94147458640921,
+      "lat": 3.5433042840655062
+    },
+    "kalimantanutara|kotatarakan": {
+      "lon": 117.59763578838205,
+      "lat": 3.344924783651914
+    },
+    "kepulauanbangkabelitung|bangka": {
+      "lon": 105.93985669118416,
+      "lat": -1.9140206156588206
+    },
+    "kepulauanbangkabelitung|bangkabarat": {
+      "lon": 105.55266014043016,
+      "lat": -1.8430073531567697
+    },
+    "kepulauanbangkabelitung|bangkaselatan": {
+      "lon": 106.29061314282063,
+      "lat": -2.7629925786945257
+    },
+    "kepulauanbangkabelitung|bangkatengah": {
+      "lon": 106.1041936240475,
+      "lat": -2.434896536845635
+    },
+    "kepulauanbangkabelitung|belitung": {
+      "lon": 107.66149156700558,
+      "lat": -2.8838459609722893
+    },
+    "kepulauanbangkabelitung|belitungtimur": {
+      "lon": 108.00569100178022,
+      "lat": -2.9150778620536304
+    },
+    "kepulauanbangkabelitung|kotapangkalpinang": {
+      "lon": 106.1068945676449,
+      "lat": -2.1060143287981585
+    },
+    "kepulauanriau|bintan": {
+      "lon": 104.56894996568319,
+      "lat": 1.0209938982997908
+    },
+    "kepulauanriau|karimun": {
+      "lon": 103.42085624350284,
+      "lat": 0.7792451920620476
+    },
+    "kepulauanriau|kepulauananambas": {
+      "lon": 105.75970020267272,
+      "lat": 2.939302655143482
+    },
+    "kepulauanriau|lingga": {
+      "lon": 104.41511872751096,
+      "lat": -0.5113699463158898
+    },
+    "kepulauanriau|natuna": {
+      "lon": 108.19829958681285,
+      "lat": 3.9236881660261282
+    },
+    "kepulauanriau|kotabatam": {
+      "lon": 104.03517889207811,
+      "lat": 1.0900295098040775
+    },
+    "kepulauanriau|kotatanjungpinang": {
+      "lon": 104.49423564787277,
+      "lat": 0.9135365388802192
+    },
+    "lampung|lampungbarat": {
+      "lon": 104.29997416523466,
+      "lat": -5.109111110839029
+    },
+    "lampung|lampungselatan": {
+      "lon": 105.51219221706512,
+      "lat": -5.546939286518774
+    },
+    "lampung|lampungtengah": {
+      "lon": 105.32601995560694,
+      "lat": -4.874536087470396
+    },
+    "lampung|lampungtimur": {
+      "lon": 105.59522496082528,
+      "lat": -5.122111713934377
+    },
+    "lampung|lampungutara": {
+      "lon": 104.85944814683191,
+      "lat": -4.809256060568703
+    },
+    "lampung|mesuji": {
+      "lon": 105.37767314273509,
+      "lat": -3.9771888703200613
+    },
+    "lampung|pesawaran": {
+      "lon": 105.08322617032775,
+      "lat": -5.467843190860514
+    },
+    "lampung|pesisirbarat": {
+      "lon": 104.19193803558196,
+      "lat": -5.368695897647528
+    },
+    "lampung|pringsewu": {
+      "lon": 104.97383665492578,
+      "lat": -5.370522227368849
+    },
+    "lampung|tanggamus": {
+      "lon": 104.77528178165744,
+      "lat": -5.515459642448509
+    },
+    "lampung|tulangbawang": {
+      "lon": 105.55429866865802,
+      "lat": -4.3978300448206635
+    },
+    "lampung|tulangbawangbarat": {
+      "lon": 105.13730112022145,
+      "lat": -4.431501435642662
+    },
+    "lampung|waykanan": {
+      "lon": 104.51795847693644,
+      "lat": -4.56198073257468
+    },
+    "lampung|kotabandarlampung": {
+      "lon": 105.26138934337666,
+      "lat": -5.421697342608248
+    },
+    "lampung|kotametro": {
+      "lon": 105.30698518736125,
+      "lat": -5.122138956647484
+    },
+    "maluku|buru": {
+      "lon": 126.72164791753454,
+      "lat": -3.3636009994365583
+    },
+    "maluku|buruselatan": {
+      "lon": 126.35140726135857,
+      "lat": -3.4901566878308614
+    },
+    "maluku|kepulauanaru": {
+      "lon": 134.5151800860067,
+      "lat": -6.150905974081392
+    },
+    "maluku|kepulauantanimbar": {
+      "lon": 131.41738593511263,
+      "lat": -7.5795725072153965
+    },
+    "maluku|malukubaratdaya": {
+      "lon": 126.24092213368161,
+      "lat": -7.789919119721559
+    },
+    "maluku|malukutengah": {
+      "lon": 129.467594548008,
+      "lat": -3.1213496396240963
+    },
+    "maluku|malukutenggara": {
+      "lon": 132.72265323161312,
+      "lat": -5.771551836547965
+    },
+    "maluku|serambagianbarat": {
+      "lon": 128.5349436000672,
+      "lat": -3.2021489190373202
+    },
+    "maluku|serambagiantimur": {
+      "lon": 130.39036499594644,
+      "lat": -3.4165372970586
+    },
+    "maluku|kotaambon": {
+      "lon": 128.24226407041476,
+      "lat": -3.679354696511952
+    },
+    "maluku|kotatual": {
+      "lon": 132.7731453956912,
+      "lat": -5.622795945026819
+    },
+    "malukuutara|halmaherabarat": {
+      "lon": 127.57184628314933,
+      "lat": 1.3573548815225962
+    },
+    "malukuutara|halmaheraselatan": {
+      "lon": 127.7164993223926,
+      "lat": -1.534115131208294
+    },
+    "malukuutara|halmaheratengah": {
+      "lon": 128.5822819912421,
+      "lat": 0.3883038727255901
+    },
+    "malukuutara|halmaheratimur": {
+      "lon": 128.24733865989617,
+      "lat": 1.0017153312475742
+    },
+    "malukuutara|halmaherautara": {
+      "lon": 127.88065385480857,
+      "lat": 1.5345723795616912
+    },
+    "malukuutara|kepulauansula": {
+      "lon": 125.82884163591382,
+      "lat": -1.8649123704594732
+    },
+    "malukuutara|pulaumorotai": {
+      "lon": 128.4435173954249,
+      "lat": 2.3143793595698376
+    },
+    "malukuutara|pulautaliabu": {
+      "lon": 124.82967194267158,
+      "lat": -1.8308508861094612
+    },
+    "malukuutara|kotaternate": {
+      "lon": 127.34358163368773,
+      "lat": 0.8098951306058506
+    },
+    "malukuutara|kotatidorekepulauan": {
+      "lon": 127.70990756203962,
+      "lat": 0.38484302698418027
+    },
+    "nusatenggarabarat|bima": {
+      "lon": 118.75884368717614,
+      "lat": -8.561769004835611
+    },
+    "nusatenggarabarat|dompu": {
+      "lon": 118.3348575155206,
+      "lat": -8.523217997362602
+    },
+    "nusatenggarabarat|lombokbarat": {
+      "lon": 116.13245322838583,
+      "lat": -8.6563183769415
+    },
+    "nusatenggarabarat|lomboktengah": {
+      "lon": 116.281557949909,
+      "lat": -8.682047591722934
+    },
+    "nusatenggarabarat|lomboktimur": {
+      "lon": 116.51093222443345,
+      "lat": -8.583701489681976
+    },
+    "nusatenggarabarat|lombokutara": {
+      "lon": 116.29780359755966,
+      "lat": -8.35161633922266
+    },
+    "nusatenggarabarat|sumbawa": {
+      "lon": 117.49265814399784,
+      "lat": -8.736628493510095
+    },
+    "nusatenggarabarat|sumbawabarat": {
+      "lon": 116.93948176430999,
+      "lat": -8.808936522102755
+    },
+    "nusatenggarabarat|kotabima": {
+      "lon": 118.79934128808851,
+      "lat": -8.444744653442964
+    },
+    "nusatenggarabarat|kotamataram": {
+      "lon": 116.11664305052321,
+      "lat": -8.588899945675914
+    },
+    "nusatenggaratimur|timortengahselatan": {
+      "lon": 124.43850122471704,
+      "lat": -9.81902471147123
+    },
+    "nusatenggaratimur|alor": {
+      "lon": 124.77523319345542,
+      "lat": -8.292484921391967
+    },
+    "nusatenggaratimur|belu": {
+      "lon": 124.91575493497214,
+      "lat": -9.17470476606204
+    },
+    "nusatenggaratimur|ende": {
+      "lon": 121.6916734455516,
+      "lat": -8.673292492404565
+    },
+    "nusatenggaratimur|florestimur": {
+      "lon": 123.16235116774521,
+      "lat": -8.333963187501086
+    },
+    "nusatenggaratimur|kupang": {
+      "lon": 123.87713234586485,
+      "lat": -9.841204990118184
+    },
+    "nusatenggaratimur|lembata": {
+      "lon": 123.54567869427379,
+      "lat": -8.3774695547761
+    },
+    "nusatenggaratimur|malaka": {
+      "lon": 124.8792180902226,
+      "lat": -9.533366099565814
+    },
+    "nusatenggaratimur|manggarai": {
+      "lon": 120.44300716918042,
+      "lat": -8.5404345129424
+    },
+    "nusatenggaratimur|manggaraibarat": {
+      "lon": 120.06175039966239,
+      "lat": -8.578104455506157
+    },
+    "nusatenggaratimur|manggaraitimur": {
+      "lon": 120.6938241077028,
+      "lat": -8.584649545090377
+    },
+    "nusatenggaratimur|nagekeo": {
+      "lon": 121.26963902697386,
+      "lat": -8.673556141702559
+    },
+    "nusatenggaratimur|ngada": {
+      "lon": 120.99888404789672,
+      "lat": -8.648292954706065
+    },
+    "nusatenggaratimur|rotendao": {
+      "lon": 123.20597040551843,
+      "lat": -10.688701204347044
+    },
+    "nusatenggaratimur|saburaijua": {
+      "lon": 121.88666670459112,
+      "lat": -10.522668293107245
+    },
+    "nusatenggaratimur|sikka": {
+      "lon": 122.09179968452672,
+      "lat": -8.582768990746308
+    },
+    "nusatenggaratimur|sumbabarat": {
+      "lon": 119.43649836548026,
+      "lat": -9.595003047502564
+    },
+    "nusatenggaratimur|sumbabaratdaya": {
+      "lon": 119.1652029726102,
+      "lat": -9.546115681643323
+    },
+    "nusatenggaratimur|sumbatengah": {
+      "lon": 119.6708823724932,
+      "lat": -9.591748552103923
+    },
+    "nusatenggaratimur|sumbatimur": {
+      "lon": 120.16313287713767,
+      "lat": -9.804664261496425
+    },
+    "nusatenggaratimur|timortengahutara": {
+      "lon": 124.60920989711741,
+      "lat": -9.343853489596814
+    },
+    "nusatenggaratimur|kotakupang": {
+      "lon": 123.59108145094177,
+      "lat": -10.205854345251746
+    },
+    "papua|biaknumfor": {
+      "lon": 135.94306456248944,
+      "lat": -0.9490236795990619
+    },
+    "papua|jayapura": {
+      "lon": 139.9476633587783,
+      "lat": -3.040267011713185
+    },
+    "papua|keerom": {
+      "lon": 140.6778881317427,
+      "lat": -3.4125587237560566
+    },
+    "papua|kepulauanyapen": {
+      "lon": 136.36764772587105,
+      "lat": -1.755463001466298
+    },
+    "papua|mamberamoraya": {
+      "lon": 137.7286274189201,
+      "lat": -2.436599598292746
+    },
+    "papua|sarmi": {
+      "lon": 139.23655045763977,
+      "lat": -2.5560390304768337
+    },
+    "papua|supiori": {
+      "lon": 135.6082493607202,
+      "lat": -0.7555770806676492
+    },
+    "papua|waropen": {
+      "lon": 136.73225299766716,
+      "lat": -2.795714478790126
+    },
+    "papua|kotajayapura": {
+      "lon": 140.81470341032076,
+      "lat": -2.6722685462063716
+    },
+    "papuabarat|fakfak": {
+      "lon": 133.09148488386796,
+      "lat": -3.2740012089885777
+    },
+    "papuabarat|kaimana": {
+      "lon": 134.31741653473568,
+      "lat": -3.52011010549689
+    },
+    "papuabarat|manokwari": {
+      "lon": 133.7518603013631,
+      "lat": -0.9704425400411747
+    },
+    "papuabarat|manokwariselatan": {
+      "lon": 134.07265189639352,
+      "lat": -1.5260993024907936
+    },
+    "papuabarat|pegununganarfak": {
+      "lon": 133.65930570291488,
+      "lat": -1.2560980227554612
+    },
+    "papuabarat|telukbintuni": {
+      "lon": 133.15185131586048,
+      "lat": -2.1869364672940677
+    },
+    "papuabarat|telukwondama": {
+      "lon": 134.56709159461536,
+      "lat": -2.631682822154449
+    },
+    "papuabaratdaya|maybrat": {
+      "lon": 132.56772357883335,
+      "lat": -1.4035168571172179
+    },
+    "papuabaratdaya|rajaampat": {
+      "lon": 130.07042068729297,
+      "lat": -1.8724473676518443
+    },
+    "papuabaratdaya|sorong": {
+      "lon": 131.53877907969024,
+      "lat": -1.148818509666441
+    },
+    "papuabaratdaya|sorongselatan": {
+      "lon": 132.15216161994942,
+      "lat": -1.6636125415854934
+    },
+    "papuabaratdaya|tambrauw": {
+      "lon": 132.8540080435342,
+      "lat": -0.8491357123931369
+    },
+    "papuabaratdaya|kotasorong": {
+      "lon": 131.30908133615293,
+      "lat": -0.8608206509522347
+    },
+    "papuapegunungan|pegununganbintang": {
+      "lon": 140.52193920306644,
+      "lat": -4.511598711910983
+    },
+    "papuapegunungan|jayawijaya": {
+      "lon": 138.94409612629084,
+      "lat": -4.108869273897822
+    },
+    "papuapegunungan|lannyjaya": {
+      "lon": 138.34933022116368,
+      "lat": -3.997337522008973
+    },
+    "papuapegunungan|mamberamotengah": {
+      "lon": 139.07890300689036,
+      "lat": -3.5638275796290557
+    },
+    "papuapegunungan|nduga": {
+      "lon": 138.26196640593753,
+      "lat": -4.419802796811581
+    },
+    "papuapegunungan|tolikara": {
+      "lon": 138.44983170174777,
+      "lat": -3.4606711406605566
+    },
+    "papuapegunungan|yahukimo": {
+      "lon": 139.3914679719063,
+      "lat": -4.454178877952833
+    },
+    "papuapegunungan|yalimo": {
+      "lon": 139.40505315666536,
+      "lat": -3.832401805698751
+    },
+    "papuaselatan|asmat": {
+      "lon": 138.79879007538642,
+      "lat": -5.546357742166012
+    },
+    "papuaselatan|bovendigoel": {
+      "lon": 140.43029662837108,
+      "lat": -6.039061111081371
+    },
+    "papuaselatan|mappi": {
+      "lon": 139.28839706020327,
+      "lat": -6.329468055256519
+    },
+    "papuaselatan|merauke": {
+      "lon": 139.99577460980066,
+      "lat": -7.879486003076534
+    },
+    "papuatengah|deiyai": {
+      "lon": 136.3674950937151,
+      "lat": -4.190569375426259
+    },
+    "papuatengah|dogiyai": {
+      "lon": 135.65566791171165,
+      "lat": -4.038610224682085
+    },
+    "papuatengah|intanjaya": {
+      "lon": 136.71930311581008,
+      "lat": -3.5259005132480397
+    },
+    "papuatengah|mimika": {
+      "lon": 136.95836177064137,
+      "lat": -4.59838788309426
+    },
+    "papuatengah|nabire": {
+      "lon": 136.00730767428698,
+      "lat": -3.324872017929195
+    },
+    "papuatengah|paniai": {
+      "lon": 136.42776444822815,
+      "lat": -3.7448750915122258
+    },
+    "papuatengah|puncak": {
+      "lon": 137.48564629867172,
+      "lat": -3.629611612685693
+    },
+    "papuatengah|puncakjaya": {
+      "lon": 137.87514927411087,
+      "lat": -3.4434123731325066
+    },
+    "riau|bengkalis": {
+      "lon": 101.56976682298748,
+      "lat": 1.28470971687997
+    },
+    "riau|indragirihilir": {
+      "lon": 103.22705226055632,
+      "lat": -0.2805023232235886
+    },
+    "riau|indragirihulu": {
+      "lon": 102.30071730292772,
+      "lat": -0.49491718762808823
+    },
+    "riau|kampar": {
+      "lon": 101.11717091231921,
+      "lat": 0.2940042189695653
+    },
+    "riau|kepulauanmeranti": {
+      "lon": 102.69010216671114,
+      "lat": 0.8713174301553135
+    },
+    "riau|kuantansingingi": {
+      "lon": 101.48250739695371,
+      "lat": -0.46677129171166776
+    },
+    "riau|pelalawan": {
+      "lon": 102.2109680928165,
+      "lat": 0.1592415491582262
+    },
+    "riau|rokanhilir": {
+      "lon": 100.70418944164814,
+      "lat": 1.892669571043923
+    },
+    "riau|rokanhulu": {
+      "lon": 100.45648749584524,
+      "lat": 0.9037805040170905
+    },
+    "riau|siak": {
+      "lon": 101.85101694262177,
+      "lat": 0.8144421365953587
+    },
+    "riau|kotadumai": {
+      "lon": 101.23076226128796,
+      "lat": 1.8633656828800333
+    },
+    "riau|kotapekanbaru": {
+      "lon": 101.48220972046114,
+      "lat": 0.5506424243084869
+    },
+    "sulawesibarat|majene": {
+      "lon": 118.87676827527243,
+      "lat": -3.257721044140796
+    },
+    "sulawesibarat|mamasa": {
+      "lon": 119.32326640573027,
+      "lat": -3.0061203669612873
+    },
+    "sulawesibarat|mamuju": {
+      "lon": 119.39261429699114,
+      "lat": -2.553535916399399
+    },
+    "sulawesibarat|mamujutengah": {
+      "lon": 119.53114768456382,
+      "lat": -2.0212109609670375
+    },
+    "sulawesibarat|pasangkayu": {
+      "lon": 119.37939667160632,
+      "lat": -1.3435189200121016
+    },
+    "sulawesibarat|polewalimandar": {
+      "lon": 119.14110649275236,
+      "lat": -3.300445436058011
+    },
+    "sulawesiselatan|bantaeng": {
+      "lon": 119.98492244807943,
+      "lat": -5.471002539785389
+    },
+    "sulawesiselatan|barru": {
+      "lon": 119.67673127339395,
+      "lat": -4.437123571245774
+    },
+    "sulawesiselatan|bone": {
+      "lon": 120.0969269041016,
+      "lat": -4.673760727475587
+    },
+    "sulawesiselatan|bulukumba": {
+      "lon": 120.24268209324329,
+      "lat": -5.454837677916461
+    },
+    "sulawesiselatan|enrekang": {
+      "lon": 119.88357725904896,
+      "lat": -3.5302054064543036
+    },
+    "sulawesiselatan|gowa": {
+      "lon": 119.76836630578373,
+      "lat": -5.3359154017743196
+    },
+    "sulawesiselatan|jeneponto": {
+      "lon": 119.60800129165872,
+      "lat": -5.537954300250706
+    },
+    "sulawesiselatan|kepulauanselayar": {
+      "lon": 120.95446255323921,
+      "lat": -7.296470287473714
+    },
+    "sulawesiselatan|luwu": {
+      "lon": 120.22239347498298,
+      "lat": -3.3454054279180827
+    },
+    "sulawesiselatan|luwutimur": {
+      "lon": 121.08629569965038,
+      "lat": -2.5127483718897974
+    },
+    "sulawesiselatan|luwuutara": {
+      "lon": 120.13206035514742,
+      "lat": -2.432030870528193
+    },
+    "sulawesiselatan|maros": {
+      "lon": 119.69254557792189,
+      "lat": -4.967772685011365
+    },
+    "sulawesiselatan|pangkajenedankepulauan": {
+      "lon": 119.58951989026104,
+      "lat": -4.754013257305958
+    },
+    "sulawesiselatan|pinrang": {
+      "lon": 119.60231464965014,
+      "lat": -3.6527167392860687
+    },
+    "sulawesiselatan|sidenrengrappang": {
+      "lon": 120.0015851320911,
+      "lat": -3.810670512683936
+    },
+    "sulawesiselatan|sinjai": {
+      "lon": 120.14651775388711,
+      "lat": -5.202529771631628
+    },
+    "sulawesiselatan|soppeng": {
+      "lon": 119.91557091026522,
+      "lat": -4.322564600176085
+    },
+    "sulawesiselatan|takalar": {
+      "lon": 119.46333087189365,
+      "lat": -5.449490501935043
+    },
+    "sulawesiselatan|tanatoraja": {
+      "lon": 119.76740853911267,
+      "lat": -3.065613142282622
+    },
+    "sulawesiselatan|torajautara": {
+      "lon": 119.84254931306953,
+      "lat": -2.880005810869404
+    },
+    "sulawesiselatan|wajo": {
+      "lon": 120.12616698464771,
+      "lat": -3.9550337767373627
+    },
+    "sulawesiselatan|kotamakassar": {
+      "lon": 119.4649845447455,
+      "lat": -5.143891318529484
+    },
+    "sulawesiselatan|kotapalopo": {
+      "lon": 120.12411712269966,
+      "lat": -2.975568387970709
+    },
+    "sulawesiselatan|kotaparepare": {
+      "lon": 119.66215374671108,
+      "lat": -4.0239718859937295
+    },
+    "sulawesitengah|banggai": {
+      "lon": 122.31670053122522,
+      "lat": -1.0924531186664392
+    },
+    "sulawesitengah|banggaikepulauan": {
+      "lon": 123.3908548358811,
+      "lat": -1.398030040703782
+    },
+    "sulawesitengah|banggailaut": {
+      "lon": 123.10185959349258,
+      "lat": -1.844406591241146
+    },
+    "sulawesitengah|buol": {
+      "lon": 121.54132912587042,
+      "lat": 0.9958189874064356
+    },
+    "sulawesitengah|donggala": {
+      "lon": 119.67573709460802,
+      "lat": -1.047463856571687
+    },
+    "sulawesitengah|morowali": {
+      "lon": 121.87589789912974,
+      "lat": -2.7082632258171895
+    },
+    "sulawesitengah|morowaliutara": {
+      "lon": 121.12004193673738,
+      "lat": -1.8406401037077273
+    },
+    "sulawesitengah|parigimoutong": {
+      "lon": 119.96584423044392,
+      "lat": -0.2239353271535709
+    },
+    "sulawesitengah|poso": {
+      "lon": 120.53799398580024,
+      "lat": -1.6642959593409916
+    },
+    "sulawesitengah|sigi": {
+      "lon": 119.93164152232316,
+      "lat": -1.4570917718677272
+    },
+    "sulawesitengah|tojounauna": {
+      "lon": 121.63671330193654,
+      "lat": -1.2327180215194549
+    },
+    "sulawesitengah|tolitoli": {
+      "lon": 120.87775228513358,
+      "lat": 0.972447513991634
+    },
+    "sulawesitengah|kotapalu": {
+      "lon": 119.88490458691018,
+      "lat": -0.797319274414912
+    },
+    "sulawesitenggara|bombana": {
+      "lon": 121.75678563355933,
+      "lat": -4.6357984297037
+    },
+    "sulawesitenggara|buton": {
+      "lon": 122.95267960841574,
+      "lat": -5.357798384787563
+    },
+    "sulawesitenggara|butonselatan": {
+      "lon": 122.68961445930856,
+      "lat": -5.587670240289303
+    },
+    "sulawesitenggara|butontengah": {
+      "lon": 122.38985533924883,
+      "lat": -5.291636521807978
+    },
+    "sulawesitenggara|butonutara": {
+      "lon": 122.95939864266343,
+      "lat": -4.756851401670772
+    },
+    "sulawesitenggara|kolaka": {
+      "lon": 121.69116789517685,
+      "lat": -4.122047732316972
+    },
+    "sulawesitenggara|kolakatimur": {
+      "lon": 121.75076995769312,
+      "lat": -3.8199876572545115
+    },
+    "sulawesitenggara|kolakautara": {
+      "lon": 121.09830668407318,
+      "lat": -3.2592677049405854
+    },
+    "sulawesitenggara|konawe": {
+      "lon": 121.65231468560177,
+      "lat": -3.5217420224763067
+    },
+    "sulawesitenggara|konawekepulauan": {
+      "lon": 123.09840471909763,
+      "lat": -4.109373928913643
+    },
+    "sulawesitenggara|konaweselatan": {
+      "lon": 122.45547839336894,
+      "lat": -4.250019639794525
+    },
+    "sulawesitenggara|konaweutara": {
+      "lon": 121.97723195547565,
+      "lat": -3.4485750824240906
+    },
+    "sulawesitenggara|muna": {
+      "lon": 122.70226811445274,
+      "lat": -4.920831044666921
+    },
+    "sulawesitenggara|munabarat": {
+      "lon": 122.4504346167497,
+      "lat": -4.822149111941901
+    },
+    "sulawesitenggara|wakatobi": {
+      "lon": 123.58463892756116,
+      "lat": -5.3080716038713485
+    },
+    "sulawesitenggara|kotabaubau": {
+      "lon": 122.70173263505671,
+      "lat": -5.432922366973595
+    },
+    "sulawesitenggara|kotakendari": {
+      "lon": 122.53185847942152,
+      "lat": -4.00003044564852
+    },
+    "sulawesiutara|bolaangmongondow": {
+      "lon": 123.98734921491078,
+      "lat": 0.7197592475412602
+    },
+    "sulawesiutara|bolaangmongondowselatan": {
+      "lon": 124.18314975201605,
+      "lat": 0.45416384678415866
+    },
+    "sulawesiutara|bolaangmongondowtimur": {
+      "lon": 124.49206862120053,
+      "lat": 0.70975908046724
+    },
+    "sulawesiutara|bolaangmongondowutara": {
+      "lon": 123.4850812636906,
+      "lat": 0.7636030265085054
+    },
+    "sulawesiutara|siautagulandangbiaro": {
+      "lon": 125.41761747750715,
+      "lat": 2.354874029512885
+    },
+    "sulawesiutara|kepulauansangihe": {
+      "lon": 125.55117852265988,
+      "lat": 3.55178503575082
+    },
+    "sulawesiutara|kepulauantalaud": {
+      "lon": 126.80926078211735,
+      "lat": 4.267416640515597
+    },
+    "sulawesiutara|minahasa": {
+      "lon": 124.90086587355145,
+      "lat": 1.2344903907689915
+    },
+    "sulawesiutara|minahasaselatan": {
+      "lon": 124.43731835017135,
+      "lat": 1.0575790673701153
+    },
+    "sulawesiutara|minahasatenggara": {
+      "lon": 124.73089783686835,
+      "lat": 0.9853747557904331
+    },
+    "sulawesiutara|minahasautara": {
+      "lon": 125.00154879247454,
+      "lat": 1.5167002240361356
+    },
+    "sulawesiutara|kotabitung": {
+      "lon": 125.14901377495647,
+      "lat": 1.4963593463068054
+    },
+    "sulawesiutara|kotakotamobagu": {
+      "lon": 124.31589256014198,
+      "lat": 0.7105248266594728
+    },
+    "sulawesiutara|kotamanado": {
+      "lon": 124.88026185598224,
+      "lat": 1.5030079429122907
+    },
+    "sulawesiutara|kotatomohon": {
+      "lon": 124.80297408683232,
+      "lat": 1.3197863298752583
+    },
+    "sumaterabarat|agam": {
+      "lon": 100.16951011310093,
+      "lat": -0.2543745986088002
+    },
+    "sumaterabarat|dharmasraya": {
+      "lon": 101.58930515772434,
+      "lat": -1.2501247000947817
+    },
+    "sumaterabarat|kepulauanmentawai": {
+      "lon": 98.89486927734066,
+      "lat": -1.3580398571536172
+    },
+    "sumaterabarat|limapuluhkota": {
+      "lon": 100.58098372797649,
+      "lat": 0.014153854666718146
+    },
+    "sumaterabarat|padangpariaman": {
+      "lon": 100.27616652643718,
+      "lat": -0.5707169896473268
+    },
+    "sumaterabarat|pasaman": {
+      "lon": 100.02302515772345,
+      "lat": 0.3988890843138222
+    },
+    "sumaterabarat|pasamanbarat": {
+      "lon": 99.72618373671914,
+      "lat": 0.18004516495244438
+    },
+    "sumaterabarat|pesisirselatan": {
+      "lon": 100.93851561949813,
+      "lat": -1.751353050702667
+    },
+    "sumaterabarat|sijunjung": {
+      "lon": 101.06876747868714,
+      "lat": -0.6545211059142435
+    },
+    "sumaterabarat|solok": {
+      "lon": 100.80686102775903,
+      "lat": -0.9260961466198285
+    },
+    "sumaterabarat|solokselatan": {
+      "lon": 101.26062370780441,
+      "lat": -1.358160441401182
+    },
+    "sumaterabarat|tanahdatar": {
+      "lon": 100.63558113303472,
+      "lat": -0.4725903756952725
+    },
+    "sumaterabarat|kotabukittinggi": {
+      "lon": 100.37776832473077,
+      "lat": -0.30364235655946636
+    },
+    "sumaterabarat|kotapadang": {
+      "lon": 100.45071880322769,
+      "lat": -0.9301092053255271
+    },
+    "sumaterabarat|kotapadangpanjang": {
+      "lon": 100.4027791516481,
+      "lat": -0.4697180085292434
+    },
+    "sumaterabarat|kotapariaman": {
+      "lon": 100.145596407769,
+      "lat": -0.6154540854376194
+    },
+    "sumaterabarat|kotapayakumbuh": {
+      "lon": 100.63498136410733,
+      "lat": -0.23019774857717934
+    },
+    "sumaterabarat|kotasawahlunto": {
+      "lon": 100.75353706984137,
+      "lat": -0.6592865077660797
+    },
+    "sumaterabarat|kotasolok": {
+      "lon": 100.64494344282073,
+      "lat": -0.7777404997242137
+    },
+    "sumateraselatan|banyuasin": {
+      "lon": 105.01272245262362,
+      "lat": -2.3968822348771983
+    },
+    "sumateraselatan|empatlawang": {
+      "lon": 102.93374217903695,
+      "lat": -3.713667077323704
+    },
+    "sumateraselatan|lahat": {
+      "lon": 103.41570863836384,
+      "lat": -3.87738103495672
+    },
+    "sumateraselatan|muaraenim": {
+      "lon": 103.9688513167072,
+      "lat": -3.8399887117595704
+    },
+    "sumateraselatan|musibanyuasin": {
+      "lon": 103.7074626454797,
+      "lat": -2.490217093693861
+    },
+    "sumateraselatan|musirawas": {
+      "lon": 103.2194121440196,
+      "lat": -3.17418304356252
+    },
+    "sumateraselatan|musirawasutara": {
+      "lon": 102.73174143403519,
+      "lat": -2.7199496154323626
+    },
+    "sumateraselatan|oganilir": {
+      "lon": 104.64178713727605,
+      "lat": -3.4200254462173145
+    },
+    "sumateraselatan|ogankomeringilir": {
+      "lon": 105.39548867676316,
+      "lat": -3.3275706113445906
+    },
+    "sumateraselatan|ogankomeringulu": {
+      "lon": 104.00951137506655,
+      "lat": -4.107572790551808
+    },
+    "sumateraselatan|ogankomeringuluselatan": {
+      "lon": 103.94476094457438,
+      "lat": -4.575076018093707
+    },
+    "sumateraselatan|ogankomeringulutimur": {
+      "lon": 104.55591835022642,
+      "lat": -4.128988298770933
+    },
+    "sumateraselatan|penukalabablematangilir": {
+      "lon": 104.01079718617878,
+      "lat": -3.2148939289615956
+    },
+    "sumateraselatan|kotalubuklinggau": {
+      "lon": 102.85086668285312,
+      "lat": -3.2527099609958725
+    },
+    "sumateraselatan|kotapagaralam": {
+      "lon": 103.26761762844207,
+      "lat": -4.137841637331643
+    },
+    "sumateraselatan|kotapalembang": {
+      "lon": 104.74481107670837,
+      "lat": -2.979079949180255
+    },
+    "sumateraselatan|kotaprabumulih": {
+      "lon": 104.23640125951725,
+      "lat": -3.4291011435029244
+    },
+    "sumaterautara|asahan": {
+      "lon": 99.62247778817974,
+      "lat": 2.851733206971984
+    },
+    "sumaterautara|batubara": {
+      "lon": 99.50469136138017,
+      "lat": 3.222246666600469
+    },
+    "sumaterautara|dairi": {
+      "lon": 98.30960141309448,
+      "lat": 2.8350619157248893
+    },
+    "sumaterautara|deliserdang": {
+      "lon": 98.71474068497051,
+      "lat": 3.46534396290361
+    },
+    "sumaterautara|humbanghasundutan": {
+      "lon": 98.60347173976844,
+      "lat": 2.239170955325351
+    },
+    "sumaterautara|karo": {
+      "lon": 98.33141614515546,
+      "lat": 3.082232875596768
+    },
+    "sumaterautara|labuhanbatu": {
+      "lon": 100.1896553421058,
+      "lat": 2.2632632650376934
+    },
+    "sumaterautara|labuhanbatuselatan": {
+      "lon": 100.07918925702023,
+      "lat": 1.8489915515189388
+    },
+    "sumaterautara|labuhanbatuutara": {
+      "lon": 99.76926930541683,
+      "lat": 2.430742144934081
+    },
+    "sumaterautara|langkat": {
+      "lon": 98.17086762667077,
+      "lat": 3.7562467105173294
+    },
+    "sumaterautara|mandailingnatal": {
+      "lon": 99.44015999700213,
+      "lat": 0.7862558952933725
+    },
+    "sumaterautara|nias": {
+      "lon": 97.72591577221394,
+      "lat": 1.0961406396288815
+    },
+    "sumaterautara|niasbarat": {
+      "lon": 97.50242516020643,
+      "lat": 1.0415586253803095
+    },
+    "sumaterautara|niasselatan": {
+      "lon": 98.68425818767456,
+      "lat": 0.13043260423135372
+    },
+    "sumaterautara|niasutara": {
+      "lon": 97.33890945030107,
+      "lat": 1.3096107486871151
+    },
+    "sumaterautara|padanglawas": {
+      "lon": 99.81949388772833,
+      "lat": 1.1547422128828728
+    },
+    "sumaterautara|padanglawasutara": {
+      "lon": 99.78997025502986,
+      "lat": 1.633592537865411
+    },
+    "sumaterautara|pakpakbharat": {
+      "lon": 98.25584066194875,
+      "lat": 2.5238863852485167
+    },
+    "sumaterautara|samosir": {
+      "lon": 98.73521579469708,
+      "lat": 2.575065783958827
+    },
+    "sumaterautara|serdangbedagai": {
+      "lon": 98.99339611218167,
+      "lat": 3.3469560900016173
+    },
+    "sumaterautara|simalungun": {
+      "lon": 98.78261307441741,
+      "lat": 2.9519600962814465
+    },
+    "sumaterautara|tapanuliselatan": {
+      "lon": 99.2173315050093,
+      "lat": 1.5527737044929353
+    },
+    "sumaterautara|tapanulitengah": {
+      "lon": 98.68687994599712,
+      "lat": 1.8595502591871345
+    },
+    "sumaterautara|tapanuliutara": {
+      "lon": 99.06209371864963,
+      "lat": 2.0244820445607576
+    },
+    "sumaterautara|toba": {
+      "lon": 99.25332970073885,
+      "lat": 2.3822789191368905
+    },
+    "sumaterautara|kotabinjai": {
+      "lon": 98.49508127954545,
+      "lat": 3.597232458361365
+    },
+    "sumaterautara|kotagunungsitoli": {
+      "lon": 97.5924910197339,
+      "lat": 1.2770542496539168
+    },
+    "sumaterautara|kotamedan": {
+      "lon": 98.67780995666752,
+      "lat": 3.637025318513686
+    },
+    "sumaterautara|kotapadangsidimpuan": {
+      "lon": 99.28376898217294,
+      "lat": 1.386056044500858
+    },
+    "sumaterautara|kotapematangsiantar": {
+      "lon": 99.05789207508329,
+      "lat": 2.9527920172877966
+    },
+    "sumaterautara|kotasibolga": {
+      "lon": 98.78975127872724,
+      "lat": 1.737948733597225
+    },
+    "sumaterautara|kotatanjungbalai": {
+      "lon": 99.79704602870584,
+      "lat": 2.9726836368904266
+    },
+    "sumaterautara|kotatebingtinggi": {
+      "lon": 99.15869253641691,
+      "lat": 3.3218718483071665
+    }
+  },
+  "bboxes": {
+    "aceh|acehbarat": [
+      95.87630717723445,
+      4.106927021764694,
+      96.49627426764337,
+      4.750086142061804
+    ],
+    "aceh|acehbaratdaya": [
+      96.58469921479706,
+      3.5746917611159326,
+      97.15446888882819,
+      4.0941316412622655
+    ],
+    "aceh|acehbesar": [
+      94.97191104555839,
+      5.051980244093034,
+      95.83991963508313,
+      5.79362729716204
+    ],
+    "aceh|acehjaya": [
+      95.28327340704219,
+      4.36978426972836,
+      96.04277202970547,
+      5.2542029666935655
+    ],
+    "aceh|acehselatan": [
+      96.94249365266,
+      2.3948588013926493,
+      97.90665470664945,
+      3.7414972219193423
+    ],
+    "aceh|acehsingkil": [
+      97.07643953435709,
+      1.9771520009641304,
+      98.19704836199239,
+      2.581949460199537
+    ],
+    "aceh|acehtamiang": [
+      97.72827293684664,
+      3.888780538790847,
+      98.28734661585369,
+      4.52317205064967
+    ],
+    "aceh|acehtengah": [
+      96.2574730003787,
+      4.1744505401603895,
+      97.36819755567275,
+      4.9556151520177
+    ],
+    "aceh|acehtenggara": [
+      97.20648681271632,
+      2.9275549996635277,
+      98.02925492037829,
+      3.74945027840765
+    ],
+    "aceh|acehtimur": [
+      97.25630800131327,
+      4.1556561141384165,
+      98.01977727739951,
+      5.249198368110196
+    ],
+    "aceh|acehutara": [
+      96.78826195062854,
+      4.7371498665731195,
+      97.51647353702421,
+      5.262664566416685
+    ],
+    "aceh|benermeriah": [
+      96.57314242108598,
+      4.578143804093337,
+      97.32869200013573,
+      4.972032473819631
+    ],
+    "aceh|bireuen": [
+      96.32713829559597,
+      4.8892387746497725,
+      96.92522611539293,
+      5.2764314692369965
+    ],
+    "aceh|gayolues": [
+      96.71648901505604,
+      3.6732338366723063,
+      97.92191634386424,
+      4.282643997822277
+    ],
+    "aceh|naganraya": [
+      96.18968095880926,
+      3.73262068579605,
+      96.79926445529047,
+      4.63221900000692
+    ],
+    "aceh|pidie": [
+      95.7252791193359,
+      4.675218877649122,
+      96.47728299261613,
+      5.56938838396681
+    ],
+    "aceh|pidiejaya": [
+      96.02025991066643,
+      4.909647606052236,
+      96.36430442221139,
+      5.2971322871253825
+    ],
+    "aceh|simeulue": [
+      95.38592503990874,
+      2.057764779421076,
+      96.68864437134076,
+      3.0173929283409997
+    ],
+    "aceh|kotabandaaceh": [
+      95.27299265328836,
+      5.5163668562454795,
+      95.37762597555833,
+      5.610809126739834
+    ],
+    "aceh|kotalangsa": [
+      97.86779669266329,
+      4.405035702835413,
+      98.08447319598127,
+      4.561038803098349
+    ],
+    "aceh|kotalhokseumawe": [
+      97.026240055834,
+      5.080375563381633,
+      97.17876887268538,
+      5.241785029855283
+    ],
+    "aceh|kotasabang": [
+      95.1102978379749,
+      5.77477748009667,
+      95.37503001322462,
+      6.0767917531369555
+    ],
+    "aceh|kotasubulussalam": [
+      97.76652640317108,
+      2.4988105562621516,
+      98.11689972184473,
+      3.0085679998134154
+    ],
+    "bali|badung": [
+      115.0851926043553,
+      -8.848048783424627,
+      115.25136207090296,
+      -8.240204232239439
+    ],
+    "bali|bangli": [
+      115.23232016134652,
+      -8.525350698675798,
+      115.45897004902865,
+      -8.144758491910835
+    ],
+    "bali|buleleng": [
+      114.43224626385404,
+      -8.382813249931491,
+      115.45718639663495,
+      -8.061683489301501
+    ],
+    "bali|gianyar": [
+      115.22531794906408,
+      -8.650443024625858,
+      115.3710549734084,
+      -8.314699769978322
+    ],
+    "bali|jembrana": [
+      114.43177125813715,
+      -8.467107038958659,
+      114.93307778321318,
+      -8.160688826328215
+    ],
+    "bali|karangasem": [
+      115.38999543314279,
+      -8.550722181583374,
+      115.71241102105182,
+      -8.167684743356212
+    ],
+    "bali|klungkung": [
+      115.35339839302148,
+      -8.819457964113724,
+      115.63048200384151,
+      -8.461148169752146
+    ],
+    "bali|tabanan": [
+      114.91556391084586,
+      -8.637282336810319,
+      115.2174114064113,
+      -8.243169609989458
+    ],
+    "bali|kotadenpasar": [
+      115.17250843741455,
+      -8.752062260964504,
+      115.27488099266374,
+      -8.59153955840382
+    ],
+    "banten|lebak": [
+      105.8629688245517,
+      -6.997482091924993,
+      106.52616724392325,
+      -6.290736277756962
+    ],
+    "banten|pandeglang": [
+      105.10135302602143,
+      -7.01384276722992,
+      106.18023585220288,
+      -6.223472731781125
+    ],
+    "banten|serang": [
+      105.82686042117159,
+      -6.335149188184434,
+      106.40986658327624,
+      -5.807602668028692
+    ],
+    "banten|tangerang": [
+      106.33938623968332,
+      -6.362724522718536,
+      106.72504414497135,
+      -6.0035301228168505
+    ],
+    "banten|kotacilegon": [
+      105.92452358119837,
+      -6.080545581613243,
+      106.08803241786188,
+      -5.876998826734407
+    ],
+    "banten|kotaserang": [
+      106.06699840924924,
+      -6.218874294912683,
+      106.25574077461707,
+      -6.016224405132124
+    ],
+    "banten|kotatangerang": [
+      106.55261464694844,
+      -6.256101132061501,
+      106.74723136413618,
+      -6.097068797686837
+    ],
+    "banten|kotatangerangselatan": [
+      106.63670662900776,
+      -6.362190373087166,
+      106.77986321601469,
+      -6.229894257214123
+    ],
+    "bengkulu|bengkuluselatan": [
+      102.79623621822692,
+      -4.5591576118343,
+      103.28886111095163,
+      -4.161480912214335
+    ],
+    "bengkulu|bengkulutengah": [
+      102.19902708822956,
+      -3.8709098548059178,
+      102.62033333341668,
+      -3.476166667257788
+    ],
+    "bengkulu|bengkuluutara": [
+      101.03277021407419,
+      -5.514358457676653,
+      102.41677777777231,
+      -2.7288018397330998
+    ],
+    "bengkulu|kaur": [
+      103.07029527770496,
+      -4.922387835430156,
+      103.79048804468752,
+      -4.257008933315534
+    ],
+    "bengkulu|kepahiang": [
+      102.43371820463146,
+      -3.799224543777571,
+      102.81079700028141,
+      -3.494539949758815
+    ],
+    "bengkulu|lebong": [
+      101.91910570176678,
+      -3.383522268337982,
+      102.50050967038501,
+      -2.721827052276618
+    ],
+    "bengkulu|mukomuko": [
+      101.02239169142348,
+      -3.128626579053309,
+      101.8658294698542,
+      -2.2899325499472294
+    ],
+    "bengkulu|rejanglebong": [
+      102.36967366230975,
+      -3.616462405615531,
+      103.00555891031553,
+      -3.2687655359007
+    ],
+    "bengkulu|seluma": [
+      102.30063035530674,
+      -4.35394344643292,
+      103.00270750005117,
+      -3.802200000229819
+    ],
+    "bengkulu|kotabengkulu": [
+      102.17927295608209,
+      -3.9820644427198264,
+      102.37133972205058,
+      -3.740010383372441
+    ],
+    "diyogyakarta|bantul": [
+      110.21149904934171,
+      -8.028066897769097,
+      110.52130889678826,
+      -7.77000707426703
+    ],
+    "diyogyakarta|gunungkidul": [
+      110.33152831268153,
+      -8.20562263577596,
+      110.83881134626662,
+      -7.782895458158804
+    ],
+    "diyogyakarta|kulonprogo": [
+      110.00352917503145,
+      -7.983111751905784,
+      110.27358694837905,
+      -7.642342693560415
+    ],
+    "diyogyakarta|sleman": [
+      110.21591039664754,
+      -7.8358955973038915,
+      110.54358415328618,
+      -7.54116155925855
+    ],
+    "diyogyakarta|kotayogyakarta": [
+      110.34480091033376,
+      -7.839928598925709,
+      110.4035659987719,
+      -7.768221533297107
+    ],
+    "dkijakarta|kepulauanseribu": [
+      106.39059040932001,
+      -6.040184090922977,
+      106.84778942384284,
+      -5.202448421657271
+    ],
+    "dkijakarta|kotajakartabarat": [
+      106.6858047231095,
+      -6.2269055744326876,
+      106.82833552136725,
+      -6.095626598988328
+    ],
+    "dkijakarta|kotajakartapusat": [
+      106.79187530769931,
+      -6.22926313458592,
+      106.8814047131571,
+      -6.135136714987403
+    ],
+    "dkijakarta|kotajakartaselatan": [
+      106.73742805685939,
+      -6.364594415599782,
+      106.8655025140299,
+      -6.2026690233566475
+    ],
+    "dkijakarta|kotajakartatimur": [
+      106.83939900905713,
+      -6.372512971396453,
+      106.97300405938994,
+      -6.154332760248663
+    ],
+    "dkijakarta|kotajakartautara": [
+      106.71050724261525,
+      -6.183116056960428,
+      106.97150866759101,
+      -6.074315556917379
+    ],
+    "gorontalo|boalemo": [
+      122.10134723638589,
+      0.40520592911035,
+      122.6554771073827,
+      0.9117389631826374
+    ],
+    "gorontalo|bonebolango": [
+      123.05617859396702,
+      0.3062813916729663,
+      123.55229455504968,
+      0.8055654269029962
+    ],
+    "gorontalo|gorontalo": [
+      122.24508997722069,
+      0.4732889930926216,
+      123.08070119600349,
+      0.9291882516365231
+    ],
+    "gorontalo|gorontaloutara": [
+      121.98202553265227,
+      0.6917152452623672,
+      123.27412911376771,
+      1.055647709873961
+    ],
+    "gorontalo|pohuwato": [
+      121.16169109656691,
+      0.40990958575888037,
+      122.12744048908736,
+      0.9930381635803815
+    ],
+    "gorontalo|kotagorontalo": [
+      122.9950361162239,
+      0.4796797770002055,
+      123.09994000043073,
+      0.5899756328691748
+    ],
+    "jambi|batanghari": [
+      102.47711111028958,
+      -2.3596027779458044,
+      103.47419636237231,
+      -1.3488609590660143
+    ],
+    "jambi|bungo": [
+      101.43750032527988,
+      -1.909249999987475,
+      102.51312643203929,
+      -1.123081945175544
+    ],
+    "jambi|kerinci": [
+      101.13166666658341,
+      -2.451949465295547,
+      101.83682952736085,
+      -1.6726828528313558
+    ],
+    "jambi|merangin": [
+      101.54012036406363,
+      -2.7685194437172793,
+      102.62908333312939,
+      -1.6501163598820394
+    ],
+    "jambi|muarojambi": [
+      103.2204127342603,
+      -2.173675000101108,
+      104.36251066073844,
+      -1.2345892103237137
+    ],
+    "jambi|sarolangun": [
+      102.06396388882247,
+      -2.766657827296884,
+      103.23091666737035,
+      -1.8914444442056837
+    ],
+    "jambi|tanjungjabungbarat": [
+      102.64358137937718,
+      -1.4540833327795237,
+      103.57395650129156,
+      -0.7315487518732926
+    ],
+    "jambi|tanjungjabungtimur": [
+      103.32978290895417,
+      -1.6812029516547948,
+      104.49877893729817,
+      -0.8729517787015499
+    ],
+    "jambi|tebo": [
+      101.81519440020145,
+      -1.8999555561039632,
+      102.82409604339776,
+      -0.8784579237940431
+    ],
+    "jambi|kotajambi": [
+      103.52421944427196,
+      -1.6961313891522583,
+      103.67994444358125,
+      -1.5483333327170694
+    ],
+    "jambi|kotasungaipenuh": [
+      101.23968305582848,
+      -2.2510000001497747,
+      101.4538139003913,
+      -2.0266438891041876
+    ],
+    "jawabarat|bandung": [
+      107.25144795056251,
+      -7.309305695901073,
+      107.93843227612868,
+      -6.812852939611406
+    ],
+    "jawabarat|bandungbarat": [
+      107.18217119844212,
+      -7.1071777618442225,
+      107.74569250700361,
+      -6.6895891988823655
+    ],
+    "jawabarat|bekasi": [
+      106.970621261562,
+      -6.485828759689464,
+      107.29662336107927,
+      -5.918552456930274
+    ],
+    "jawabarat|bogor": [
+      106.40126871018285,
+      -6.78747373512472,
+      107.22715544007158,
+      -6.302884735442119
+    ],
+    "jawabarat|ciamis": [
+      108.16702539460638,
+      -7.573915372696297,
+      108.72306078872451,
+      -7.051960317214848
+    ],
+    "jawabarat|cianjur": [
+      106.77714513833753,
+      -7.50284707932927,
+      107.48456408606378,
+      -6.604940633603266
+    ],
+    "jawabarat|cirebon": [
+      108.32352454472206,
+      -7.006006618110908,
+      108.84663877326088,
+      -6.516445812724018
+    ],
+    "jawabarat|garut": [
+      107.42028193836083,
+      -7.7406215168694095,
+      108.13635083981949,
+      -6.947613939831391
+    ],
+    "jawabarat|indramayu": [
+      107.85143120398695,
+      -6.6639586302865075,
+      108.54260291509249,
+      -5.806608997207422
+    ],
+    "jawabarat|karawang": [
+      107.0843812699797,
+      -6.590748932417227,
+      107.64279358305753,
+      -5.940207701923831
+    ],
+    "jawabarat|kuningan": [
+      108.38313999971125,
+      -7.194385362394477,
+      108.79337201390739,
+      -6.781915064228786
+    ],
+    "jawabarat|majalengka": [
+      108.04222189222662,
+      -7.073609370376114,
+      108.40765000044726,
+      -6.542554229793821
+    ],
+    "jawabarat|pangandaran": [
+      108.31293365616338,
+      -7.820099934564232,
+      108.8003866332366,
+      -7.461077756633098
+    ],
+    "jawabarat|purwakarta": [
+      107.22051254831554,
+      -6.773154432730858,
+      107.59892800002723,
+      -6.408200664728873
+    ],
+    "jawabarat|subang": [
+      107.52649700982919,
+      -6.814269808005217,
+      107.92541902137083,
+      -6.182229397368725
+    ],
+    "jawabarat|sukabumi": [
+      106.37027257581876,
+      -7.4372497091068,
+      107.06397675532304,
+      -6.715603831951248
+    ],
+    "jawabarat|sumedang": [
+      107.74324740324512,
+      -7.040722501342315,
+      108.22001546134456,
+      -6.57921621985265
+    ],
+    "jawabarat|tasikmalaya": [
+      107.90453985533019,
+      -7.820458738879647,
+      108.44241003139794,
+      -7.03922726962272
+    ],
+    "jawabarat|kotabandung": [
+      107.54554618141127,
+      -6.969499127082982,
+      107.73819204512687,
+      -6.83708198044897
+    ],
+    "jawabarat|kotabanjar": [
+      108.4696152562391,
+      -7.444531997253793,
+      108.66485520540346,
+      -7.334995983977403
+    ],
+    "jawabarat|kotabekasi": [
+      106.89942917022007,
+      -6.398430178210094,
+      107.04238958900844,
+      -6.172313503065644
+    ],
+    "jawabarat|kotabogor": [
+      106.73548419743778,
+      -6.681089000257127,
+      106.84848312039975,
+      -6.5149030122640985
+    ],
+    "jawabarat|kotacimahi": [
+      107.51035307293601,
+      -6.932867999958229,
+      107.57618571479895,
+      -6.8283574117651105
+    ],
+    "jawabarat|kotacirebon": [
+      108.51823084697602,
+      -6.796386793615542,
+      108.59111272037578,
+      -6.6913266054385
+    ],
+    "jawabarat|kotadepok": [
+      106.71707274231329,
+      -6.461867180825624,
+      106.91845821227673,
+      -6.314935114863633
+    ],
+    "jawabarat|kotasukabumi": [
+      106.87379266430008,
+      -6.97819551281265,
+      106.9556684983026,
+      -6.893183598943934
+    ],
+    "jawabarat|kotatasikmalaya": [
+      108.1524714231177,
+      -7.450503948898105,
+      108.3094143230127,
+      -7.270900740576706
+    ],
+    "jawatengah|banjarnegara": [
+      109.36170125460929,
+      -7.540893645825068,
+      109.9177086537314,
+      -7.171622441322504
+    ],
+    "jawatengah|banyumas": [
+      108.88939445708857,
+      -7.665842929207737,
+      109.44637299092085,
+      -7.246898080681844
+    ],
+    "jawatengah|batang": [
+      109.67329486776404,
+      -7.195768615928858,
+      110.05104224820126,
+      -6.868076644421509
+    ],
+    "jawatengah|blora": [
+      111.09787006115448,
+      -7.3781215976335615,
+      111.62989782212686,
+      -6.849653498110423
+    ],
+    "jawatengah|boyolali": [
+      110.37713147223972,
+      -7.626116487585736,
+      110.85875857364928,
+      -7.141044773197684
+    ],
+    "jawatengah|brebes": [
+      108.69324372311941,
+      -7.351504999755924,
+      109.19689900038861,
+      -6.758505721261957
+    ],
+    "jawatengah|cilacap": [
+      108.5559760092855,
+      -7.784361592313597,
+      109.39393871330105,
+      -7.138700808995128
+    ],
+    "jawatengah|demak": [
+      110.47720174326591,
+      -7.1481532160980334,
+      110.8335249999788,
+      -6.7081770110601715
+    ],
+    "jawatengah|grobogan": [
+      110.5379079913608,
+      -7.282065550384757,
+      111.24920604062633,
+      -6.931749729866147
+    ],
+    "jawatengah|jepara": [
+      110.16319199981096,
+      -6.79484279525873,
+      110.97387199429717,
+      -5.725794999939263
+    ],
+    "jawatengah|karanganyar": [
+      110.70836090003559,
+      -7.783012968973305,
+      111.1966178944004,
+      -7.458038739695975
+    ],
+    "jawatengah|kebumen": [
+      109.3787593586575,
+      -7.83123002064892,
+      109.83925075971484,
+      -7.445676052707632
+    ],
+    "jawatengah|kendal": [
+      109.9226751057716,
+      -7.201375173925121,
+      110.36639236371666,
+      -6.833058517036842
+    ],
+    "jawatengah|klaten": [
+      110.44522491170042,
+      -7.808581260416839,
+      110.79927643056286,
+      -7.539069780246147
+    ],
+    "jawatengah|kudus": [
+      110.75832341799142,
+      -6.979651927994083,
+      110.97699713660869,
+      -6.619277477273736
+    ],
+    "jawatengah|magelang": [
+      110.04345501793479,
+      -7.7063155788008855,
+      110.44522491170042,
+      -7.323765981414868
+    ],
+    "jawatengah|pati": [
+      110.80254873163865,
+      -7.001990729688393,
+      111.2708750011804,
+      -6.410414853162897
+    ],
+    "jawatengah|pekalongan": [
+      109.48344421208077,
+      -7.244427953287395,
+      109.79911318132831,
+      -6.840614960811723
+    ],
+    "jawatengah|pemalang": [
+      109.18721669239645,
+      -7.247229999764641,
+      109.59587096657192,
+      -6.7719964638656185
+    ],
+    "jawatengah|purbalingga": [
+      109.22367400035486,
+      -7.4934999999250165,
+      109.58410172331595,
+      -7.165098134171525
+    ],
+    "jawatengah|purworejo": [
+      109.79796865822703,
+      -7.896328014426305,
+      110.14136616511647,
+      -7.517686053168741
+    ],
+    "jawatengah|rembang": [
+      111.23394251393594,
+      -6.9117124686554545,
+      111.69139365519311,
+      -6.620639585948122
+    ],
+    "jawatengah|semarang": [
+      110.24832383467735,
+      -7.496672039183209,
+      110.66149184667144,
+      -7.0793982731117735
+    ],
+    "jawatengah|sragen": [
+      110.76909369521795,
+      -7.53743013179509,
+      111.15527982900095,
+      -7.247508994644373
+    ],
+    "jawatengah|sukoharjo": [
+      110.70264972210705,
+      -7.825803453866235,
+      110.96043500327288,
+      -7.539393058642733
+    ],
+    "jawatengah|tegal": [
+      108.95128179471915,
+      -7.249768748129152,
+      109.35991788460277,
+      -6.844534770163494
+    ],
+    "jawatengah|temanggung": [
+      109.93550489703343,
+      -7.403962889075969,
+      110.3328277044351,
+      -7.080910644110875
+    ],
+    "jawatengah|wonogiri": [
+      110.75568648164588,
+      -8.211254465621014,
+      111.31450628383799,
+      -7.709197260245374
+    ],
+    "jawatengah|wonosobo": [
+      109.73052128812701,
+      -7.611380674078808,
+      110.07430140438632,
+      -7.189850484212438
+    ],
+    "jawatengah|kotamagelang": [
+      110.19889230793366,
+      -7.506027000245811,
+      110.23665618873221,
+      -7.433925636758668
+    ],
+    "jawatengah|kotapekalongan": [
+      109.64224805210596,
+      -6.936817948289579,
+      109.71139528656326,
+      -6.8531156361775905
+    ],
+    "jawatengah|kotasalatiga": [
+      110.46630221727358,
+      -7.390407135380953,
+      110.53517634111533,
+      -7.286156993550356
+    ],
+    "jawatengah|kotasemarang": [
+      110.26971075974383,
+      -7.115463946104209,
+      110.50522536286029,
+      -6.9340835982794315
+    ],
+    "jawatengah|kotasurakarta": [
+      110.7691593286402,
+      -7.594865120229048,
+      110.86903832375971,
+      -7.522545955331487
+    ],
+    "jawatengah|kotategal": [
+      109.07643260717916,
+      -6.899157470640719,
+      109.16167113131772,
+      -6.840165361841936
+    ],
+    "jawatimur|bangkalan": [
+      112.67375490636391,
+      -7.2127817817538,
+      113.14745479330416,
+      -6.879638157774685
+    ],
+    "jawatimur|banyuwangi": [
+      113.83759286771668,
+      -8.780203437238825,
+      114.6052621351395,
+      -7.88533180232072
+    ],
+    "jawatimur|blitar": [
+      111.95570127939064,
+      -8.352427999852257,
+      112.47801486309547,
+      -7.92650689257897
+    ],
+    "jawatimur|bojonegoro": [
+      111.42351454436078,
+      -7.469639719797153,
+      112.1654437237489,
+      -6.986354737980686
+    ],
+    "jawatimur|bondowoso": [
+      113.62326034568848,
+      -8.127024158837841,
+      114.24851965405887,
+      -7.755020956052209
+    ],
+    "jawatimur|gresik": [
+      112.36708384034705,
+      -7.408522238710339,
+      112.7784416852356,
+      -5.715772062031003
+    ],
+    "jawatimur|jember": [
+      113.26329769633172,
+      -8.562401375722821,
+      114.04684825274482,
+      -7.9685404738637535
+    ],
+    "jawatimur|jombang": [
+      112.06263056275031,
+      -7.779216080757471,
+      112.45562251576656,
+      -7.344264864631692
+    ],
+    "jawatimur|kediri": [
+      111.79708097840445,
+      -8.012561786197452,
+      112.41734288906311,
+      -7.593147717293273
+    ],
+    "jawatimur|lamongan": [
+      112.07256313677944,
+      -7.3837741991199115,
+      112.55247691997396,
+      -6.861206804250556
+    ],
+    "jawatimur|lumajang": [
+      112.90013414487495,
+      -8.357467823081581,
+      113.37948254408425,
+      -7.899212223864963
+    ],
+    "jawatimur|madiun": [
+      111.45072050394816,
+      -7.811145259046429,
+      111.84957721121937,
+      -7.410661356236562
+    ],
+    "jawatimur|magetan": [
+      111.18152661666014,
+      -7.800406000336561,
+      111.51456950038222,
+      -7.509277777847138
+    ],
+    "jawatimur|malang": [
+      112.28740688472,
+      -8.463936483581751,
+      112.9499458105507,
+      -7.763930698742686
+    ],
+    "jawatimur|mojokerto": [
+      112.33187513223163,
+      -7.779216080757471,
+      112.66376859604398,
+      -7.303954922181858
+    ],
+    "jawatimur|nganjuk": [
+      111.72534528915381,
+      -7.836208771817325,
+      112.16911311238024,
+      -7.394113932212213
+    ],
+    "jawatimur|ngawi": [
+      111.11842410159107,
+      -7.620091064950677,
+      111.67350516483158,
+      -7.245349313220188
+    ],
+    "jawatimur|pacitan": [
+      110.89528623737006,
+      -8.284655416014601,
+      111.42655941858234,
+      -7.918143693076888
+    ],
+    "jawatimur|pamekasan": [
+      113.3610349892734,
+      -7.254023861611873,
+      113.64971734358062,
+      -6.887702400145627
+    ],
+    "jawatimur|pasuruan": [
+      112.57480731300713,
+      -7.956755844106826,
+      113.10017601780903,
+      -7.545104690728869
+    ],
+    "jawatimur|ponorogo": [
+      111.27929396764259,
+      -8.175518790759533,
+      111.7847518640074,
+      -7.768378161023274
+    ],
+    "jawatimur|probolinggo": [
+      112.9261429467397,
+      -8.027884799443878,
+      113.64356000029383,
+      -7.6763074648176035
+    ],
+    "jawatimur|sampang": [
+      113.04082060718527,
+      -7.314554331816917,
+      113.48330939301411,
+      -6.8867821310904445
+    ],
+    "jawatimur|sidoarjo": [
+      112.45668788144064,
+      -7.577428311667215,
+      112.87784833573224,
+      -7.330238035257056
+    ],
+    "jawatimur|situbondo": [
+      113.5727003550375,
+      -7.993019447989073,
+      114.46703593556006,
+      -7.604774263321516
+    ],
+    "jawatimur|sumenep": [
+      113.57624406431214,
+      -7.252018336576941,
+      116.26951799965607,
+      -5.042965329086593
+    ],
+    "jawatimur|trenggalek": [
+      111.39217376640624,
+      -8.40662268329016,
+      111.84693056759173,
+      -7.879155408695108
+    ],
+    "jawatimur|tuban": [
+      111.56721980774803,
+      -7.165039226778872,
+      112.22246448714645,
+      -6.757138010710565
+    ],
+    "jawatimur|tulungagung": [
+      111.71686483694268,
+      -8.38818686733001,
+      112.12200866866523,
+      -7.834342897106942
+    ],
+    "jawatimur|kotabatu": [
+      112.47462747307952,
+      -7.939368583693155,
+      112.5950861474079,
+      -7.734705541727286
+    ],
+    "jawatimur|kotablitar": [
+      112.13349535122947,
+      -8.134868418043055,
+      112.20051350369535,
+      -8.056481551582255
+    ],
+    "jawatimur|kotakediri": [
+      111.95547887255192,
+      -7.8758033242640115,
+      112.08194103684944,
+      -7.7714372796067
+    ],
+    "jawatimur|kotamadiun": [
+      111.49686114062926,
+      -7.680507226826964,
+      111.55901449412366,
+      -7.5951264767055084
+    ],
+    "jawatimur|kotamalang": [
+      112.56894724601867,
+      -8.05157467692979,
+      112.69377060273118,
+      -7.91401328858237
+    ],
+    "jawatimur|kotamojokerto": [
+      112.40765593697196,
+      -7.494052132399957,
+      112.46847998366431,
+      -7.447384435443264
+    ],
+    "jawatimur|kotapasuruan": [
+      112.87217969303842,
+      -7.685848790589115,
+      112.95314205955847,
+      -7.617444585898862
+    ],
+    "jawatimur|kotaprobolinggo": [
+      113.16293964225072,
+      -7.820162117287825,
+      113.2424981742514,
+      -7.722469476585018
+    ],
+    "jawatimur|kotasurabaya": [
+      112.59010768042513,
+      -7.351435510939978,
+      112.8462999888535,
+      -7.192164142161398
+    ],
+    "kalimantanbarat|bengkayang": [
+      108.69277642729035,
+      0.5304996879103658,
+      110.14373840310482,
+      1.536785730277332
+    ],
+    "kalimantanbarat|kapuashulu": [
+      111.52898412731572,
+      0.06620489384083506,
+      114.2055225832007,
+      1.5855231260914788
+    ],
+    "kalimantanbarat|kayongutara": [
+      108.67789122919694,
+      -1.7445040181458342,
+      110.42165682310397,
+      -0.723236945028896
+    ],
+    "kalimantanbarat|ketapang": [
+      109.80806089879152,
+      -3.0679185242204614,
+      111.34139898527502,
+      -0.3241940151416127
+    ],
+    "kalimantanbarat|kuburaya": [
+      109.05325661759889,
+      -1.0141067877979442,
+      109.97253272320663,
+      0.22978351699578248
+    ],
+    "kalimantanbarat|landak": [
+      109.15161111076424,
+      -0.032364186557900965,
+      110.26026227908099,
+      1.0369441405596564
+    ],
+    "kalimantanbarat|melawi": [
+      111.1140867567984,
+      -1.3203302783196396,
+      112.46275138856585,
+      -0.13067881997155517
+    ],
+    "kalimantanbarat|mempawah": [
+      108.5994959459812,
+      0.005904580831758821,
+      109.38054160720944,
+      0.6805677231219693
+    ],
+    "kalimantanbarat|sambas": [
+      108.90337852280065,
+      0.9587486678167974,
+      109.75349842231441,
+      2.0814594439982432
+    ],
+    "kalimantanbarat|sanggau": [
+      109.84216670982582,
+      -0.4995107227416167,
+      111.01306240760411,
+      1.1992677058399988
+    ],
+    "kalimantanbarat|sekadau": [
+      110.55311498666735,
+      -0.6807103500025473,
+      111.29658097073525,
+      0.7392178683100799
+    ],
+    "kalimantanbarat|sintang": [
+      110.7586778012396,
+      -0.7001625068941113,
+      113.4432009733463,
+      1.0852355823562672
+    ],
+    "kalimantanbarat|kotapontianak": [
+      109.27416764711927,
+      -0.09816330079564217,
+      109.38499999985011,
+      0.038116786560513205
+    ],
+    "kalimantanbarat|kotasingkawang": [
+      108.87380714118666,
+      0.7451541672310409,
+      109.175714460554,
+      1.0180184593844483
+    ],
+    "kalimantanselatan|balangan": [
+      115.31446321630453,
+      -2.5323905559793385,
+      115.83628319181594,
+      -2.040595486592414
+    ],
+    "kalimantanselatan|banjar": [
+      114.49881910981412,
+      -3.72875332740408,
+      115.59581197074588,
+      -2.83049954371897
+    ],
+    "kalimantanselatan|baritokuala": [
+      114.34709776005369,
+      -3.518871935091708,
+      114.86922222172821,
+      -2.526632715827118
+    ],
+    "kalimantanselatan|hulusungaiselatan": [
+      114.86455448310299,
+      -2.937227510241394,
+      115.59794271198666,
+      -2.4990733217763488
+    ],
+    "kalimantanselatan|hulusungaitengah": [
+      115.15472298237978,
+      -2.782556388666338,
+      115.81957730904563,
+      -2.4535039272643804
+    ],
+    "kalimantanselatan|hulusungaiutara": [
+      114.85932616916742,
+      -2.5546250668932817,
+      115.3982455689779,
+      -2.2962180196458153
+    ],
+    "kalimantanselatan|kotabaru": [
+      115.51210920537567,
+      -4.942744078076691,
+      117.45809995185145,
+      -2.3073855921712987
+    ],
+    "kalimantanselatan|tabalong": [
+      115.12550284987665,
+      -2.35963990735584,
+      115.75799845326605,
+      -1.314912800085624
+    ],
+    "kalimantanselatan|tanahbumbu": [
+      115.25000000359735,
+      -3.8612511639100315,
+      116.08503272627934,
+      -3.0049571676391356
+    ],
+    "kalimantanselatan|tanahlaut": [
+      114.51371848661897,
+      -4.177939975149661,
+      115.37728013996654,
+      -3.510664624972451
+    ],
+    "kalimantanselatan|tapin": [
+      114.7991581644178,
+      -3.193638889023445,
+      115.50610888911403,
+      -2.5265200829353933
+    ],
+    "kalimantanselatan|kotabanjarbaru": [
+      114.67457899972115,
+      -3.569210544131243,
+      114.90765388601811,
+      -3.3774982342560183
+    ],
+    "kalimantanselatan|kotabanjarmasin": [
+      114.52228128615249,
+      -3.382140004057879,
+      114.65958907467609,
+      -3.269563718390847
+    ],
+    "kalimantantengah|baritoselatan": [
+      114.59680536297722,
+      -2.6062046171493574,
+      115.45454574878737,
+      -1.252287075887784
+    ],
+    "kalimantantengah|baritotimur": [
+      114.91339822914506,
+      -2.3957228554253778,
+      115.44329224783903,
+      -1.609257617844742
+    ],
+    "kalimantantengah|baritoutara": [
+      114.45362776870664,
+      -1.4615772745715265,
+      115.84935882984621,
+      -0.04589351277537723
+    ],
+    "kalimantantengah|gunungmas": [
+      113.15755959110231,
+      -1.654980555408228,
+      114.00800004586553,
+      -0.29082350060398987
+    ],
+    "kalimantantengah|kapuas": [
+      113.6782294497294,
+      -3.4635483335886423,
+      114.7973013890479,
+      -0.38403158918647584
+    ],
+    "kalimantantengah|katingan": [
+      112.0963400056868,
+      -3.3603253632248613,
+      113.76199999970031,
+      -0.45216448820049315
+    ],
+    "kalimantantengah|kotawaringinbarat": [
+      111.21755505861911,
+      -3.525744225915231,
+      112.13980759464481,
+      -1.4831611106966651
+    ],
+    "kalimantantengah|kotawaringintimur": [
+      112.06699999985018,
+      -3.2995907442174204,
+      113.26965555965633,
+      -1.1932063505925488
+    ],
+    "kalimantantengah|lamandau": [
+      110.86313604169501,
+      -2.3144022781425715,
+      111.84605708936323,
+      -1.2432771280369597
+    ],
+    "kalimantantengah|murungraya": [
+      113.22025254232108,
+      -0.8647500003122115,
+      115.13738753190911,
+      0.790647674250808
+    ],
+    "kalimantantengah|pulangpisau": [
+      113.58132675912269,
+      -3.466601220769652,
+      114.34874999991266,
+      -1.5205992138825923
+    ],
+    "kalimantantengah|seruyan": [
+      111.44598332956704,
+      -3.5413721623953425,
+      112.84499999995015,
+      -0.6999918209656979
+    ],
+    "kalimantantengah|sukamara": [
+      110.73321249925746,
+      -3.0654254677111386,
+      111.39772152223057,
+      -2.019411687799069
+    ],
+    "kalimantantengah|kotapalangkaraya": [
+      113.47568966034964,
+      -2.4035551185738218,
+      114.1082873286973,
+      -1.5847192390016556
+    ],
+    "kalimantantimur|berau": [
+      116.1751669995574,
+      0.9844939997982944,
+      119.03708614421019,
+      2.566412000013793
+    ],
+    "kalimantantimur|kutaibarat": [
+      115.22490459277275,
+      -1.1540449997768736,
+      116.52233607964637,
+      0.329684077858003
+    ],
+    "kalimantantimur|kutaikartanegara": [
+      115.23241965784094,
+      -1.140653243752146,
+      117.62802927882815,
+      1.5295059998021028
+    ],
+    "kalimantantimur|kutaitimur": [
+      115.96810323267809,
+      0.02250000437175892,
+      118.98754814223308,
+      1.8658914882016848
+    ],
+    "kalimantantimur|mahakamulu": [
+      113.83614768776567,
+      -0.2733772887308721,
+      115.76831647132815,
+      1.5207540197822862
+    ],
+    "kalimantantimur|paser": [
+      115.61693359670825,
+      -2.409592700942367,
+      116.59742462314796,
+      -0.966466000105795
+    ],
+    "kalimantantimur|penajampaserutara": [
+      116.33446857116769,
+      -1.5957833553175842,
+      116.9451613813927,
+      -0.7977703577157573
+    ],
+    "kalimantantimur|kotabalikpapan": [
+      116.72892384975594,
+      -1.2822534145634084,
+      117.02270169083044,
+      -1.0140469999690342
+    ],
+    "kalimantantimur|kotabontang": [
+      117.38833333271718,
+      0.02158972138854587,
+      117.56449266010829,
+      0.20412018429906986
+    ],
+    "kalimantantimur|kotasamarinda": [
+      117.0541660023592,
+      -0.7166940237101986,
+      117.29781997271373,
+      -0.3159239611218805
+    ],
+    "kalimantanutara|bulungan": [
+      115.98853931443782,
+      2.0962307879205806,
+      117.98822973591362,
+      3.5896412337560015
+    ],
+    "kalimantanutara|malinau": [
+      114.56164743328247,
+      1.114075090293218,
+      116.79406923420791,
+      4.121292999872072
+    ],
+    "kalimantanutara|nunukan": [
+      115.55820715123912,
+      3.407342559411596,
+      117.92619088859878,
+      4.4084616953510505
+    ],
+    "kalimantanutara|tanatidung": [
+      116.67591213004084,
+      3.3138417657849075,
+      117.82649368333692,
+      3.7958607090045717
+    ],
+    "kalimantanutara|kotatarakan": [
+      117.51465091570734,
+      3.23860187987297,
+      117.6686549516647,
+      3.442296582221548
+    ],
+    "kepulauanbangkabelitung|bangka": [
+      105.68791001823283,
+      -2.9426426340503102,
+      107.47247549264995,
+      -1.4935499710542448
+    ],
+    "kepulauanbangkabelitung|bangkabarat": [
+      105.10850870581218,
+      -2.1543104713511756,
+      105.81151094357526,
+      -1.5020606827542498
+    ],
+    "kepulauanbangkabelitung|bangkaselatan": [
+      105.87729188880971,
+      -3.1356906107330023,
+      107.10227199965315,
+      -2.440818648062118
+    ],
+    "kepulauanbangkabelitung|bangkatengah": [
+      105.74644377496028,
+      -2.7212022347953084,
+      107.08612899985359,
+      -2.1445374649320197
+    ],
+    "kepulauanbangkabelitung|belitung": [
+      107.10662317601886,
+      -3.353478254317979,
+      107.98422222217786,
+      -2.5243115953038657
+    ],
+    "kepulauanbangkabelitung|belitungtimur": [
+      107.74736111092663,
+      -3.8015621272902838,
+      108.87182602824869,
+      -2.4917405942529474
+    ],
+    "kepulauanbangkabelitung|kotapangkalpinang": [
+      106.04017389710775,
+      -2.160725072004402,
+      106.18224920763485,
+      -2.0574458256642973
+    ],
+    "kepulauanriau|bintan": [
+      104.21372872530046,
+      0.09983617310098403,
+      108.04456731243161,
+      1.5847565295901784
+    ],
+    "kepulauanriau|karimun": [
+      103.23114957559248,
+      0.47259858175918446,
+      103.98144943594275,
+      1.1917371841237507
+    ],
+    "kepulauanriau|kepulauananambas": [
+      105.37997053761028,
+      2.2998951246603756,
+      106.50095053344042,
+      3.45094329839457
+    ],
+    "kepulauanriau|lingga": [
+      104.02750354795046,
+      -1.2752441138247388,
+      105.76316521600197,
+      0.5099184258946483
+    ],
+    "kepulauanriau|natuna": [
+      107.55246905460322,
+      1.9001673682295301,
+      109.16710990639709,
+      4.7958215424303
+    ],
+    "kepulauanriau|kotabatam": [
+      103.65152110501501,
+      0.462651750777729,
+      104.3711523775802,
+      1.2063478830484282
+    ],
+    "kepulauanriau|kotatanjungpinang": [
+      104.33650524392195,
+      0.8290599887274848,
+      104.5520135656736,
+      0.9910833189400865
+    ],
+    "lampung|lampungbarat": [
+      103.81231757739441,
+      -5.354249999937525,
+      104.59045147305709,
+      -4.855780006741897
+    ],
+    "lampung|lampungselatan": [
+      105.114842391763,
+      -6.167562467433888,
+      105.83883461902255,
+      -5.17937019917534
+    ],
+    "lampung|lampungtengah": [
+      104.54756840206014,
+      -5.266689898420011,
+      105.91142781094473,
+      -4.482497646948749
+    ],
+    "lampung|lampungtimur": [
+      105.27848966016974,
+      -5.621042823267678,
+      106.28044012221395,
+      -4.619938157420014
+    ],
+    "lampung|lampungutara": [
+      104.49435696000575,
+      -5.088724124418745,
+      105.12538300102469,
+      -4.50410178167189
+    ],
+    "lampung|mesuji": [
+      105.04963619155708,
+      -4.2269299959225375,
+      105.7601627780898,
+      -3.7239088710974837
+    ],
+    "lampung|pesawaran": [
+      104.93429535124956,
+      -5.845432999733084,
+      105.39527739183822,
+      -5.121439347048165
+    ],
+    "lampung|pesisirbarat": [
+      103.590706375299,
+      -5.943141124063604,
+      104.66494509613928,
+      -4.779014734842038
+    ],
+    "lampung|pringsewu": [
+      104.77199471778202,
+      -5.576249208234322,
+      105.09781178718433,
+      -5.1569283756440125
+    ],
+    "lampung|tanggamus": [
+      104.26034405293574,
+      -5.936374574626838,
+      105.19507906025046,
+      -5.0943318938018205
+    ],
+    "lampung|tulangbawang": [
+      105.15593983995169,
+      -4.683157122103479,
+      105.91468023160748,
+      -4.110695424654034
+    ],
+    "lampung|tulangbawangbarat": [
+      104.92631519908727,
+      -4.726212830557655,
+      105.25527871933745,
+      -4.138668814414162
+    ],
+    "lampung|waykanan": [
+      104.28721647825793,
+      -4.943107242305336,
+      105.06847222201549,
+      -4.1913354237907345
+    ],
+    "lampung|kotabandarlampung": [
+      105.17844368792592,
+      -5.518265079369903,
+      105.35067351577021,
+      -5.326577762553678
+    ],
+    "lampung|kotametro": [
+      105.26296382012423,
+      -5.178750156194736,
+      105.35923374414205,
+      -5.054534027123639
+    ],
+    "maluku|buru": [
+      126.09983360913384,
+      -3.8145913477124953,
+      127.26892203022763,
+      -3.056689931794912
+    ],
+    "maluku|buruselatan": [
+      125.99520616842995,
+      -3.905005597030689,
+      127.24393178972036,
+      -3.1123565347262154
+    ],
+    "maluku|kepulauanaru": [
+      134.05176717971165,
+      -7.100441087885815,
+      134.9083735303143,
+      -5.328583625733677
+    ],
+    "maluku|kepulauantanimbar": [
+      126.65547853200871,
+      -8.341600013130073,
+      132.00831963794099,
+      -6.631590956057724
+    ],
+    "maluku|malukubaratdaya": [
+      125.7225203071665,
+      -8.343922999746649,
+      130.0928647743899,
+      -7.06304534996283
+    ],
+    "maluku|malukutengah": [
+      127.90388730595443,
+      -6.990543163136368,
+      130.31037112802514,
+      -2.7262425328665767
+    ],
+    "maluku|malukutenggara": [
+      132.42793215844245,
+      -6.037991684968239,
+      133.19176638031428,
+      -5.276324637671851
+    ],
+    "maluku|serambagianbarat": [
+      127.46993705505109,
+      -3.568375874347021,
+      128.84286929508198,
+      -2.8359633613199957
+    ],
+    "maluku|serambagiantimur": [
+      129.85623266560518,
+      -4.788150711885811,
+      131.86663980878018,
+      -2.9716742884375673
+    ],
+    "maluku|kotaambon": [
+      128.06650300970622,
+      -3.792685610052862,
+      128.2984895148793,
+      -3.575303031909341
+    ],
+    "maluku|kotatual": [
+      131.92624272991816,
+      -5.767445207430359,
+      132.81644308737862,
+      -5.1146691877327815
+    ],
+    "malukuutara|halmaherabarat": [
+      127.39715466195808,
+      0.7551014586654166,
+      127.79065152404871,
+      1.969963173961295
+    ],
+    "malukuutara|halmaheraselatan": [
+      127.01884672419703,
+      -1.865214085361691,
+      128.9368483292871,
+      0.3747161616216328
+    ],
+    "malukuutara|halmaheratengah": [
+      127.76862088674459,
+      -0.21441562468129938,
+      129.92325873929943,
+      0.6563615484467018
+    ],
+    "malukuutara|halmaheratimur": [
+      127.69374389616394,
+      0.4159344490156176,
+      128.75821083815973,
+      1.5898002109110383
+    ],
+    "malukuutara|halmaherautara": [
+      127.60103407336388,
+      0.8531498981493275,
+      128.07479192161003,
+      2.3006782471034466
+    ],
+    "malukuutara|kepulauansula": [
+      125.32771402138508,
+      -2.4770987122357173,
+      126.48671027026282,
+      -1.753679356716889
+    ],
+    "malukuutara|pulaumorotai": [
+      128.12502213985988,
+      1.96263742157978,
+      128.69373564018767,
+      2.6451910077588376
+    ],
+    "malukuutara|pulautaliabu": [
+      124.28319632844784,
+      -2.0734232575772698,
+      125.32685920139116,
+      -1.5784519374069799
+    ],
+    "malukuutara|kotaternate": [
+      126.12730482285943,
+      0.43293135060135945,
+      127.43935382641804,
+      1.3515487405819844
+    ],
+    "malukuutara|kotatidorekepulauan": [
+      127.36196448077625,
+      -0.024322831033776637,
+      127.83157015104166,
+      0.7876177908284294
+    ],
+    "nusatenggarabarat|bima": [
+      117.76546790342104,
+      -8.884308984272131,
+      119.34613900710953,
+      -8.080053957823878
+    ],
+    "nusatenggarabarat|dompu": [
+      117.69086500461624,
+      -8.88943597429071,
+      118.54263662058356,
+      -8.098392957269134
+    ],
+    "nusatenggarabarat|lombokbarat": [
+      115.82098901173353,
+      -8.922315743176927,
+      116.33732701772776,
+      -8.410450127771156
+    ],
+    "nusatenggarabarat|lomboktengah": [
+      116.09188406289925,
+      -8.956074042682864,
+      116.44635044891413,
+      -8.410125876308054
+    ],
+    "nusatenggarabarat|lomboktimur": [
+      116.37607977775966,
+      -8.937621334756756,
+      116.75513100968843,
+      -8.246714998298526
+    ],
+    "nusatenggarabarat|lombokutara": [
+      116.02794698866262,
+      -8.480428797151234,
+      116.49392292590234,
+      -8.210431162368153
+    ],
+    "nusatenggarabarat|sumbawa": [
+      116.83936799663584,
+      -9.105162024607676,
+      118.33347699806508,
+      -8.127362355188499
+    ],
+    "nusatenggarabarat|sumbawabarat": [
+      116.71164901179247,
+      -9.107471027665763,
+      117.0965141179322,
+      -8.49110396657478
+    ],
+    "nusatenggarabarat|kotabima": [
+      118.69579639818528,
+      -8.532360065064886,
+      118.8959996292796,
+      -8.340374397260568
+    ],
+    "nusatenggarabarat|kotamataram": [
+      116.0710629939621,
+      -8.623946042875534,
+      116.16985992569508,
+      -8.552822005031473
+    ],
+    "nusatenggaratimur|timortengahselatan": [
+      124.05472488104851,
+      -10.173635000255015,
+      124.82099905806014,
+      -9.473692194039511
+    ],
+    "nusatenggaratimur|alor": [
+      123.80005096188246,
+      -8.550462085057102,
+      125.14137722917586,
+      -8.116441570122372
+    ],
+    "nusatenggaratimur|belu": [
+      124.79243515455882,
+      -9.392505989859483,
+      125.19305074779382,
+      -8.957439463560384
+    ],
+    "nusatenggaratimur|ende": [
+      121.3948135408123,
+      -8.906735245035495,
+      122.02500035608153,
+      -8.441030581995772
+    ],
+    "nusatenggaratimur|florestimur": [
+      122.6477921720711,
+      -8.647220457857756,
+      123.33911044569061,
+      -8.06335760427002
+    ],
+    "nusatenggaratimur|kupang": [
+      123.27049496686928,
+      -10.37012002212128,
+      124.22647237460046,
+      -9.254766351385939
+    ],
+    "nusatenggaratimur|lembata": [
+      123.20747999180824,
+      -8.585909992152345,
+      123.9241174311745,
+      -7.77896372829339
+    ],
+    "nusatenggaratimur|malaka": [
+      124.64244079990308,
+      -9.790775332815276,
+      125.08783014124806,
+      -9.301985939799255
+    ],
+    "nusatenggaratimur|manggarai": [
+      120.23300169896928,
+      -8.915742174761547,
+      120.54640367429019,
+      -8.240945074855315
+    ],
+    "nusatenggaratimur|manggaraibarat": [
+      119.34345893658073,
+      -8.86589069879669,
+      120.3993147153019,
+      -8.282347062267075
+    ],
+    "nusatenggaratimur|manggaraitimur": [
+      120.46824432101866,
+      -8.893512682963927,
+      120.93589032807618,
+      -8.256568065963492
+    ],
+    "nusatenggaratimur|nagekeo": [
+      121.09635429771274,
+      -8.908239223561303,
+      121.52525557478498,
+      -8.438882153788345
+    ],
+    "nusatenggaratimur|ngada": [
+      120.81073629784186,
+      -8.956422278165537,
+      121.1939992608572,
+      -8.343802371881885
+    ],
+    "nusatenggaratimur|rotendao": [
+      122.63979300644212,
+      -11.007615376748241,
+      123.44127637900183,
+      -10.431041800838408
+    ],
+    "nusatenggaratimur|saburaijua": [
+      121.2718104541892,
+      -10.827778371674484,
+      122.0074329650594,
+      -10.41863236439207
+    ],
+    "nusatenggaratimur|sikka": [
+      121.67575048939365,
+      -8.807358400769587,
+      122.68685912734686,
+      -8.10663351082777
+    ],
+    "nusatenggaratimur|sumbabarat": [
+      119.14074189442292,
+      -9.797201219960332,
+      119.54620384782932,
+      -9.375968297398956
+    ],
+    "nusatenggaratimur|sumbabaratdaya": [
+      118.92785895003058,
+      -9.72905981605761,
+      119.40495080633472,
+      -9.357771805424413
+    ],
+    "nusatenggaratimur|sumbatengah": [
+      119.40325284404351,
+      -9.829316268331105,
+      119.92632270093206,
+      -9.343454065152894
+    ],
+    "nusatenggaratimur|sumbatimur": [
+      119.6731724050825,
+      -10.334290072228995,
+      120.84853613713312,
+      -9.278783142328066
+    ],
+    "nusatenggaratimur|timortengahutara": [
+      124.09320139992477,
+      -9.663017704103698,
+      124.85754118198008,
+      -9.018704203236343
+    ],
+    "nusatenggaratimur|kotakupang": [
+      123.52717999496085,
+      -10.29273000738387,
+      123.69183861126298,
+      -10.12394175370897
+    ],
+    "papua|biaknumfor": [
+      134.78303404728354,
+      -1.3405654065681976,
+      136.70781547490438,
+      -0.6833779091631325
+    ],
+    "papua|jayapura": [
+      139.3606125716129,
+      -3.753760905041739,
+      140.65271484421478,
+      -2.3193175012017146
+    ],
+    "papua|keerom": [
+      140.31357921011247,
+      -4.1162119137488045,
+      141.00273535705117,
+      -2.7137000390255377
+    ],
+    "papua|kepulauanyapen": [
+      135.00668757736995,
+      -1.9770936320653991,
+      137.0542988489128,
+      -1.465438555145207
+    ],
+    "papua|mamberamoraya": [
+      136.80149320204976,
+      -3.425688199250912,
+      139.2332958643127,
+      -1.4584775515976727
+    ],
+    "papua|sarmi": [
+      138.13653810774758,
+      -3.4841797597880113,
+      140.00448369506654,
+      -1.580641674173913
+    ],
+    "papua|supiori": [
+      134.29965899386747,
+      -0.9675726167827552,
+      135.79429556368942,
+      0.9379435231750417
+    ],
+    "papua|waropen": [
+      136.0113934398554,
+      -3.4066163027001632,
+      137.5510813560199,
+      -2.1841332701342946
+    ],
+    "papua|kotajayapura": [
+      140.60334972520968,
+      -2.8392617580236728,
+      141.00273535705117,
+      -2.4738142118563093
+    ],
+    "papuabarat|fakfak": [
+      131.57744706493017,
+      -3.968455453656164,
+      133.5004774747557,
+      -2.57893210143523
+    ],
+    "papuabarat|kaimana": [
+      132.8370558877191,
+      -4.330794988697731,
+      135.2028153948147,
+      -2.7870956744257906
+    ],
+    "papuabarat|manokwari": [
+      133.4262634526963,
+      -1.242169674990448,
+      134.1851962758875,
+      -0.7138791466052812
+    ],
+    "papuabarat|manokwariselatan": [
+      133.65188598095335,
+      -1.852748476361013,
+      134.27765522111162,
+      -1.1976845238216764
+    ],
+    "papuabarat|pegununganarfak": [
+      133.2300035967886,
+      -1.5604300982704071,
+      134.08472596033485,
+      -0.9523507143139458
+    ],
+    "papuabarat|telukbintuni": [
+      132.59857413338963,
+      -3.128483253199546,
+      134.35983444230578,
+      -1.2432505422786537
+    ],
+    "papuabarat|telukwondama": [
+      134.00839862229864,
+      -3.4991331381837103,
+      134.81943391734148,
+      -1.7313565269820668
+    ],
+    "papuabaratdaya|maybrat": [
+      132.07133452936506,
+      -1.8858115018992176,
+      132.90949589901666,
+      -0.9248634440926633
+    ],
+    "papuabaratdaya|rajaampat": [
+      129.30036577116348,
+      -2.255275935635906,
+      131.3408683228149,
+      1.0804967334375721
+    ],
+    "papuabaratdaya|sorong": [
+      130.60613708056184,
+      -1.7544990869632375,
+      132.28967357877275,
+      -0.7160519887082355
+    ],
+    "papuabaratdaya|sorongselatan": [
+      131.77813686702294,
+      -2.2836746570597892,
+      132.6957572254157,
+      -1.0409523755516208
+    ],
+    "papuabaratdaya|tambrauw": [
+      131.74352776299585,
+      -1.3567179715571225,
+      133.49316161221867,
+      -0.343997041630109
+    ],
+    "papuabaratdaya|kotasorong": [
+      131.18472843027288,
+      -0.9518486363055327,
+      131.39649355693209,
+      -0.7819900482020774
+    ],
+    "papuapegunungan|pegununganbintang": [
+      139.9408815319572,
+      -5.344435573442911,
+      141.00123879073772,
+      -3.6702305298150133
+    ],
+    "papuapegunungan|jayawijaya": [
+      138.58346105308522,
+      -4.478431218425952,
+      139.22142603188595,
+      -3.751968063375413
+    ],
+    "papuapegunungan|lannyjaya": [
+      137.94609826572247,
+      -4.235713804748256,
+      138.74614309442836,
+      -3.7584495187302362
+    ],
+    "papuapegunungan|mamberamotengah": [
+      138.5913725716869,
+      -3.8792531487138486,
+      139.4636434422911,
+      -3.2525845208588837
+    ],
+    "papuapegunungan|nduga": [
+      137.71034221981768,
+      -4.811869654560821,
+      139.02186897627232,
+      -4.023302867733117
+    ],
+    "papuapegunungan|tolikara": [
+      138.0619061356597,
+      -3.8503856898476823,
+      138.9082581141207,
+      -3.106956212858927
+    ],
+    "papuapegunungan|yahukimo": [
+      138.75332817305687,
+      -5.222778319563728,
+      140.162698438682,
+      -3.616673981918675
+    ],
+    "papuapegunungan|yalimo": [
+      138.94655220012396,
+      -4.204592026101109,
+      140.12558013621435,
+      -3.460087882649601
+    ],
+    "papuaselatan|asmat": [
+      137.68118268543262,
+      -6.523813821550543,
+      139.98742860104912,
+      -4.56458095005077
+    ],
+    "papuaselatan|bovendigoel": [
+      139.7075111113488,
+      -7.210137887353588,
+      141.00063166382026,
+      -5.029330025859993
+    ],
+    "papuaselatan|mappi": [
+      138.56410463711944,
+      -7.386304617963705,
+      140.08481018514203,
+      -5.293852777783385
+    ],
+    "papuaselatan|merauke": [
+      137.64081072213716,
+      -9.125541666714536,
+      141.02004178909738,
+      -6.615435408017659
+    ],
+    "papuatengah|deiyai": [
+      136.00300650544594,
+      -4.402777550843309,
+      136.92935834561123,
+      -3.972839875259984
+    ],
+    "papuatengah|dogiyai": [
+      135.0198038917363,
+      -4.298074440283164,
+      136.2082880273706,
+      -3.7837292231251123
+    ],
+    "papuatengah|intanjaya": [
+      136.2477852327024,
+      -4.036542408105584,
+      137.35292465814658,
+      -3.0112826409810527
+    ],
+    "papuatengah|mimika": [
+      134.8854899382102,
+      -5.217687214293479,
+      137.96877215031455,
+      -3.9566168357983127
+    ],
+    "papuatengah|nabire": [
+      134.58525788494356,
+      -3.946783867981088,
+      136.378567731116,
+      -2.2745970406208986
+    ],
+    "papuatengah|paniai": [
+      135.99040858638716,
+      -4.192428329403766,
+      137.26995064130915,
+      -3.2538938788993637
+    ],
+    "papuatengah|puncak": [
+      136.84801026975825,
+      -4.202991794036029,
+      138.0795268906536,
+      -3.0401148734026133
+    ],
+    "papuatengah|puncakjaya": [
+      137.43506503132625,
+      -3.9116865606861477,
+      138.35394007437506,
+      -2.9707781490922596
+    ],
+    "riau|bengkalis": [
+      100.96766968690659,
+      0.9216684786174074,
+      102.50679233689685,
+      2.1258023637881625
+    ],
+    "riau|indragirihilir": [
+      102.56457001469445,
+      -1.1269444623170504,
+      103.81357735311238,
+      0.5384974550935535
+    ],
+    "riau|indragirihulu": [
+      101.77705411355659,
+      -1.1047021695694408,
+      102.72014622296993,
+      0.09350472376407915
+    ],
+    "riau|kampar": [
+      100.42931158995799,
+      -0.37908464344152115,
+      101.66680560609397,
+      0.9682655563104188
+    ],
+    "riau|kepulauanmeranti": [
+      102.20583574482382,
+      0.6878671874208404,
+      103.15344183757087,
+      1.4185577226608377
+    ],
+    "riau|kuantansingingi": [
+      101.02870260743939,
+      -0.9836111135620467,
+      101.93033283189476,
+      0.009374682395721479
+    ],
+    "riau|pelalawan": [
+      101.49561177296503,
+      -0.40204199434253063,
+      103.35160561131002,
+      0.7238947696279947
+    ],
+    "riau|rokanhilir": [
+      100.27184498785597,
+      1.2298237371757477,
+      101.33538888908596,
+      2.9211540003568395
+    ],
+    "riau|rokanhulu": [
+      100.05083317041456,
+      0.37661106105170994,
+      100.9997393869632,
+      1.4376263330888346
+    ],
+    "riau|siak": [
+      100.98079213464933,
+      0.40578024066564033,
+      102.89666799962852,
+      1.2285086171790223
+    ],
+    "riau|kotadumai": [
+      101.01015861292974,
+      1.4471949442913274,
+      101.7249893943451,
+      2.234096689410789
+    ],
+    "riau|kotapekanbaru": [
+      101.3232342656489,
+      0.42039450899944164,
+      101.6053479996106,
+      0.6910000000499767
+    ],
+    "sulawesibarat|majene": [
+      118.775557857709,
+      -3.5705799139318177,
+      119.08274314527999,
+      -2.9149533140441246
+    ],
+    "sulawesibarat|mamasa": [
+      119.01309924133689,
+      -3.3382970866412425,
+      119.6369376811291,
+      -2.654256892341669
+    ],
+    "sulawesibarat|mamuju": [
+      117.05879748661486,
+      -2.960837295904442,
+      119.76223896275806,
+      -2.116626995339546
+    ],
+    "sulawesibarat|mamujutengah": [
+      119.12691914190493,
+      -2.313287774411224,
+      119.87486954679223,
+      -1.7327831773017248
+    ],
+    "sulawesibarat|pasangkayu": [
+      119.28146989012338,
+      -1.8419310512769709,
+      119.87147663943537,
+      -0.8495221865995521
+    ],
+    "sulawesibarat|polewalimandar": [
+      118.90163114256322,
+      -3.533079679283693,
+      119.49289143619094,
+      -3.0729616947263754
+    ],
+    "sulawesiselatan|bantaeng": [
+      119.8541082980596,
+      -5.58745253240838,
+      120.10195639257347,
+      -5.354370424555358
+    ],
+    "sulawesiselatan|barru": [
+      119.57029905155997,
+      -4.800656552058127,
+      119.82571696816363,
+      -4.0673591573991335
+    ],
+    "sulawesiselatan|bone": [
+      119.69624987033531,
+      -5.139990874279368,
+      120.45814052776326,
+      -4.222073968938458
+    ],
+    "sulawesiselatan|bulukumba": [
+      119.95695873325897,
+      -5.66096599968107,
+      120.47230623584412,
+      -5.28712678057646
+    ],
+    "sulawesiselatan|enrekang": [
+      119.68559453276161,
+      -3.8226944443930737,
+      120.1003395293459,
+      -3.2375947460007186
+    ],
+    "sulawesiselatan|gowa": [
+      119.36542288735647,
+      -5.5696548223121125,
+      120.03189313655908,
+      -5.091759198727955
+    ],
+    "sulawesiselatan|jeneponto": [
+      119.48607942332684,
+      -5.702789000212131,
+      119.93950999429087,
+      -5.381985671001902
+    ],
+    "sulawesiselatan|kepulauanselayar": [
+      120.27869979995589,
+      -7.495285168575609,
+      122.22255263219822,
+      -5.73884725559635
+    ],
+    "sulawesiselatan|luwu": [
+      119.88593241035257,
+      -3.6673482170465537,
+      120.42101135698863,
+      -2.663866523421257
+    ],
+    "sulawesiselatan|luwutimur": [
+      120.4698359753501,
+      -3.0159496961215364,
+      121.78414063058571,
+      -2.0185851658726133
+    ],
+    "sulawesiselatan|luwuutara": [
+      119.67626405034568,
+      -2.916634670353682,
+      120.65591963178562,
+      -1.9476865889648725
+    ],
+    "sulawesiselatan|maros": [
+      119.4517154708923,
+      -5.2120200240048735,
+      119.97284613314264,
+      -4.718298898175613
+    ],
+    "sulawesiselatan|pangkajenedankepulauan": [
+      117.0382912712253,
+      -7.758926923938318,
+      119.81048228363053,
+      -4.5564127046825025
+    ],
+    "sulawesiselatan|pinrang": [
+      119.43142277793892,
+      -4.043781625921275,
+      119.80266666693315,
+      -3.270566805113864
+    ],
+    "sulawesiselatan|sidenrengrappang": [
+      119.65942920299538,
+      -4.132068877876341,
+      120.33847515530415,
+      -3.488511035955513
+    ],
+    "sulawesiselatan|sinjai": [
+      119.92878029987108,
+      -5.355870180764181,
+      120.4268015709358,
+      -5.03934428980706
+    ],
+    "sulawesiselatan|soppeng": [
+      119.70623537756066,
+      -4.545153771829094,
+      120.09444581422304,
+      -4.0985675992152775
+    ],
+    "sulawesiselatan|takalar": [
+      119.18952919181876,
+      -5.606381967353861,
+      119.64535624559437,
+      -5.210502981927048
+    ],
+    "sulawesiselatan|tanatoraja": [
+      119.37411331687612,
+      -3.3895587157620337,
+      120.04414371316192,
+      -2.7391974800796053
+    ],
+    "sulawesiselatan|torajautara": [
+      119.67402027961228,
+      -3.182704722045207,
+      120.08532858174871,
+      -2.5866333333616236
+    ],
+    "sulawesiselatan|wajo": [
+      119.8812484794338,
+      -4.287215427849647,
+      120.44018442097435,
+      -3.64215849521832
+    ],
+    "sulawesiselatan|kotamakassar": [
+      119.07475002669244,
+      -5.2323388890284575,
+      119.5432706280371,
+      -4.974971357342175
+    ],
+    "sulawesiselatan|kotapalopo": [
+      120.04953325485592,
+      -3.073530109426928,
+      120.22954252596685,
+      -2.8813811939868454
+    ],
+    "sulawesiselatan|kotaparepare": [
+      119.61697754757583,
+      -4.078595279848221,
+      119.72112611188057,
+      -3.9613026364074404
+    ],
+    "sulawesitengah|banggai": [
+      121.85368856517519,
+      -1.6216601951618141,
+      123.45948214208728,
+      -0.42068250859086653
+    ],
+    "sulawesitengah|banggaikepulauan": [
+      122.60790999844777,
+      -1.734414966577427,
+      123.55951538802478,
+      -1.1460549964409399
+    ],
+    "sulawesitengah|banggailaut": [
+      123.04776713234735,
+      -2.2372326773461264,
+      124.18122022223554,
+      -1.449514281259015
+    ],
+    "sulawesitengah|buol": [
+      120.88254921007812,
+      0.6792745007176944,
+      122.19570839342768,
+      1.3133930998117744
+    ],
+    "sulawesitengah|donggala": [
+      119.42677955663139,
+      -1.4514410562597195,
+      120.20312158998948,
+      0.7488038795954584
+    ],
+    "sulawesitengah|morowali": [
+      121.43791402471257,
+      -3.6397385383028418,
+      123.18167373885208,
+      -2.1505532189558334
+    ],
+    "sulawesitengah|morowaliutara": [
+      120.81722154293996,
+      -2.411086038689694,
+      122.05840169038572,
+      -1.2736036766683139
+    ],
+    "sulawesitengah|parigimoutong": [
+      119.89853991078829,
+      -1.1851666669081578,
+      121.35068010730119,
+      0.7113641801128363
+    ],
+    "sulawesitengah|poso": [
+      120.0893737188221,
+      -2.2416728137492985,
+      120.95602789966794,
+      -1.1093653756115511
+    ],
+    "sulawesitengah|sigi": [
+      119.64704832541996,
+      -2.0553603023360427,
+      120.37001990399536,
+      -0.8566731107753771
+    ],
+    "sulawesitengah|tojounauna": [
+      120.8876553664021,
+      -1.6496832832569002,
+      122.39892843899634,
+      -0.12121000833518458
+    ],
+    "sulawesitengah|tolitoli": [
+      120.13664391568423,
+      0.5885010495838312,
+      121.17841569602763,
+      1.3742776528913954
+    ],
+    "sulawesitengah|kotapalu": [
+      119.75728697631288,
+      -0.9474557763628848,
+      120.04205169942642,
+      -0.6512590827404434
+    ],
+    "sulawesitenggara|bombana": [
+      121.46684643171753,
+      -5.4287725326262395,
+      122.15255341061152,
+      -4.3772777778471355
+    ],
+    "sulawesitenggara|buton": [
+      122.68015415179272,
+      -5.651997552844782,
+      123.2245104938643,
+      -5.068678226119141
+    ],
+    "sulawesitenggara|butonselatan": [
+      122.4570179863911,
+      -6.2127143399947995,
+      122.8227845877386,
+      -5.4817076930555855
+    ],
+    "sulawesitenggara|butontengah": [
+      121.93279232620503,
+      -5.523118072041359,
+      122.64867011003761,
+      -5.142288794092467
+    ],
+    "sulawesitenggara|butonutara": [
+      122.8321577717638,
+      -5.146691576255227,
+      123.21394197144488,
+      -4.366528300140862
+    ],
+    "sulawesitenggara|kolaka": [
+      121.1026509756621,
+      -4.615229037390092,
+      121.81141527679367,
+      -3.6280496072035344
+    ],
+    "sulawesitenggara|kolakatimur": [
+      121.12057158620988,
+      -4.415833881328515,
+      122.02879905733074,
+      -3.2260973309270273
+    ],
+    "sulawesitenggara|kolakautara": [
+      120.86449754402648,
+      -3.7453080206485883,
+      121.44161867486207,
+      -2.773288753573036
+    ],
+    "sulawesitenggara|konawe": [
+      121.36094225588045,
+      -4.128559555978642,
+      122.82165321002762,
+      -2.8950206817590445
+    ],
+    "sulawesitenggara|konawekepulauan": [
+      122.93701730680337,
+      -4.26084255164241,
+      123.25953543001621,
+      -3.9783754920352603
+    ],
+    "sulawesitenggara|konaweselatan": [
+      121.88188888896111,
+      -4.536716131843901,
+      122.9112906249625,
+      -3.9833190581279236
+    ],
+    "sulawesitenggara|konaweutara": [
+      121.54613724184028,
+      -3.87041290023509,
+      122.48874330366061,
+      -3.0393534192248577
+    ],
+    "sulawesitenggara|muna": [
+      122.26944393209178,
+      -5.234585098723325,
+      122.92797700323612,
+      -4.514451962188273
+    ],
+    "sulawesitenggara|munabarat": [
+      122.16040324831138,
+      -5.002948285934641,
+      122.65955840889357,
+      -4.571095859286414
+    ],
+    "sulawesitenggara|wakatobi": [
+      123.46380271812095,
+      -6.133490735309159,
+      124.61543124775393,
+      -5.245049199061195
+    ],
+    "sulawesitenggara|kotabaubau": [
+      122.55643957642543,
+      -5.538144578809216,
+      122.77019387574686,
+      -5.308246562928502
+    ],
+    "sulawesitenggara|kotakendari": [
+      122.44294444443067,
+      -4.091674804748349,
+      122.65127307179486,
+      -3.9028123340219683
+    ],
+    "sulawesiutara|bolaangmongondow": [
+      123.63406292366503,
+      0.43128644831098306,
+      124.4365567340061,
+      1.0108300802440713
+    ],
+    "sulawesiutara|bolaangmongondowselatan": [
+      123.47364993209877,
+      0.2922755111059967,
+      124.47594185503259,
+      0.6151017303605872
+    ],
+    "sulawesiutara|bolaangmongondowtimur": [
+      124.33755845306018,
+      0.4459110003924156,
+      124.70260434761255,
+      0.9567453883890327
+    ],
+    "sulawesiutara|bolaangmongondowutara": [
+      123.10496459543978,
+      0.5618948163927246,
+      123.74139216611562,
+      1.0466815536109149
+    ],
+    "sulawesiutara|siautagulandangbiaro": [
+      125.15931414892881,
+      2.0699078978312553,
+      125.4904617528077,
+      2.811736820797716
+    ],
+    "sulawesiutara|kepulauansangihe": [
+      125.32019531676056,
+      2.935498079073117,
+      125.78058807118262,
+      4.746521856298646
+    ],
+    "sulawesiutara|kepulauantalaud": [
+      126.57672209994507,
+      3.7279921522160855,
+      127.16351293207617,
+      5.565881888638312
+    ],
+    "sulawesiutara|minahasa": [
+      124.56526716834523,
+      1.0183575208829705,
+      125.06345172391799,
+      1.464612222276271
+    ],
+    "sulawesiutara|minahasaselatan": [
+      124.29782954010126,
+      0.7624479314269212,
+      124.75957271380983,
+      1.3782042539232737
+    ],
+    "sulawesiutara|minahasatenggara": [
+      124.54991883378719,
+      0.8421499421661789,
+      124.95109508866747,
+      1.134379469037336
+    ],
+    "sulawesiutara|minahasautara": [
+      124.73101221514173,
+      1.285740024282786,
+      125.18872600699964,
+      1.8877674690935127
+    ],
+    "sulawesiutara|kotabitung": [
+      125.03249364076898,
+      1.3871879595567211,
+      125.29612185773763,
+      1.5991831300973676
+    ],
+    "sulawesiutara|kotakotamobagu": [
+      124.25240277806589,
+      0.6479281973284596,
+      124.3795277777848,
+      0.7745633246378087
+    ],
+    "sulawesiutara|kotamanado": [
+      124.68206579979683,
+      1.4280233875693522,
+      124.93411819339994,
+      1.648904065869969
+    ],
+    "sulawesiutara|kotatomohon": [
+      124.7312379710556,
+      1.2425847231065408,
+      124.90949749961,
+      1.4051331899447934
+    ],
+    "sumaterabarat|agam": [
+      99.77061731443759,
+      -0.4790134717942234,
+      100.54275797060394,
+      -0.03233333261716531
+    ],
+    "sumaterabarat|dharmasraya": [
+      101.14231472234657,
+      -1.6958658751099502,
+      101.89285442109478,
+      -0.8211332866718184
+    ],
+    "sumaterabarat|kepulauanmentawai": [
+      98.59654141065765,
+      -3.5730200003726313,
+      100.7856690002242,
+      -0.906072165697827
+    ],
+    "sumaterabarat|limapuluhkota": [
+      100.2649080078983,
+      -0.3708370409966104,
+      100.86447874859547,
+      0.42422316306860175
+    ],
+    "sumaterabarat|padangpariaman": [
+      99.96214077837428,
+      -0.8755863669173163,
+      100.45788750030799,
+      -0.3221213314341913
+    ],
+    "sumaterabarat|pasaman": [
+      99.74348109457691,
+      -0.11180480574715368,
+      100.35346374165843,
+      0.90657353883776
+    ],
+    "sumaterabarat|pasamanbarat": [
+      99.16715112612368,
+      -0.18217172864225795,
+      100.06361354123203,
+      0.5519810004228827
+    ],
+    "sumaterabarat|pesisirselatan": [
+      100.29562911699023,
+      -2.4784435197526182,
+      101.29286944366994,
+      -0.9588841756641013
+    ],
+    "sumaterabarat|sijunjung": [
+      100.78905045021817,
+      -0.9902544666702067,
+      101.54775060710485,
+      -0.3130862538274908
+    ],
+    "sumaterabarat|solok": [
+      100.42601426884353,
+      -1.3292310134005252,
+      101.26257202497901,
+      -0.5319722196421655
+    ],
+    "sumaterabarat|solokselatan": [
+      100.88814740477898,
+      -1.7250833977805495,
+      101.6723665549726,
+      -1.0066138226697579
+    ],
+    "sumaterabarat|tanahdatar": [
+      100.31690694979598,
+      -0.6591450003414128,
+      100.8493026351086,
+      -0.27872523318286646
+    ],
+    "sumaterabarat|kotabukittinggi": [
+      100.33263301220383,
+      -0.3220663801592831,
+      100.40785332527082,
+      -0.2710708541365374
+    ],
+    "sumaterabarat|kotapadang": [
+      100.13793172996547,
+      -1.1370268310233715,
+      100.56558301144693,
+      -0.7260594438881522
+    ],
+    "sumaterabarat|kotapadangpanjang": [
+      100.36533772715443,
+      -0.4907110723580548,
+      100.43542106682881,
+      -0.44923226935365257
+    ],
+    "sumaterabarat|kotapariaman": [
+      100.07458300030528,
+      -0.676159211178609,
+      100.18608416715061,
+      -0.5495890742762715
+    ],
+    "sumaterabarat|kotapayakumbuh": [
+      100.5827409510341,
+      -0.2769743619771585,
+      100.68561305090167,
+      -0.1840884573164363
+    ],
+    "sumaterabarat|kotasawahlunto": [
+      100.6886070315893,
+      -0.7727820219727537,
+      100.81328899958774,
+      -0.5477222220028803
+    ],
+    "sumaterabarat|kotasolok": [
+      100.54146600005588,
+      -0.8190469998191201,
+      100.6848052834371,
+      -0.7430529999958662
+    ],
+    "sumateraselatan|banyuasin": [
+      104.0388869838473,
+      -3.168399466162411,
+      105.5707104357381,
+      -1.6269314634162395
+    ],
+    "sumateraselatan|empatlawang": [
+      102.62033333341668,
+      -4.020397823700497,
+      103.20216158778705,
+      -3.4128930561694997
+    ],
+    "sumateraselatan|lahat": [
+      102.9146439679448,
+      -4.2679052433322955,
+      103.77242160637212,
+      -3.4901871177412307
+    ],
+    "sumateraselatan|muaraenim": [
+      103.31613663130052,
+      -4.376844964723306,
+      104.67666801711536,
+      -3.0178357129478055
+    ],
+    "sumateraselatan|musibanyuasin": [
+      103.0293255557299,
+      -3.265972927808283,
+      104.68414787102752,
+      -1.7155003326741163
+    ],
+    "sumateraselatan|musirawas": [
+      102.4842376241671,
+      -3.5957290898255305,
+      103.65009975529956,
+      -2.7530603729377905
+    ],
+    "sumateraselatan|musirawasutara": [
+      102.06388889435699,
+      -3.109910083783321,
+      103.3614129070801,
+      -2.3145166674102295
+    ],
+    "sumateraselatan|oganilir": [
+      104.31769012539901,
+      -3.803055555869131,
+      104.82638364309068,
+      -3.034978126639201
+    ],
+    "sumateraselatan|ogankomeringilir": [
+      104.63199432667689,
+      -4.266598448359707,
+      106.22062381533685,
+      -2.391331974890745
+    ],
+    "sumateraselatan|ogankomeringulu": [
+      103.61522736664976,
+      -4.463403252058454,
+      104.57328405731344,
+      -3.7470184916100795
+    ],
+    "sumateraselatan|ogankomeringuluselatan": [
+      103.40828667289165,
+      -4.924159182400237,
+      104.36904941459885,
+      -4.22655471872522
+    ],
+    "sumateraselatan|ogankomeringulutimur": [
+      104.15129346492155,
+      -4.644140021644619,
+      104.92778764828141,
+      -3.6158228896145754
+    ],
+    "sumateraselatan|penukalabablematangilir": [
+      103.60509070587145,
+      -3.413562149973151,
+      104.25790099963145,
+      -3.0033302239106856
+    ],
+    "sumateraselatan|kotalubuklinggau": [
+      102.75304688220791,
+      -3.376246464302815,
+      102.97652060184431,
+      -3.13069817008447
+    ],
+    "sumateraselatan|kotapagaralam": [
+      103.11992211921051,
+      -4.267172795887733,
+      103.41455874089324,
+      -3.986640382147824
+    ],
+    "sumateraselatan|kotapalembang": [
+      104.61191502755659,
+      -3.0907425740105214,
+      104.86542090994708,
+      -2.86561874321041
+    ],
+    "sumateraselatan|kotaprabumulih": [
+      104.1248476312132,
+      -3.5814333739509845,
+      104.35173370604579,
+      -3.3163729497517362
+    ],
+    "sumaterautara|asahan": [
+      99.07766666698313,
+      2.531159482324272,
+      99.98999236305718,
+      3.172810481818299
+    ],
+    "sumaterautara|batubara": [
+      99.20677722229098,
+      3.0152206725960298,
+      99.75833797032114,
+      3.4325230047329782
+    ],
+    "sumaterautara|dairi": [
+      97.93010266020967,
+      2.5492191667312287,
+      98.6289424893045,
+      3.1103170182159126
+    ],
+    "sumaterautara|deliserdang": [
+      98.46813736544708,
+      3.041030398733934,
+      98.9454925180653,
+      3.906254896746141
+    ],
+    "sumaterautara|humbanghasundutan": [
+      98.25155960229385,
+      1.9990993844290568,
+      98.96263888877381,
+      2.4763888892359116
+    ],
+    "sumaterautara|karo": [
+      97.90464205988322,
+      2.830022812402987,
+      98.6293915828553,
+      3.3307541697692002
+    ],
+    "sumaterautara|labuhanbatu": [
+      99.63055698082007,
+      1.7937003795689161,
+      100.3625847656745,
+      2.7341171021226547
+    ],
+    "sumaterautara|labuhanbatuselatan": [
+      99.67596714856516,
+      1.4479757788591758,
+      100.43445603581743,
+      2.243273948933597
+    ],
+    "sumaterautara|labuhanbatuutara": [
+      99.38755805595957,
+      1.9952908841669643,
+      100.07298278802527,
+      2.8563800197221703
+    ],
+    "sumaterautara|langkat": [
+      97.80050154361139,
+      3.2192318940366995,
+      98.66372025668457,
+      4.302546688079211
+    ],
+    "sumaterautara|mandailingnatal": [
+      98.81754248299931,
+      0.22901030867885375,
+      99.96447300012893,
+      1.3452004091715626
+    ],
+    "sumaterautara|nias": [
+      97.48586111100158,
+      0.8944489869312928,
+      98.02027399994519,
+      1.2931600022323604
+    ],
+    "sumaterautara|niasbarat": [
+      97.26678504109684,
+      0.8111713319913978,
+      97.62431203856977,
+      1.1915300001094504
+    ],
+    "sumaterautara|niasselatan": [
+      97.52361111076416,
+      -0.6387751383619271,
+      98.95060339313218,
+      1.0274341363763124
+    ],
+    "sumaterautara|niasutara": [
+      97.0576326302418,
+      1.0838833329495063,
+      97.53915797875777,
+      1.705553476711616
+    ],
+    "sumaterautara|padanglawas": [
+      99.41855320196875,
+      0.7580550139278248,
+      100.18638923427578,
+      1.550383694551913
+    ],
+    "sumaterautara|padanglawasutara": [
+      99.35966758099411,
+      1.2187872965965436,
+      100.34093540764306,
+      2.0427423079112135
+    ],
+    "sumaterautara|pakpakbharat": [
+      98.06936527808517,
+      2.2636111106642627,
+      98.46750805585215,
+      2.7857591786432536
+    ],
+    "sumaterautara|samosir": [
+      98.4201457630166,
+      2.355897903165724,
+      99.0188884736242,
+      2.7986278529931177
+    ],
+    "sumaterautara|serdangbedagai": [
+      98.73556874070492,
+      3.0158792865998088,
+      99.50342822823025,
+      3.7817009076708032
+    ],
+    "sumaterautara|simalungun": [
+      98.53455218703384,
+      2.597055556069103,
+      99.56574476460928,
+      3.304255555749357
+    ],
+    "sumaterautara|tapanuliselatan": [
+      98.78202924825128,
+      0.9760159433811229,
+      99.63367410657483,
+      2.1252841672305873
+    ],
+    "sumaterautara|tapanulitengah": [
+      98.02612878791332,
+      1.4030226852488088,
+      99.05704761275717,
+      2.3108257078402
+    ],
+    "sumaterautara|tapanuliutara": [
+      98.6522246672347,
+      1.640391667041838,
+      99.48276107736189,
+      2.4080066675736784
+    ],
+    "sumaterautara|toba": [
+      98.89469337429985,
+      2.1049722215908258,
+      99.58584609172375,
+      2.6629390716808228
+    ],
+    "sumaterautara|kotabinjai": [
+      98.4409401490687,
+      3.5278633031489584,
+      98.53945663891285,
+      3.668125478807859
+    ],
+    "sumaterautara|kotagunungsitoli": [
+      97.47124060766798,
+      1.1306980807518325,
+      97.72312541170841,
+      1.420825913585075
+    ],
+    "sumaterautara|kotamedan": [
+      98.59263908142847,
+      3.480169609240157,
+      98.74671589592194,
+      3.797394234756201
+    ],
+    "sumaterautara|kotapadangsidimpuan": [
+      99.21995389015997,
+      1.3028080208735222,
+      99.3504063904426,
+      1.4771849998879123
+    ],
+    "sumaterautara|kotapematangsiantar": [
+      99.01215324487642,
+      2.892163430597904,
+      99.10207736457878,
+      3.01859315455053
+    ],
+    "sumaterautara|kotasibolga": [
+      98.76270562066797,
+      1.716669756404185,
+      98.81120569079005,
+      1.7580361108778337
+    ],
+    "sumaterautara|kotatanjungbalai": [
+      99.75253443921301,
+      2.920875431755764,
+      99.83787361097842,
+      3.025051224834229
+    ],
+    "sumaterautara|kotatebingtinggi": [
+      99.1144148462682,
+      3.273930907385502,
+      99.19372296114577,
+      3.3781521809784323
+    ]
+  },
+  "totals": {
+    "kabkota": 514,
+    "provinsi": 38,
+    "kecamatan": 7281,
+    "desa": 84276,
+    "complete": 509,
+    "outliers": 25
+  },
+  "source": {
+    "primary": {
+      "institution": "Badan Pusat Statistik (BPS)",
+      "title": "Statistik Potensi Desa Indonesia 2024",
+      "release_date": "10 Desember 2024",
+      "catalog_number": "1105014",
+      "publication_number": "04300.24002",
+      "url": "https://www.bps.go.id/id/publication/2024/12/10/2f5217e2d6a695a0830290a7/statistik-potensi-desa-indonesia-2024.html",
+      "accessed": "2 Oktober 2026"
+    },
+    "boundary": {
+      "dataset": "Indonesia-GeoJSON — kabupaten/kota",
+      "source": "Laravel Nusa / Peta Nusa",
+      "reference": "Kepmendagri No 300.2.2-2138 Tahun 2025",
+      "url": "https://github.com/AlfianAliM/Indonesia-GeoJSON",
+      "documentation": "https://nusa.creasi.dev/en/api/regencies.html",
+      "accessed": "2 Oktober 2026",
+      "join_note": "Polygon digabungkan ke data Podes melalui audit nama kabupaten/kota satu-ke-satu 514/514. Kode boundary tidak diklaim sebagai kode BPS."
+    }
+  }
+}
